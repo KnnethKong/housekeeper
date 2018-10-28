@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_g"
+                android:orientation="vertical">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_skillSet_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+    <LinearLayout
+        android:id="@+id/ll_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/divider_big_width"
+        android:layout_marginRight="@dimen/divider_big_width"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_shape_tv_rect_white_little_corner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.haiwai.housekeeper.view.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/test_head_1"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="3dp"
+                    android:text="Albert"
+                    android:textColor="@color/tv_pressed_focused"
+                    android:textSize="@dimen/pro_order_text_title_size_big"/>
+
+
+                <LinearLayout
+                    android:id="@+id/o2o_ll_skill3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pro_order_item_margin"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/pro_order_detial_card"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:src="@mipmap/pro_person_cup"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:drawableLeft="@mipmap/pro_location_icon"
+                    android:drawablePadding="5dp"
+                    android:text="0.1km"
+                    android:textColor="@color/green"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:drawableLeft="@mipmap/diamond"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="完成30单/评价4.8"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="start"
+                android:text="免费上门/检测费$500/总价$1000"
+                android:textColor="@color/light_gray2"
+                android:textSize="14sp"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_top_layout"
+        android:layout_marginLeft="@dimen/divider_big_width"
+        android:layout_marginRight="@dimen/divider_big_width"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/pro_evalue_bj"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RatingBar
+                android:id="@+id/ratingbar"
+                style="@style/roomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:rating="4"/>
+
+            <FrameLayout
+                android:id="@+id/fl_layout"
+                android:layout_below="@id/ratingbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/pro_order_img_marging"
+                android:layout_marginTop="@dimen/pro_order_img_marging">
+
+                <TextView
+                    android:id="@+id/tv_order_linkman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/tv_order_linkman"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@mipmap/pro_order_text_lie"/>
+            </FrameLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+            <TextView
+                android:id="@+id/tv_ev1"
+               style="@style/evalute_text"
+                android:layout_marginLeft="30dp"
+                android:text="态度好服务棒"
+                android:background="@drawable/pro_evaluate_selector"/>
+            <TextView
+                android:id="@+id/tv_ev11"
+                android:layout_toRightOf="@id/tv_ev1"
+                style="@style/evalute_text"
+                android:layout_marginLeft="30dp"
+                android:text="专业"
+                android:background="@drawable/pro_evaluate_selector"/>
+            <TextView
+                android:id="@+id/tv_ev2"
+                android:layout_below="@id/tv_ev1"
+                style="@style/evalute_text"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="颜值高"
+                android:background="@drawable/pro_evaluate_selector"/>
+            <TextView
+                android:id="@+id/tv_ev21"
+                android:layout_toRightOf="@id/tv_ev2"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/tv_ev1"
+                style="@style/evalute_text"
+                android:layout_marginLeft="20dp"
+                android:text="报价合理，无乱收费"
+                android:background="@drawable/pro_evaluate_selector"/>
+        </RelativeLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/divider_big_width"
+            android:layout_marginRight="@dimen/divider_big_width"
+            android:minLines="3"
+            android:hint="请输入反馈信息"
+            android:padding="5dp"
+            android:background="@drawable/pro_order_offer_edit_bj"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/pro_submit"/>
+</RelativeLayout>

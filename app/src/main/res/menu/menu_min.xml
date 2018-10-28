@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/inco_zqbg"
+        android:icon="@mipmap/inco_zqbg"
+        android:title="@string/recuring_reports"/>
+    <item
+        android:id="@+id/icon_zqgl"
+        android:icon="@mipmap/icon_zqgl"
+        android:title="@string/recuring_manangement1" />
+    <item
+        android:id="@+id/icon_dcfw"
+        android:icon="@mipmap/icon_dcfw"
+        android:title="@string/one_time_service"/>
+    <item
+        android:id="@+id/icon_fy"
+        android:icon="@mipmap/icon_fy"
+        android:title="@string/translation" />
+
+</menu>

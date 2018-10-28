@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/pro_list_item_padding_top_bottom"
+                android:paddingTop="@dimen/pro_list_item_padding_top_bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/space_l"
+        android:paddingRight="@dimen/space_l">
+
+        <com.haiwai.housekeeper.view.CircleImageView
+            android:id="@+id/civ_detail_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/pro_order_item_img_marign_small"
+            android:minHeight="@dimen/pro_order_listview_item_img_width_height"
+            android:minWidth="@dimen/pro_order_listview_item_img_width_height"
+            android:src="@mipmap/img_default">
+        </com.haiwai.housekeeper.view.CircleImageView>
+
+        <TextView
+            android:id="@+id/tv_detial_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_l"
+            android:layout_marginRight="@dimen/space_l"
+            android:layout_marginTop="@dimen/space_mm"
+            android:layout_toRightOf="@id/civ_detail_img"
+            android:text="@string/order_item_title"
+            android:padding="@dimen/space_s"
+            android:textSize="@dimen/pro_order_text_title_size_big"/>
+
+        <ImageView
+            android:id="@+id/iv_detail_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/tv_detial_name"
+            android:gravity="center"
+            android:src="@mipmap/pro_order_detial_card"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_s"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/iv_detail_card"
+            android:gravity="center"
+            android:src="@mipmap/pro_person_cup"/>
+
+        <TextView
+            android:id="@+id/tv_title_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_detial_name"
+            android:layout_marginLeft="@dimen/space_l"
+            android:layout_toRightOf="@id/civ_detail_img"
+            android:text="@string/order_detial_card_tel"
+            android:textSize="@dimen/pro_order_text_title_size_midle"/>
+
+        <TextView
+            android:id="@+id/tv_title_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title_tel"
+            android:layout_marginLeft="@dimen/pro_order_item_margin"
+            android:layout_marginTop="@dimen/pro_order_item_margin"
+            android:layout_toRightOf="@id/civ_detail_img"
+            android:text="@string/order_locaton_content"
+            android:textSize="@dimen/pro_order_text_title_size_midle"/>
+    </RelativeLayout>
+
+</RelativeLayout>

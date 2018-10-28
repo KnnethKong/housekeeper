@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_prob_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+    <android.support.design.widget.TabLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tl_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/shouru1"
+        app:tabIndicatorColor="@color/text_color_count"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextAppearance="@style/TabLayoutTextStyle1"
+        app:tabMinWidth="100dp"
+
+        app:tabTextColor="@color/text_color_light" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/activity_bg" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haiwai.housekeeper.activity.base.AboutUsActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xl">
+
+            <ImageView
+                android:id="@+id/ivlogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/pro_user_logon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivlogo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_s"
+                android:text="v1.0"
+                android:textSize="@dimen/txt_xl"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_l"
+            android:layout_marginRight="@dimen/space_l"
+            android:layout_marginTop="@dimen/space_xxl"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_s"
+                android:lineSpacingExtra="3dp"
+                android:textSize="@dimen/txt_xl"
+                android:text="@string/str_us_des"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_s"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginTop="@dimen/space_s"
+                android:textSize="@dimen/txt_xl"
+                android:text="@string/str_us_des1"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_m"
+        android:layout_marginTop="@dimen/space_xl">
+
+        <TextView
+            android:id="@+id/ivt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/hint_a_color"
+            android:text="@string/str_us_des2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ivt"
+            android:layout_marginBottom="@dimen/space_s"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_s"
+            android:textColor="@color/hint_a_color"
+            android:text="Copyright©2017"
+            android:textSize="@dimen/txt_xl"/>
+    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

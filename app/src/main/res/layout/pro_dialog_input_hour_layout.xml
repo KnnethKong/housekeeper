@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/space_l"
+              android:layout_marginRight="@dimen/space_l"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_hour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_l"
+        android:layout_marginRight="@dimen/space_l"
+        android:layout_marginTop="@dimen/space_l"
+        android:background="@drawable/pro_order_single_offer_edit_bj"
+        android:minHeight="@dimen/space_xxl"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_l"
+        android:layout_marginTop="@dimen/space_mm"
+        android:gravity="center|left"
+        android:text="提示信息"/>
+</LinearLayout>

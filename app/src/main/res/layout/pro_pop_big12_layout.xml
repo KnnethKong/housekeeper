@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/pop_pro_bj"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_m"
+            android:layout_marginTop="@dimen/space_l"
+            android:drawableLeft="@mipmap/pop_big_dot"
+            android:drawablePadding="@dimen/space_m"
+            android:textSize="12sp"
+
+            android:text="@string/pro_pop_word8_1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_m"
+            android:layout_marginTop="@dimen/space_m"
+            android:drawableLeft="@mipmap/pop_big_dot"
+            android:drawablePadding="@dimen/space_m"
+            android:textSize="12sp"
+            android:text="@string/pro_pop_word8_2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_l"
+            android:layout_marginLeft="@dimen/space_m"
+            android:layout_marginTop="@dimen/space_m"
+            android:textSize="12sp"
+
+            android:drawableLeft="@mipmap/pop_big_dot"
+            android:drawablePadding="@dimen/space_m"
+            android:text="@string/pro_pop_word8_3"/>
+    </LinearLayout>
+
+</RelativeLayout>

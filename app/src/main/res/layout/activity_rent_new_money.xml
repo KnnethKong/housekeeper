@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rent_new_money"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    tools:context="com.haiwai.housekeeper.activity.server.RentNewMoneyActivity">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_zj_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_l"
+        android:layout_marginRight="@dimen/space_l"
+        android:layout_marginTop="@dimen/space_xl"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_smlx"
+            android:layout_marginTop="@dimen/space_xl"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/left_title_text"
+                android:paddingLeft="@dimen/space_l"
+                android:text="@string/zj"/>
+
+            <EditText
+                android:id="@+id/et_zj"
+                android:layout_width="0dip"
+                android:minHeight="@dimen/space_xxl"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingLeft="@dimen/space_m"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_sub_zj"
+        style="@style/common_text_button_style"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/space_xl"
+        android:layout_marginLeft="@dimen/space_l"
+        android:layout_marginRight="@dimen/space_l"
+        android:text="@string/zuj_tj"
+        android:textSize="@dimen/txt_xxl"/>
+</LinearLayout>

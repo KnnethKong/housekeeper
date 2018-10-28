@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="@dimen/space_xl"
+                android:paddingBottom="@dimen/space_xl">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/space_mm"
+        android:paddingRight="@dimen/space_l"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <com.haiwai.housekeeper.view.CircleImageView
+            android:id="@+id/civ_detail_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_l"
+            android:layout_marginBottom="@dimen/space_l"
+            android:layout_marginRight="@dimen/space_l"
+            android:layout_marginLeft="@dimen/space_mm"
+            android:minHeight="@dimen/space_smlx"
+            android:minWidth="@dimen/space_smlx"
+            android:src="@mipmap/img_default">
+        </com.haiwai.housekeeper.view.CircleImageView>
+
+        <TextView
+            android:id="@+id/tv_detial_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/civ_detail_img"
+            android:textSize="@dimen/txt_xxxl"
+            android:layout_marginTop="@dimen/space_xl"
+            android:layout_marginLeft="@dimen/space_l"
+            android:layout_marginRight="@dimen/space_l"
+            android:text="@string/order_item_title"/>
+
+        <ImageView
+            android:id="@+id/iv_detail_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xll"
+            android:gravity="center"
+            android:src="@mipmap/pro_order_detial_card"
+            android:layout_toRightOf="@id/tv_detial_name"/>
+
+        <TextView
+            android:id="@+id/tv_title_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_l"
+            android:layout_marginTop="@dimen/space_mm"
+            android:layout_below="@id/tv_detial_name"
+            android:layout_toRightOf="@id/civ_detail_img"
+            android:textSize="@dimen/txt_xxl"
+            android:text="@string/order_detial_card_tel"/>
+
+        <ImageView
+            android:id="@+id/iv_detail_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_l"
+            android:src="@mipmap/pro_order_detail_chat"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

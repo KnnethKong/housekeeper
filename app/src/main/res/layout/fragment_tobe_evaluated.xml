@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.haiwai.housekeeper.fragment.user.needs.TobeEvaluatedFragment">
+
+
+    <com.haiwai.housekeeper.view.xlistview.XListView
+        android:id="@+id/lv_evaluated_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:scrollbars="none"></com.haiwai.housekeeper.view.xlistview.XListView>
+
+    <TextView
+        android:id="@+id/tv_empty_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="暂无数据"
+        android:textSize="16sp"
+        />
+</FrameLayout>

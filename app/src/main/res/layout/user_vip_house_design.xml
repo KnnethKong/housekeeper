@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/divider_big_width">
+
+            <LinearLayout
+                android:id="@+id/vip_house_design_ll_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_shape_tv_rect_theme_fill_corner_transparent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <TextView
+                    android:id="@+id/vip_house_design_tv_addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/locate_theme"
+                    android:drawablePadding="10dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/theme"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_shape_tv_rect_white_little_corner"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="60dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingRight="20dp"
+                        android:text="@string/business_order_this_month"
+                        android:textColor="@color/text_1"
+                        android:textSize="16sp"
+                        />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/line_gray"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_history_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@mipmap/arrow_down_grey"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="@string/business_order_history"
+                            android:textColor="@color/text_1"
+                            android:textSize="16sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_gray2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_shape_tv_rect_white_little_corner"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="@string/house_design_title"
+                        android:textColor="@color/text_1"
+                        android:textSize="16sp"
+                        />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.haiwai.housekeeper.view.HouseManageProgress
+                            android:id="@+id/hmp_fwgl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_gray2"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawableLeft="@mipmap/nike_theme"
+                        android:drawablePadding="5dp"
+                        android:text="@string/house_design_first_visit"
+                        android:textColor="@color/text_1"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_fwgl_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="2016.03.02"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        android:textStyle="italic"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_fwgl_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:background="@null"
+                        android:src="@mipmap/user_zk"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_1_fwgl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/ll_fwgl_cqxs_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawableLeft="@mipmap/nike_theme"
+                            android:drawablePadding="5dp"
+                            android:text="出勤巡视"
+                            android:textColor="@color/text_1"
+                            android:textSize="16sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_fwgl_cqxs_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingRight="10dp"
+                            android:text="2016.03.02"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            android:textStyle="italic"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@mipmap/arrow_right"
+                            android:text="@string/house_design_detail"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_fwgl_zlxj_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawableLeft="@mipmap/nike_theme"
+                            android:drawablePadding="5dp"
+                            android:text="整理信件"
+                            android:textColor="@color/text_1"
+                            android:textSize="16sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_fwgl_zlxj_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingRight="10dp"
+                            android:text="2016.03.02"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            android:textStyle="italic"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@mipmap/arrow_right"
+                            android:text="@string/house_design_detail"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_fwgl_tsqkfk_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawableLeft="@mipmap/nike_theme"
+                            android:drawablePadding="5dp"
+                            android:text="特殊情况反馈"
+                            android:textColor="@color/text_1"
+                            android:textSize="16sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_fwgl_tsqkfk_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingRight="10dp"
+                            android:text="2016.03.02"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            android:textStyle="italic"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@mipmap/arrow_right"
+                            android:text="@string/house_design_detail"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawableLeft="@mipmap/nike_theme"
+                        android:drawablePadding="5dp"
+                        android:text="第二次巡视"
+                        android:textColor="@color/text_1"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_fwgl_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="2016.03.02"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        android:textStyle="italic"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_fwgl_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:background="@null"
+                        android:src="@mipmap/user_zk"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_2_fwgl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/ll_fwgl_cqxs_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawableLeft="@mipmap/nike_theme"
+                            android:drawablePadding="5dp"
+                            android:text="出勤巡视"
+                            android:textColor="@color/text_1"
+                            android:textSize="16sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_fwgl_cqxs_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingRight="10dp"
+                            android:text="2016.03.02"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            android:textStyle="italic"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@mipmap/arrow_right"
+                            android:text="@string/house_design_detail"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_fwgl_zlxj_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawableLeft="@mipmap/nike_theme"
+                            android:drawablePadding="5dp"
+                            android:text="整理信件"
+                            android:textColor="@color/text_1"
+                            android:textSize="16sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_fwgl_zlxj_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingRight="10dp"
+                            android:text="2016.03.02"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            android:textStyle="italic"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@mipmap/arrow_right"
+                            android:text="@string/house_design_detail"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_fwgl_tsqkfk_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawableLeft="@mipmap/nike_theme"
+                            android:drawablePadding="5dp"
+                            android:text="特殊情况反馈"
+                            android:textColor="@color/text_1"
+                            android:textSize="16sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_fwgl_tsqkfk_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingRight="10dp"
+                            android:text="2016.03.02"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            android:textStyle="italic"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@mipmap/arrow_right"
+                            android:text="@string/house_design_detail"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_shape_tv_rect_white_little_corner"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="@string/zl"
+                        android:textColor="@color/text_1"
+                        android:textSize="16sp"
+                        />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.haiwai.housekeeper.view.HouseManageProgress
+                            android:id="@+id/hmp_zl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_gray2"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_zl_zz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_zl_zzing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="@string/house_design_renting"
+                        android:textColor="@color/theme"
+                        android:textSize="16sp"
+                        />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_zl_gl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_zl_gl_zjsq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="80dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawableLeft="@mipmap/nike_theme"
+                            android:drawablePadding="5dp"
+                            android:text="@string/house_design_take_rent"
+                            android:textColor="@color/text_1"
+                            android:textSize="16sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_zl_gl_zjsq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingRight="10dp"
+                            android:text="2016.03.02"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            android:textStyle="italic"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@mipmap/arrow_right"
+                            android:text="@string/house_design_detail"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_zl_gl_fwzfzt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="80dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawableLeft="@mipmap/nike_theme"
+                            android:drawablePadding="5dp"
+                            android:text="@string/house_design_rent_state"
+                            android:textColor="@color/text_1"
+                            android:textSize="16sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_zl_gl_fwzfzt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingRight="10dp"
+                            android:text="2016.03.02"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            android:textStyle="italic"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@mipmap/arrow_right"
+                            android:text="@string/house_design_detail"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_zl_gl_jgqd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="80dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawableLeft="@mipmap/nike_theme"
+                            android:drawablePadding="5dp"
+                            android:text="@string/house_design_price_bill"
+                            android:textColor="@color/text_1"
+                            android:textSize="16sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_zl_gl_jgqd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingRight="10dp"
+                            android:text="2016.03.02"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            android:textStyle="italic"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@mipmap/arrow_right"
+                            android:text="@string/house_design_detail"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="16sp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_yygl_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_shape_tv_rect_white_little_corner"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="@string/yygl"
+                        android:textColor="@color/text_1"
+                        android:textSize="16sp"
+                        />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.haiwai.housekeeper.view.HouseManageProgress
+                            android:id="@+id/hmp_yygl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_gray2"/>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_yygl_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawableLeft="@mipmap/nike_theme"
+                        android:drawablePadding="5dp"
+                        android:text="@string/house_design_first_cut"
+                        android:textColor="@color/text_1"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_yygl_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="2016.03.02"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        android:textStyle="italic"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/arrow_right"
+                        android:text="@string/house_design_detail"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_yygl_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawableLeft="@mipmap/nike_theme"
+                        android:drawablePadding="5dp"
+                        android:text="@string/house_design_second_cut"
+                        android:textColor="@color/text_1"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_yygl_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="2016.03.02"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        android:textStyle="italic"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/arrow_right"
+                        android:text="@string/house_design_detail"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_yygl_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawableLeft="@mipmap/nike_theme"
+                        android:drawablePadding="5dp"
+                        android:text="@string/house_design_third_cut"
+                        android:textColor="@color/text_1"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_yygl_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="2016.03.02"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        android:textStyle="italic"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/arrow_right"
+                        android:text="@string/house_design_detail"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_yygl_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawableLeft="@mipmap/nike_theme"
+                        android:drawablePadding="5dp"
+                        android:text="@string/house_design_fourth_cut"
+                        android:textColor="@color/text_1"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_yygl_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="2016.03.02"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        android:textStyle="italic"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/arrow_right"
+                        android:text="@string/house_design_detail"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_shape_tv_rect_white_little_corner"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="@string/jzfw"
+                        android:textColor="@color/text_1"
+                        android:textSize="16sp"
+                        />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.haiwai.housekeeper.view.HouseManageProgress
+                            android:id="@+id/hmp_jzfw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_gray2"/>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_jzfw_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawableLeft="@mipmap/nike_theme"
+                        android:drawablePadding="5dp"
+                        android:text="@string/house_design_first_clean"
+                        android:textColor="@color/text_1"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_jzfw_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="2016.03.02"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        android:textStyle="italic"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/arrow_right"
+                        android:text="@string/house_design_detail"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_jzfw_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawableLeft="@mipmap/nike_theme"
+                        android:drawablePadding="5dp"
+                        android:text="@string/house_design_second_clean"
+                        android:textColor="@color/text_1"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_jzfw_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="2016.03.02"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        android:textStyle="italic"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/arrow_right"
+                        android:text="@string/house_design_detail"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_jzfw_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawableLeft="@mipmap/nike_theme"
+                        android:drawablePadding="5dp"
+                        android:text="@string/house_design_third_clean"
+                        android:textColor="@color/text_1"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_jzfw_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="2016.03.02"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        android:textStyle="italic"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/arrow_right"
+                        android:text="@string/house_design_detail"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_jzfw_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawableLeft="@mipmap/nike_theme"
+                        android:drawablePadding="5dp"
+                        android:text="@string/house_design_fourth_clean"
+                        android:textColor="@color/text_1"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_jzfw_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="2016.03.02"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        android:textStyle="italic"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/arrow_right"
+                        android:text="@string/house_design_detail"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vip_house_design_bt_commit"
+                style="@style/commit_btn_small_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/i_theme"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="@string/house_design_effect_next_month"
+                android:textColor="@color/light_gray2"
+                android:textSize="16sp"
+                android:textStyle="italic"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

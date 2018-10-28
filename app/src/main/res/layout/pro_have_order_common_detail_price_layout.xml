@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/pro_order_img_marging"
+              android:background="@color/white_g"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="@dimen/pro_order_line_padding_top_bottom"
+                  android:layout_marginLeft="@dimen/pro_order_item_padding_middle"
+                  android:layout_marginRight="@dimen/pro_order_item_padding_middle"
+                  android:layout_marginTop="@dimen/pro_order_line_padding_top_bottom"
+                  android:background="@color/white"
+                  android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pro_detail_content_height"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/pro_order_item_padding"
+                android:text="我的报价"/>
+
+            <ImageButton
+                android:id="@+id/ib_modify_price_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/pro_order_item_padding"
+                android:src="@mipmap/pro_modify_price"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pro_line_height_default_g"
+                android:background="@color/line_color_default"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pro_detail_content_height"
+                >
+
+                <TextView
+                    style="@style/left_text"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tv_base_offer"/>
+
+                <TextView
+                    style="@style/right_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="$1600"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/pro_line_height_default_g"-->
+                <!--android:background="@color/line_color_default"/>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/pro_detail_content_height"-->
+                <!--&gt;-->
+
+                <!--<TextView-->
+                    <!--style="@style/left_text"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:text="@string/tv_offer_check_name"/>-->
+
+                <!--<TextView-->
+                    <!--style="@style/right_text"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:text="$1600"/>-->
+            <!--</RelativeLayout>-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pro_line_height_default_g"
+                android:background="@color/line_color_default"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pro_detail_content_height"
+                >
+
+                <TextView
+                    style="@style/left_text"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tv_offer_person"/>
+
+                <TextView
+                    style="@style/right_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="$1600"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pro_line_height_default_g"
+                android:background="@color/line_color_default"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pro_detail_content_height"
+                >
+
+                <TextView
+                    style="@style/left_text"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tv_offer_clf"/>
+
+                <TextView
+                    style="@style/right_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="$1600"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pro_line_height_default_g"
+                android:background="@color/line_color_default"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pro_order_img_marging"
+                android:layout_marginTop="@dimen/pro_order_img_marging"
+                android:gravity="center"
+                android:text="合计$123242"
+                android:textColor="@color/text_color_count"
+                android:textSize="@dimen/pro_order_text_title_size_big"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

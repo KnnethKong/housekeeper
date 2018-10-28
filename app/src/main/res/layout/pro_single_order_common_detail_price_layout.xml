@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/pro_order_img_marging"
+              android:background="@color/white_g"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_mm"
+        android:layout_marginTop="@dimen/space_mm"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pro_detail_content_height"
+            >
+
+            <TextView
+                style="@style/left_text"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/space_l"
+                android:text="@string/pro_wdbj_str"/>
+
+            <TextView
+                android:id="@+id/ib_modify_price_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_l"
+                android:background="@drawable/pro_bg_shape_tv_rect_theme_fill_corner"
+                android:gravity="center"
+                android:padding="@dimen/space_m"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_xxl"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                style="@style/line_horizental_type"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pro_detail_content_height"
+                >
+
+                <TextView
+                    style="@style/left_text"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tv_base_offer"/>
+
+                <TextView
+                    android:id="@+id/tv_jcfy_a"
+                    style="@style/right_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<View-->
+                <!--style="@style/line_horizental_type"/>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/pro_detail_content_height"-->
+                <!--&gt;-->
+
+                <!--<TextView-->
+                    <!--style="@style/left_text"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:text="@string/tv_offer_check_name"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_jcf_a"-->
+                    <!--style="@style/right_text"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:text=""/>-->
+            <!--</RelativeLayout>-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                style="@style/line_horizental_type"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pro_detail_content_height"
+                >
+
+                <TextView
+                    style="@style/left_text"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tv_offer_person"/>
+
+                <TextView
+                    android:id="@+id/tv_rgf_a"
+                    style="@style/right_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                style="@style/line_horizental_type"/>
+
+            <TextView
+                android:id="@+id/tv_input_zgs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_xxxl"
+                android:layout_margin="@dimen/space_l"
+                android:background="@drawable/pro_order_zgs_offer_edit_bj"
+                android:gravity="center"
+                android:text="@string/pro_zgs_str"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_xxl"/>
+
+            <LinearLayout
+                android:id="@+id/ll_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_zgs_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pro_detail_content_height"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        style="@style/left_text"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tv_offer_zgs"/>
+
+                    <TextView
+                        android:id="@+id/tv_clf_gs"
+                        style="@style/right_text"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text=""/>
+                </RelativeLayout>
+
+                <View
+                    style="@style/line_horizental_type"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pro_detail_content_height"
+                >
+
+                <TextView
+                    style="@style/left_text"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tv_offer_material"/>
+
+                <TextView
+                    android:id="@+id/tv_clf_a"
+                    style="@style/right_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/pro_str_zw"
+                    android:textColorHint="@color/hint_text_color"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                style="@style/line_horizental_type"/>
+
+            <TextView
+                android:id="@+id/tv_hj_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pro_order_img_marging"
+                android:layout_marginTop="@dimen/pro_order_img_marging"
+                android:gravity="center"
+                android:text="合计$123242"
+                android:textColor="@color/text_color_count"
+                android:textSize="@dimen/pro_order_text_title_size_big"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_g"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".activity.server.OrderDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.haiwai.housekeeper.view.TopViewNormalBar
+            android:id="@+id/top_offer_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.haiwai.housekeeper.view.TopViewNormalBar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_fwbj_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/space_mm"
+                    android:layout_marginTop="@dimen/space_xl"
+                    android:drawablePadding="@dimen/space_s"
+                    android:drawableRight="@mipmap/pro_offer_icon"
+                    android:text="@string/tv_fwbj"
+                    android:textColor="@color/tv_pressed_focused"
+                    android:textSize="@dimen/txt_xxxl" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_l"
+                    android:layout_marginRight="@dimen/space_l"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/space_m"
+                    android:paddingTop="@dimen/space_xl">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/space_mm">
+
+                            <TextView
+                                android:id="@+id/tv_all_money"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/pro_price_selector"
+                                android:drawablePadding="@dimen/space_sm"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/pro_order_img_marging_b"
+                                android:text="@string/tv_debj" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/space_sm"
+                                android:gravity="center_horizontal"
+                                android:text="@string/tv_debj_desc"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/txt_s" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_line"
+                            android:layout_width="@dimen/pro_line_width_default_g"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/line_color_default" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/space_mm">
+
+                            <TextView
+                                android:id="@+id/tv_hour_money"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/pro_price_selector"
+                                android:drawablePadding="@dimen/space_sm"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/pro_order_img_marging_b"
+                                android:text="@string/hourly_price" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/space_sm"
+                                android:text="@string/time"
+                                android:textSize="@dimen/txt_s" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et_input_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_l"
+                        android:layout_marginRight="@dimen/space_l"
+                        android:layout_marginTop="@dimen/space_xl"
+                        android:background="@drawable/pro_order_offer_edit_bj"
+                        android:hint="@string/enter_price"
+                        android:inputType="numberDecimal"
+                        android:padding="@dimen/space_mm"
+                        android:textColorHint="@color/hint_text_color" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_l"
+                        android:layout_marginRight="@dimen/space_l"
+                        android:layout_marginTop="@dimen/space_mm">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tv_RealIncome" />
+
+                            <TextView
+                                android:id="@+id/tv_realincome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:text="$0"
+                                android:textColor="@color/txt_green_color" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_smf2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="right"
+                            android:paddingRight="@dimen/space_l"
+                            android:src="@mipmap/pro_offer_icon" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_l"
+                    android:layout_marginRight="@dimen/space_l"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space_s"
+                        android:drawableLeft="@mipmap/pro_offer_point"
+                        android:drawablePadding="@dimen/space_s"
+                        android:paddingLeft="@dimen/space_m"
+                        android:paddingTop="@dimen/space_m"
+                        android:text="@string/pay_after_task" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space_s"
+                        android:drawableLeft="@mipmap/pro_offer_point"
+                        android:drawablePadding="@dimen/space_s"
+                        android:paddingLeft="@dimen/space_m"
+                        android:text="@string/change_after_talk" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_xl"
+                    android:gravity="center_horizontal"
+                    android:text="@string/visit_fee"
+                    android:textColor="@color/tv_pressed_focused"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_l"
+                    android:layout_marginRight="@dimen/space_l"
+                    android:layout_marginTop="@dimen/space_m"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_xl"
+                        android:layout_marginTop="@dimen/space_xl">
+
+                        <TextView
+                            android:id="@+id/tv_offer_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1.5"
+                            android:paddingLeft="@dimen/space_l"
+                            android:text="@string/tv_base_offer"
+                            android:textColor="@color/tv_pressed_focused"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_offer_wc"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/tv_offer_name"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/pro_price_selector"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/pay_free"
+                            android:textColor="@color/tv_pressed_focused"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_visite_fee_desc"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-2dp"
+                            android:layout_weight="1.5"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_offer_yc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:drawableLeft="@drawable/pro_price_selector"
+                                android:textColor="@color/tv_pressed_focused"
+                                android:textSize="@dimen/txt_xxl" />
+
+                            <TextView
+                                android:id="@+id/tv_offer_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:gravity="left"
+                                android:hint="@string/tv_offer_name_hint"
+                                android:paddingLeft="@dimen/space_sm"
+                                android:singleLine="true"
+                                android:textColorHint="@color/hint_text_color"
+                                android:visibility="visible" />
+
+                            <EditText
+                                android:id="@+id/et_offer_content"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:gravity="left"
+                                android:hint="@string/tv_offer_name_hint"
+                                android:inputType="numberDecimal"
+                                android:paddingLeft="@dimen/space_sm"
+                                android:singleLine="true"
+                                android:textColorHint="@color/hint_text_color"
+                                android:textSize="14sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_smf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="right"
+                                android:paddingRight="@dimen/space_l"
+                                android:src="@mipmap/pro_offer_icon" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginLeft="@dimen/space_l"
+                    android:layout_marginRight="@dimen/space_l"
+                    android:layout_marginTop="@dimen/space_l"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space_sm"
+                        android:drawableLeft="@mipmap/pro_offer_point"
+                        android:drawablePadding="@dimen/space_s"
+                        android:paddingLeft="@dimen/space_m"
+                        android:text="@string/pay_cancel" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space_sm"
+                        android:drawableLeft="@mipmap/pro_offer_point"
+                        android:drawablePadding="@dimen/space_s"
+                        android:paddingLeft="@dimen/space_m"
+                        android:text="@string/is_pay_fee" />
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_margin="@dimen/space_sm"-->
+                        <!--android:drawableLeft="@mipmap/pro_offer_point"-->
+                        <!--android:drawablePadding="@dimen/space_s"-->
+                        <!--android:paddingLeft="@dimen/space_m"-->
+                        <!--android:text="@string/check_pay_fee" />-->
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/bj_bj"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/gray_1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_xl"
+                android:text="@string/final_price"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_pric_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$0"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_sub_price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/submit_all"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

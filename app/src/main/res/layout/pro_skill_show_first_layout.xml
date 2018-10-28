@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white_g"
+              android:orientation="vertical">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_showb_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/space_xl"
+                android:gravity="center"
+                android:paddingLeft="@dimen/space_xxx"
+                android:paddingRight="@dimen/space_xxx"
+                android:text="@string/showa_c_c"
+                android:textSize="@dimen/txt_l"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_smlx"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginRight="@dimen/space_l"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    style="@style/left_title_text"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/space_ll"
+                    android:text="@string/show_a_c"/>
+
+                <TextView
+                    android:id="@+id/tv_type_id"
+                    style="@style/left_title_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/space_l"
+                    android:text="除草"
+                    android:textColor="@color/txt_green_color"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/left_title_text"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/space_mm"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginTop="@dimen/space_xl"
+                android:paddingLeft="@dimen/space_l"
+                android:text="@string/show_ser_a"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginRight="@dimen/space_l"
+                android:background="@color/white">
+
+                <EditText
+                    android:id="@+id/et_class"
+                    style="@style/edit_input_style"
+                    android:hint="@string/showa_asc"
+                    android:padding="@dimen/space_l"
+                    android:minLines="4"
+                    />
+            </LinearLayout>
+
+            <TextView
+                style="@style/left_title_text"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/space_mm"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginTop="@dimen/space_xl"
+                android:paddingLeft="@dimen/space_l"
+                android:text="@string/showa_adv"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginRight="@dimen/space_l"
+                android:background="@color/white">
+
+                <EditText
+                    android:id="@+id/et_advantage"
+                    style="@style/edit_input_style"
+                    android:hint="@string/show_inpu_adv"
+                    android:padding="@dimen/space_l"
+                    android:minLines="4"
+                    android:textColorHint="@color/hint_a_color"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_showb_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/btn_common_bj">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <TextView
+                        android:id="@+id/ib_btn_showb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#fff"/>
+
+                    <TextView
+                        android:id="@+id/ib_btn_showb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginLeft="5dp"                        android:textColor="#fff"
+                        android:textSize="21dp"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!--<TextView
+                android:id="@+id/ib_btn_showb"
+                style="@style/common_text_button_style"
+                />-->
+            <TextView
+                android:id="@+id/ib_btn_showb_save"
+                style="@style/common_text_button_style"
+                android:text="@string/btn_set_btn_save"
+                android:textSize="@dimen/txt_xxl"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_common_multi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haiwai.housekeeper.activity.user.CommonMultiActivity">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_multi_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.haiwai.housekeeper.view.TopViewNormalBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/layout_single"
+                android:visibility="gone"
+                layout="@layout/single_textview_item_view" />
+
+            <include
+                android:id="@+id/layout_multi"
+                layout="@layout/multi_textview_item_view"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_type2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginRight="@dimen/space_l"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/tv_stitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_l"
+                    android:layout_marginTop="@dimen/space_l"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/space_xxxl"
+                    android:text="@string/tv_title1"
+                    android:textSize="@dimen/txt_xxl"/>
+                <LinearLayout
+                    android:id="@+id/ll_layout_single"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_xxxl"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_title_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/space_xxxl"
+                        android:drawableLeft="@drawable/pro_new_text_button"
+                        android:drawablePadding="@dimen/space_m"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/space_l"
+                        android:text=""
+                        android:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/et_single_input_price"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:inputType="number"
+                        android:background="@drawable/bg_shape_tv_rect_gray_light_fill_corner"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/zf_jy_month" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_title_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_xxxl"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/pro_new_text_button"
+                    android:drawablePadding="@dimen/space_m"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/space_l"
+                    android:text="@string/tv_con2"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_mutli_next"
+                style="@style/common_vip_button_style"
+                android:layout_marginTop="@dimen/space_xxl"
+                android:text="@string/btn_tv_con" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_g"
+    android:orientation="vertical"
+    tools:context=".activity.server.OrderDetailActivity">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_skill_messagee_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/space_xl"
+                    android:text="@string/skill_sf_rz"
+                    android:textSize="@dimen/txt_xxl"/>
+
+                <TextView
+                    android:id="@+id/tv_content_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toRightOf="@id/tv_content"
+                    android:text=""
+                    android:textSize="@dimen/txt_xl"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginRight="@dimen/space_l"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_height"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/left_text"
+                            android:paddingLeft="@dimen/space_xl"
+                            android:text="@string/skill_sf_q1"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/space_xl"
+                            android:text="@string/skill_sf_q2"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="@dimen/space_pic_wh"
+                            android:layout_height="@dimen/space_pic_wh"
+                            android:layout_alignTop="@+id/imageView4"
+                            android:layout_margin="@dimen/space_m"
+                            android:src="@mipmap/pic_add"/>
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/imageView1"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="@dimen/space_mm"
+                            android:src="@mipmap/pro_del_icon"
+                            android:visibility="invisible"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/line_horizental_type"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_height"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/left_text"
+                            android:paddingLeft="@dimen/space_xl"
+                            android:text="@string/skill_sf_q3"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/space_xl"
+                            android:text="@string/skill_sf_q4"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="@dimen/space_pic_wh"
+                            android:layout_height="@dimen/space_pic_wh"
+                            android:layout_alignTop="@+id/imageView5"
+                            android:layout_margin="@dimen/space_m"
+                            android:src="@mipmap/pic_add"/>
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/imageView2"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="@dimen/space_mm"
+                            android:src="@mipmap/pro_del_icon"
+                            android:visibility="invisible"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/line_horizental_type"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_height"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/left_text"
+                            android:paddingLeft="@dimen/space_xl"
+                            android:text="@string/skill_sf_q5"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/space_xl"
+                            android:text="@string/skill_sf_q6"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="@dimen/space_pic_wh"
+                            android:layout_height="@dimen/space_pic_wh"
+                            android:layout_alignTop="@+id/imageView6"
+                            android:layout_margin="@dimen/space_m"
+                            android:src="@mipmap/pic_add"/>
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/imageView3"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="@dimen/space_mm"
+                            android:src="@mipmap/pro_del_icon"
+                            android:visibility="invisible"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ib_sf_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/space_m"
+                    android:layout_marginTop="@dimen/space_m"
+                    android:textColor="#fff"
+                    android:background="@drawable/evalue_slide_color_shape"
+                    android:text="@string/submit_all"/>
+
+                <!--<ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@null"
+                    android:src="@mipmap/pro_submit_icon"/>-->
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space_xl"
+                android:layout_marginLeft="@dimen/space_xl"
+                android:layout_marginRight="@dimen/space_xl"
+                android:text="@string/skill_jn_s"
+                android:textSize="@dimen/pro_order_text_title_size_big"/>
+
+            <LinearLayout
+                android:id="@+id/ll_new_skill_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginRight="@dimen/space_l"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

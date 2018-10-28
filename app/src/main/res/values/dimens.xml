@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">20sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
+    <!-- 选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 true 才有效果-->
+    <dimen name="pickerview_textsize">20sp</dimen>
+    <dimen name="menu_item_padding">2dp</dimen>
+    <dimen name="text_right_padding">28dp</dimen>
+    <dimen name="text_right_translation">8dp</dimen>
+    <dimen name="text_wrapper_right_margin">-8dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="menu_text_size">15sp</dimen>
+
+
+    <!--___________________________user_________________________-->
+    <dimen name="commit_btn_small_big_height">50dp</dimen>
+    <dimen name="normal_edge_margin">16dp</dimen>
+    <!--___________________________user-end___________________________-->
+
+    <dimen name="title_bar_height">50dp</dimen>
+    <!--<dimen name="divider_height">0.8dp</dimen>-->
+    <dimen name="divider_height_small">0.5dp</dimen>
+    <dimen name="divider_big_height">10dp</dimen>
+    <dimen name="divider_big_width">20dp</dimen>
+
+    <dimen name="alphabet_size">12dip</dimen>
+    <dimen name="umeng_socialize_pad_window_height">350dip</dimen>
+    <dimen name="umeng_socialize_pad_window_width">580dip</dimen>
+    <dimen name="icon_size_on_screen">70dip</dimen>
+    <!--<dimen name="fab_margin">16dp</dimen>-->
+    <!--<dimen name="grid_divider">2dp</dimen>-->
+
+    <!--<dimen name="indicator_right_padding">10dp</dimen>-->
+    <!--<dimen name="indicator_corner_radius">12dp</dimen>-->
+    <!--<dimen name="indicator_internal_padding">4dp</dimen>-->
+    <!--<dimen name="header_footer_left_right_padding">24dp</dimen>-->
+    <!--<dimen name="header_footer_top_bottom_padding">12dp</dimen>-->
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+    <!--海外之家服务端的内容start  add by liu_yjie 2016/09/13-->
+    <dimen name="pro_title_top_bar_margin_left">15dp</dimen>
+    <dimen name="pro_title_top_bar_margin_right">15dp</dimen>
+    <dimen name="pro_title_bar_height">50dp</dimen>
+    <dimen name="pro_order_condition_height">40dp</dimen>
+    <dimen name="pro_layout_margain_left_right">15dp</dimen>
+    <dimen name="pro_order_listview_item_margin_left">15dp</dimen>
+    <dimen name="pro_order_listview_item_margin_right">15dp</dimen>
+    <dimen name="pro_order_listview_item_img_width_height">80dp</dimen>
+    <dimen name="pro_order_listview_item_margin_top_bottom">20dp</dimen>
+    <dimen name="pro_order_listview_item_content_left">20dp</dimen>
+    <!--订单页ListView的Item布局内容-->
+    <dimen name="pro_order_item_img_marign_bottom_small">2dp</dimen>
+    <dimen name="pro_order_line_padding_top_bottom">10dp</dimen>
+    <dimen name="pro_order_item_img_marign_small">5dp</dimen>
+    <dimen name="pro_order_item_margin">10dp</dimen>
+    <dimen name="pro_order_item_padding">16dp</dimen>
+    <dimen name="pro_order_item_padding_middle">15dp</dimen>
+    <dimen name="pro_order_item_padding_btn">15dp</dimen>
+    <dimen name="pro_order_img_marging">20dp</dimen>
+    <dimen name="pro_order_img_marging_b">40dp</dimen>
+    <dimen name="pro_title_margin_top">20dp</dimen>
+    <dimen name="pro_title_margin_top_icon">25dp</dimen>
+    <dimen name="pro_list_item_padding_top_bottom">20dp</dimen>
+    <dimen name="pro_list_item_padding_left">80dp</dimen>
+    <!--设置默认宽度-->
+    <dimen name="relativeLayout_ho_width">60dp</dimen>
+    <dimen name="relativeLayout_ho_height">80dp</dimen>
+    <!--字体设置-->
+    <dimen name="pro_top_font_size_default">14sp</dimen>
+    <dimen name="pro_top_font_size_default_g">16sp</dimen>
+    <dimen name="pro_top_font_top_size_default">18sp</dimen>
+    <dimen name="pro_order_text_title_size_big">20sp</dimen>
+    <dimen name="pro_order_text_title_size_midle">18sp</dimen>
+    <!--线条设置-->
+    <dimen name="pro_line_height_default">0.5dp</dimen>
+    <dimen name="pro_line_height_default_g">1dp</dimen>
+    <dimen name="pro_line_width_default">0.5dp</dimen>
+    <dimen name="pro_line_width_default_g">1dp</dimen>
+    <dimen name="pro_detail_content_height">60dp</dimen>
+    <dimen name="margain_left_right">15dp</dimen>
+    <dimen name="pro_detail_content_height_m">55dp</dimen>
+    <dimen name="drawable_padding_text">5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="pic_width_height">60dip</dimen>
+    <dimen name="space_height">90dip</dimen>
+    <dimen name="space_pic_wh">80dip</dimen>
+    <dimen name="space_pic_wh_sm">65dip</dimen>
+    <!--分割线默认高度-->
+    <dimen name="line_divider_default_height">1dp</dimen>
+    <!--顶部标题栏默认高度-->
+    <dimen name="top_bar_default_height">50dip</dimen>
+    <dimen name="txt_button_defalut_height">45dip</dimen>
+    <!--设置部分默认padding或margin值-->
+    <dimen name="space_ss">2dip</dimen>
+    <dimen name="space_s">4dip</dimen>
+    <dimen name="space_sm">6dip</dimen>
+    <dimen name="space_m">8dip</dimen>
+    <dimen name="space_mm">10dip</dimen>
+    <dimen name="space_ml">14dip</dimen>
+    <dimen name="space_l">16dip</dimen>
+    <dimen name="space_ll">18dip</dimen>
+    <dimen name="space_xl">20dip</dimen>
+    <dimen name="space_xll">26dip</dimen>
+    <dimen name="space_xxl">32dip</dimen>
+    <dimen name="space_xxx">40dip</dimen>
+    <dimen name="space_xxx2">50dip</dimen>
+    <dimen name="space_xxxl">60dip</dimen>
+    <dimen name="space_smlx">65dip</dimen>
+    <dimen name="space_smlxx">70dip</dimen>
+    <dimen name="space_dsmlx">130dip</dimen>
+    <dimen name="space_dsmlxs">150dip</dimen>
+    <!--设置部分默认text值-->
+    <dimen name="txt_ss">8sp</dimen>
+    <dimen name="txt_s">10sp</dimen>
+    <dimen name="txt_m">12sp</dimen>
+    <dimen name="txt_l">14sp</dimen>
+    <dimen name="txt_xl">16sp</dimen>
+    <dimen name="txt_xxl">18sp</dimen>
+    <dimen name="txt_xxxl">20sp</dimen>
+    <!--海外之家服务端的内容end  add by liu_yjie 2016/09/13-->
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/pop_pro_bj"
+              android:orientation="vertical">
+    <com.haiwai.housekeeper.view.TextFontView
+        android:id="@+id/tv_content"
+        android:layout_width="140dp"
+        android:layout_marginLeft="4dp"
+
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/pop_big_dot"
+        android:drawablePadding="@dimen/space_m"
+        android:text="@string/pro_pop_word8_1"
+        android:textSize="@dimen/txt_l"/>
+
+    <com.haiwai.housekeeper.view.TextFontView
+        android:id="@+id/tv_content1"
+        android:layout_width="140dp"
+        android:layout_marginLeft="4dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/pop_big_dot"
+        android:drawablePadding="@dimen/space_m"
+        android:layout_marginTop="5dp"
+        android:text="@string/pro_pop_word8_2"
+        android:textSize="@dimen/txt_l"/>
+
+    <com.haiwai.housekeeper.view.TextFontView
+        android:id="@+id/tv_content2"
+        android:layout_width="140dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+
+        android:drawableLeft="@mipmap/pop_big_dot"
+        android:drawablePadding="@dimen/space_m"
+        android:layout_height="wrap_content"
+        android:text="@string/pro_pop_word8_3"
+        android:textSize="@dimen/txt_l"/>
+</LinearLayout>

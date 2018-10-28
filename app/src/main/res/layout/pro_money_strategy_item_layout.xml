@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:layout_margin="@dimen/space_l"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/tv_title_arrow"
+        style="@style/left_text"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/space_xl"
+        android:drawableRight="@mipmap/pro_oder_arrow_up"
+        android:paddingLeft="@dimen/space_m"
+        android:paddingRight="@dimen/space_m"
+        android:text="上传真实形象照，打造个人品牌第一步"
+        />
+
+    <TextView
+        style="@style/line_horizental_type"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_xl"
+        android:padding="@dimen/space_s"
+        android:textSize="@dimen/txt_l"
+        android:text="发布技能时，我们要求您上传个人真实、清晰的个人形象照片作为头像，它是您在海外管家上个人服务品牌的重要标识，可给客户留下良好的第一印象，有助于提升客户对您的关注度。"/>
+
+</LinearLayout>

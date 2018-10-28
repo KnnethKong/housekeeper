@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_edu_time"
+            style="@style/left_text"
+            android:drawableLeft="@mipmap/pro_offer_point"
+            android:drawablePadding="@dimen/pro_order_item_padding"
+            android:textSize="13sp"
+            android:text="教育经历/2008.08-2011.09"/>
+
+        <TextView
+            android:id="@+id/tv_edu_sch"
+            style="@style/left_text"
+            android:layout_below="@id/tv_edu_time"
+            android:layout_marginLeft="20dp"
+            android:padding="3dp"
+            android:textSize="13sp"
+            android:text="东北石油大学"/>
+
+        <TextView
+            android:id="@+id/ib_edu_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_edu_time"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/pro_skill_detail_ecu"
+            android:gravity="center"
+            android:text="本科"
+
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <TextView
+        style="@style/line_horizental_type"/>
+</LinearLayout>

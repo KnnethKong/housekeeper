@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white_g"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_feadback_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scrollbars="none">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pro_detail_content_height_m"
+                android:layout_margin="@dimen/space_l"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    style="@style/left_title_text"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/pro_order_item_padding"
+                    android:text="@string/complete_time_week"/>
+
+                <EditText
+                    android:id="@+id/tv_finish_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/space_sm"
+                    android:drawableRight="@mipmap/pro_arrow_down"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/space_l"
+                    android:text="2017-07"
+                    android:textColor="@color/text_color_count"
+                    android:textSize="@dimen/txt_xl"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/space_l"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_feadback_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="@string/fed_back_hint"
+                    android:minLines="5"
+                    android:padding="@dimen/pro_order_item_padding"
+                    android:textColorHint="@color/hint_text_color"/>
+                <!-- 显示图片 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <GridView
+                        android:id="@+id/mgridview"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:columnWidth="80dp"
+                        android:gravity="center"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="3"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="5dp">
+                    </GridView>
+
+                    <TextView
+                        android:id="@+id/tv_change_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right|bottom"
+                        android:text="1/3"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/ib_feadback_btn"
+                style="@style/common_text_button_style"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginRight="@dimen/space_l"
+                android:text="@string/fed_back_submit"
+                android:textSize="@dimen/txt_xxl"/>
+
+        </LinearLayout>
+    <!--</ScrollView>-->
+</LinearLayout>

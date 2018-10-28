@@ -1,0 +1,314 @@
+[
+    {
+        "hccn": [
+            {
+                "ty": "房屋保洁",
+                "type": "1"
+            },
+            {
+                "ty": "草坪修剪",
+                "type": "2"
+            },
+            {
+                "ty": "地毯清洗",
+                "type": "3"
+            },
+            {
+                "ty": "高压清洗",
+                "type": "4"
+            },
+            {
+                "ty": "垃圾处理",
+                "type": "5"
+            },
+            {
+                "ty": "搬运搬家",
+                "type": "6"
+            },
+            {
+                "ty": "安保系统",
+                "type": "7"
+            },
+            {
+                "ty": "除害",
+                "type": "8"
+            }
+        ],
+        "hcen": [
+            {
+                "ty": "House Cleaning",
+                "type": "1"
+            },
+            {
+                "ty": "lawn mowing",
+                "type": "2"
+            },
+            {
+                "ty": "Carpet Cleaning",
+                "type": "3"
+            },
+            {
+                "ty": "Pressure Washing",
+                "type": "4"
+            },
+            {
+                "ty": "Junk Removal",
+                "type": "5"
+            },
+            {
+                "ty": "Local Moving",
+                "type": "6"
+            },
+            {
+                "ty": "Home Security & Alarm",
+                "type": "7"
+            },
+            {
+                "ty": "Pest control",
+                "type": "8"
+            }
+        ],
+        "hncn": "居家服务",
+        "hnen": "Household service"
+    },
+    {
+        "hccn": [
+            {
+                "ty": "技工维修",
+                "type": "9"
+            },
+            {
+                "ty": "屋顶维修",
+                "type": "10"
+            },
+            {
+                "ty": "园艺修建",
+                "type": "11"
+            },
+            {
+                "ty": "家电服务",
+                "type": "12"
+            },
+            {
+                "ty": "改建翻新",
+                "type": "13"
+            },
+            {
+                "ty": "室内粉刷",
+                "type": "14"
+            },
+            {
+                "ty": "室外粉刷",
+                "type": "15"
+            },
+            {
+                "ty": "修换锁具",
+                "type": "16"
+            },
+            {
+                "ty": "电工",
+                "type": "17"
+            },
+            {
+                "ty": "锅炉维修",
+                "type": "18"
+            }
+        ],
+        "hcen": [
+            {
+                "ty": "Handyman",
+                "type": "9"
+            },
+            {
+                "ty": "Roof Repair or Maintence",
+                "type": "10"
+            },
+            {
+                "ty": "Landscaping",
+                "type": "11"
+            },
+            {
+                "ty": "Appliances",
+                "type": "12"
+            },
+            {
+                "ty": "Genaeral Contracting",
+                "type": "13"
+            },
+            {
+                "ty": "Interior Painting",
+                "type": "14"
+            },
+            {
+                "ty": "Exterior Painting",
+                "type": "15"
+            },
+            {
+                "ty": "Lock Installation & Repair",
+                "type": "16"
+            },
+            {
+                "ty": "Electrical and Wiring Issues",
+                "type": "17"
+            },
+            {
+                "ty": "Boiler Repair",
+                "type": "18"
+            }
+        ],
+        "hncn": "房屋维修",
+        "hnen": "Housing maintenance"
+    },
+    {
+        "hccn": [
+            {
+                "ty": "接机用车",
+                "type": "19"
+            },
+            {
+                "ty": "陪同代办",
+                "type": "20"
+            },
+            {
+                "ty": "保险服务",
+                "type": "21"
+            },
+            {
+                "ty": "移民咨询",
+                "type": "22"
+            },
+            {
+                "ty": "税务服务",
+                "type": "23"
+            },
+            {
+                "ty": "驾驶教练",
+                "type": "24"
+            },
+            {
+                "ty": "翻译公证",
+                "type": "25"
+            },
+            {
+                "ty": "法律咨询",
+                "type": "26"
+            },
+            {
+                "ty": "房产买卖",
+                "type": "27"
+            },
+            {
+                "ty": "旅游代理",
+                "type": "28"
+            }
+        ],
+        "hcen": [
+            {
+                "ty": "Pick up the car",
+                "type": "19"
+            },
+            {
+                "ty": "Accompanied by do STH for sb",
+                "type": "20"
+            },
+            {
+                "ty": "Insurance Services",
+                "type": "21"
+            },
+            {
+                "ty": "The immigration consultancy",
+                "type": "22"
+            },
+            {
+                "ty": "Tax Attorney",
+                "type": "23"
+            },
+            {
+                "ty": "Driving instructor",
+                "type": "24"
+            },
+            {
+                "ty": "Translation notarization",
+                "type": "25"
+            },
+            {
+                "ty": "Lawyer",
+                "type": "26"
+            },
+            {
+                "ty": "Estate sale",
+                "type": "27"
+            },
+            {
+                "ty": "Travel Agency Services",
+                "type": "28"
+            }
+        ],
+        "hncn": "生活服务",
+        "hnen": "Life service"
+    },
+    {
+        "hccn": [
+            {
+                "ty": "周期服务-信件管理",
+                "type": "29"
+            },
+            {
+                "ty": "周期服务-家政服务",
+                "type": "30"
+            },
+            {
+                "ty": "周期服务-租赁管理",
+                "type": "31"
+            },
+            {
+                "ty": "周期服务-草坪修剪",
+                "type": "32"
+            },
+            {
+                "ty": "周期服务-秋天落叶清扫",
+                "type": "33"
+            },
+            {
+                "ty": "周期服务-冬季清雪",
+                "type": "34"
+            },
+            {
+                "ty": "周期服务-租赁招租",
+                "type": "35"
+            }
+        ],
+        "hcen": [
+            {
+                "ty": "Mails Management",
+                "type": "29"
+            },
+            {
+                "ty": "House Cleaning",
+                "type": "30"
+            },
+            {
+                "ty": "For renting",
+                "type": "31"
+            },
+            {
+                "ty": "Lawn Mowing",
+                "type": "32"
+            },
+            {
+                "ty": "Leaves Cleaning",
+                "type": "33"
+            },
+            {
+                "ty": "Snow Plowing",
+                "type": "34"
+            },
+            {
+                "ty": "Rental Management",
+                "type": "35"
+            }
+        ],
+        "hncn": "周期服务",
+        "hnen": "Cycle service"
+    }
+]

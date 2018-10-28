@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rent_price"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_g"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.haiwai.housekeeper.activity.server.RentPriceActivity">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_rent_price_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_l"
+            android:layout_marginRight="@dimen/space_l"
+            android:layout_marginTop="@dimen/space_xl"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_zjsr"
+                style="@style/left_title_text"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginTop="@dimen/space_xl"
+                android:text="@string/zjsr"
+                android:textSize="@dimen/txt_xxl"
+                />
+
+            <TextView
+                android:id="@+id/tv_zjsr_c"
+                style="@style/left_title_text"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_sm"
+                android:layout_marginTop="@dimen/space_xl"
+                android:layout_toRightOf="@id/tv_zjsr"
+                android:text=""
+                android:textSize="@dimen/txt_xxl"
+                />
+
+            <TextView
+                android:id="@+id/tv_glfy"
+                style="@style/left_title_text"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zjsr"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginTop="@dimen/space_l"
+                android:text="@string/glfy"
+                android:textSize="@dimen/txt_xxl"
+                />
+
+            <TextView
+                android:id="@+id/tv_glfy_c"
+                style="@style/left_title_text"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zjsr"
+                android:layout_marginLeft="@dimen/space_sm"
+                android:layout_marginTop="@dimen/space_l"
+                android:layout_toRightOf="@id/tv_glfy"
+                android:text=""
+                android:textSize="@dimen/txt_xxl"
+                />
+
+            <TextView
+                android:id="@+id/tv_wfwxfy"
+                style="@style/left_title_text"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_glfy"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginTop="@dimen/space_l"
+                android:text="@string/whwxfy"
+                android:textSize="@dimen/txt_xxl"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_wfwxfy_c"
+                style="@style/left_title_text"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_glfy"
+                android:layout_marginLeft="@dimen/space_sm"
+                android:layout_marginTop="@dimen/space_l"
+                android:layout_toRightOf="@id/tv_wfwxfy"
+                android:text=""
+                android:textSize="@dimen/txt_xxl"
+                />
+
+            <TextView
+                android:id="@+id/tv_yrz"
+                style="@style/left_title_text"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_wfwxfy"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginTop="@dimen/space_l"
+                android:text="@string/yrz"
+                android:textSize="@dimen/txt_xxl"
+                />
+
+            <TextView
+                android:id="@+id/tv_yrz_c"
+                style="@style/left_title_text"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_wfwxfy"
+                android:layout_marginLeft="@dimen/space_sm"
+                android:layout_marginTop="@dimen/space_l"
+                android:layout_toRightOf="@id/tv_yrz"
+                android:text=""
+                android:textColor="@color/red"
+                android:textSize="@dimen/txt_xxl"
+                />
+
+            <EditText
+                android:id="@+id/et_bz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_yrz"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginRight="@dimen/space_l"
+                android:layout_marginTop="@dimen/space_xl"
+                android:background="@drawable/pro_etit_gray_bj"
+                android:gravity="left|top"
+                android:hint="@string/fiance_status"
+                android:padding="@dimen/space_m"
+                android:minLines="3"
+
+                android:textColorHint="#BBBBBB"/>
+
+            <CheckBox
+                android:id="@+id/cb_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_bz"
+                android:layout_marginBottom="@dimen/space_xxl"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginTop="@dimen/space_l"
+                android:text="@string/kad"
+                android:padding="@dimen/space_sm"
+                android:textColor="@color/gray"
+                style="@style/CheckBoxStyle"
+                android:textSize="@dimen/txt_xl"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/ib_sub_content"
+            style="@style/common_button_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_xxl"
+            android:text="@string/commit"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

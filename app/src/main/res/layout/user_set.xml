@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shape_tv_rect_white_little_corner"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/divider_big_width"
+        android:layout_marginLeft="@dimen/divider_big_width"
+        android:layout_marginRight="@dimen/divider_big_width"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/user_set_xxts"
+            android:drawablePadding="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/set_label_1"
+            android:textColor="@color/text_1"
+            android:textSize="16sp" />
+            <ImageButton
+                android:id="@+id/user_set_ib_msg_push"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:src="@drawable/user_set_switch_select"
+                android:layout_marginRight="15dp"
+                />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/divider_big_width"
+        android:background="@drawable/bg_shape_tv_rect_white_little_corner"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/user_set_tv_yjfk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/user_set_yjfk"
+            android:drawablePadding="20dp"
+            android:drawableRight="@mipmap/arrow_right"
+            android:paddingBottom="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/set_label_2"
+            android:textColor="@color/text_1"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/use_guide_cjwt"
+                android:drawablePadding="20dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:text="@string/set_label_3"
+                android:textColor="@color/text_1"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_version_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:text="1.0"
+                android:textColor="@color/text_1"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_gray" />
+        <TextView
+            android:id="@+id/user_set_tv_gywm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/use_guide_gywm"
+            android:drawableRight="@mipmap/arrow_right"
+            android:drawablePadding="20dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"
+            android:text="@string/set_label_4"
+            android:textColor="@color/text_1"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/user_set_tv_safe_quit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginLeft="@dimen/divider_big_width"
+        android:layout_marginRight="@dimen/divider_big_width"
+        android:background="@drawable/bg_shape_tv_rect_white_little_corner"
+        android:text="@string/set_safe_quit"
+        android:textColor="@color/theme"
+        android:textSize="18sp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:gravity="center"
+        />
+</LinearLayout>

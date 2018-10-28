@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:paddingRight="25dp">
+
+        <ImageView
+            android:id="@+id/self_support_iv_main"
+            android:layout_width="240dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+           android:layout_centerHorizontal="true"
+
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/pic_tygl"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/hori_ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignBottom="@+id/self_support_iv_main"
+            android:layout_alignLeft="@+id/self_support_iv_main"
+            android:layout_alignRight="@+id/self_support_iv_main"
+            android:orientation="horizontal"></LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="180dp"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dip">
+
+            <!--<com.haiwai.housekeeper.view.RoundImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:borderRadius="5dp"-->
+                <!--app:type="round"-->
+                <!--app:src="@mipmap/zy_ying_bar"/>-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+
+
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/tv_ziying_decrible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/tygl_a"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/home_self_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:textColor="#8E8E8E"
+        android:textSize="13sp"
+        android:text=""/>
+
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <!--<com.haiwai.housekeeper.view.PullToZoomScrollView-->
+    <!--android:id="@+id/o2o_detail_ob_body"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@+id/user_order_detail_ll_bottom"-->
+    <!--android:background="@color/background">-->
+
+    <!--<com.haiwai.housekeeper.libs.pulltorefresh.library.PullToRefreshListView-->
+    <!--android:id="@+id/o2o_detail_listview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@+id/user_order_detail_ll_bottom"-->
+    <!--android:cacheColorHint="#00000000"-->
+    <!--android:divider="@color/background_gray"-->
+    <!--android:dividerHeight="0.5dp"-->
+    <!--android:fadingEdge="none"-->
+    <!--android:fastScrollEnabled="false"-->
+    <!--android:footerDividersEnabled="false"-->
+    <!--android:headerDividersEnabled="false"-->
+    <!--android:listSelector="@color/transparent"-->
+    <!--android:scrollingCache="false" />-->
+
+    <com.haiwai.housekeeper.libs.ui.PullToRefreshListView
+        android:id="@+id/o2o_detail_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/user_order_detail_ll_bottom"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:fastScrollEnabled="false"
+        android:listSelector="@color/transparent" />
+    <!--</com.haiwai.housekeeper.view.PullToZoomScrollView>-->
+
+    <RelativeLayout
+        android:id="@+id/o2o_detail_rl_collpase_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/o2o_detail_collapse_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/iv_back_black"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/o2o_detail_collapse_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/o2o_detail_collapse_iv_back"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxLength="15"
+            android:text=""
+            android:textColor="@color/text_1"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/o2o_collapse_type"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/o2o_collapse_type"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/o2o_collapse_order"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/o2o_collapse_order"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/o2o_collapse_all"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/o2o_collapse_all"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/user_home_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/o2o_detail_rl_title0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/o2o_detail_expand_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/ib_back_white"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/user_order_detail_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/theme"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/o2o_detail_tv_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/look_for_your_sercice"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

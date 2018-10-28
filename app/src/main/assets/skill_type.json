@@ -1,0 +1,204 @@
+[
+    {
+        "hccn": [
+            {
+                "ty": "房屋保洁",
+                "type": "1"
+            },
+            {
+                "ty": "草坪修剪",
+                "type": "2"
+            },
+            {
+                "ty": "地毯清洁",
+                "type": "3"
+            },
+            {
+                "ty": "搬运搬家",
+                "type": "6"
+            }
+
+        ],
+        "hcen": [
+            {
+                "ty": "House Cleaning",
+                "type": "1"
+            },
+            {
+                "ty": "Lawn Mowing",
+                "type": "2"
+            },
+            {
+                "ty": "Carpet Cleaning",
+                "type": "3"
+            },
+
+            {
+                "ty": "Local Moving",
+                "type": "6"
+            }
+
+        ],
+        "hncn": "家居服务",
+        "hnen": "Home Services"
+    },
+    {
+        "hccn": [
+
+            {
+                "ty": "屋顶维修",
+                "type": "10"
+            },
+
+            {
+                "ty": "家电服务",
+                "type": "12"
+            },
+
+            {
+                "ty": "室内粉刷",
+                "type": "14"
+            },
+            {
+                "ty": "室外粉刷",
+                "type": "15"
+            },
+            {
+                "ty": "修换锁具",
+                "type": "16"
+            },
+
+            {
+                "ty": "技工维修",
+                "type": "9"
+            }
+        ],
+        "hcen": [
+            {
+                "ty": "Handyman",
+                "type": "9"
+            },
+            {
+                "ty": "Roof Repair or\nMaintence",
+                "type": "10"
+            },
+
+            {
+                "ty": "Appliances",
+                "type": "12"
+            },
+
+            {
+                "ty": "Interior Painting",
+                "type": "14"
+            },
+            {
+                "ty": "Exterior Painting",
+                "type": "15"
+            },
+            {
+                "ty": "Lock Repair\n& Installation",
+                "type": "16"
+            }
+
+        ],
+        "hncn": "房屋维修",
+        "hnen": "Repair & Maintenance"
+    },
+    {
+        "hccn": [
+
+
+            {
+                "ty": "保险服务",
+                "type": "21"
+            },
+
+            {
+                "ty": "税务服务",
+                "type": "23"
+            },
+
+
+            {
+                "ty": "法律咨询",
+                "type": "26"
+            },
+            {
+                "ty": "房产买卖",
+                "type": "27"
+            },
+            {
+                "ty": "旅游代理",
+                "type": "28"
+            }
+
+        ],
+        "hcen": [
+
+
+            {
+                "ty": "Insurance Services",
+                "type": "21"
+            },
+
+            {
+                "ty": "Tax Attorney",
+                "type": "23"
+            },
+
+            {
+                "ty": "Lawyer",
+                "type": "26"
+            },
+            {
+                "ty": "Real Estate Agent",
+                "type": "27"
+            },
+            {
+                "ty": "Travel Agency Services",
+                "type": "28"
+            }
+
+        ],
+        "hncn": "生活服务",
+        "hnen": "Life Services"
+    },
+    {
+        "hccn": [
+            {
+                "ty": "周期服务-信件管理",
+                "type": "29"
+            },
+
+            {
+                "ty": "周期服务-租赁管理",
+                "type": "31"
+            },
+
+            {
+                "ty": "周期服务-租赁招租",
+                "type": "35"
+            }
+        ],
+        "hcen": [
+            {
+                "ty": "Empty House Management",
+                "type": "29"
+            },
+
+            {
+                "ty": "Rental Management",
+                "type": "31"
+            },
+
+
+            {
+                "ty": "Rental-For renting",
+                "type": "35"
+            }
+        ],
+        "hncn": "周期管理服务",
+        "hnen": "Cycle service"
+    }
+]

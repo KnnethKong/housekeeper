@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/gvitem_tvname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pop_all_checkbox_bg_select"
+        android:button="@null"
+        android:focusable="false"
+        android:textSize="12sp"
+        android:padding="8dp"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:textColor="@drawable/pop_all_text_color_select"
+        android:text="大田作物" />
+</LinearLayout>

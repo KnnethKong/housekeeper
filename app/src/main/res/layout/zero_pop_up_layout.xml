@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#55000000"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space_mm"
+        android:layout_marginRight="@dimen/space_mm"
+        android:background="@drawable/zero_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/line_horizental_type"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/space_l"
+                android:minWidth="100dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_title"/>
+
+            <TextView
+                style="@style/line_horizental_type"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/space_l"
+                android:minWidth="100dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_l"
+            android:layout_marginRight="@dimen/space_l"
+            android:background="@drawable/zero_txt_bg"
+            android:gravity="center"
+            android:minHeight="50dip"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/pay_jcf"
+                android:textColor="@color/base_text_color"
+                android:textSize="@dimen/txt_xxl"/>
+
+            <TextView
+                android:id="@+id/tv_pay_smf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_m"
+                android:text=""
+                android:textColor="@color/green"
+                android:textSize="@dimen/txt_xxl"/>
+        </LinearLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<CheckBox-->
+                <!--android:id="@+id/cb_jcf"-->
+                <!--style="@style/CheckBoxStyle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="@dimen/space_xl"-->
+                <!--android:layout_marginTop="@dimen/space_l"-->
+                <!--android:paddingLeft="@dimen/space_m"-->
+                <!--android:text="@string/pay_jcf_c"-->
+                <!--android:textColor="@color/hint_a_color"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_pay_jcf"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_toRightOf="@id/cb_jcf"-->
+                <!--android:layout_marginLeft="@dimen/space_s"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text=""-->
+                <!--android:textColor="@color/hint_a_color"/>-->
+        <!--</RelativeLayout>-->
+
+        <TextView
+            style="@style/line_horizental_type"
+            android:layout_marginLeft="@dimen/space_l"
+            android:layout_marginRight="@dimen/space_l"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_l"
+            android:layout_marginRight="@dimen/space_l"
+            android:layout_marginTop="@dimen/space_l"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_hj"
+                android:textSize="@dimen/txt_xxl"/>
+
+            <TextView
+                android:id="@+id/tv_pay_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_m"
+                android:text=""
+                android:textColor="@color/green"
+                android:textSize="@dimen/txt_xxl"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_l"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_pay_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/space_m"
+                android:layout_weight="1"
+                android:background="@drawable/zero_btn_left"
+                android:gravity="center"
+                android:minHeight="50dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/txt_xxl"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pay_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_m"
+                android:layout_weight="1"
+                android:background="@drawable/zero_btn_right"
+                android:gravity="center"
+                android:minHeight="50dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_xxl"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

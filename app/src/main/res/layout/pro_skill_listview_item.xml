@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_white"
+                android:paddingBottom="@dimen/pro_list_item_padding_top_bottom"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pro_order_listview_item_margin_left"
+        android:layout_marginRight="@dimen/pro_order_listview_item_margin_right"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/pro_order_item_margin"
+            android:paddingRight="@dimen/pro_order_item_margin"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_skill_adapte_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_skill_item_title"
+                    style="@style/baseText"
+                    android:paddingTop="@dimen/space_mm"
+                    android:paddingRight="@dimen/space_s"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:text="House Cleaning"
+                    android:textColor="#000"
+                    android:textSize="@dimen/txt_xxl"/>
+
+                <TextView
+                    android:id="@+id/tv_skill_item_attend"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:textSize="12sp"
+                    android:layout_alignBaseline="@id/tv_skill_item_title"
+                    android:layout_marginLeft="@dimen/pro_order_item_margin"
+                    android:text="@string/pro_skill_item_attend"
+                    android:textColor="@color/tv_pressed_focused"/>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_skill_status"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/pro_skill_status_running"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/space_l"
+                android:layout_marginTop="@dimen/space_l"
+                android:layout_below="@id/ll_skill_adapte_top"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_skill_item_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="@dimen/space_s"
+                android:lines="3"
+                android:textSize="@dimen/pro_top_font_size_default"/>
+
+            <ImageView
+                android:id="@+id/iv_right_arrow_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/pro_order_item_padding_middle"
+                android:src="@mipmap/pro_skill_right_arrow_icon"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pro_line_height_default"
+            android:layout_marginBottom="@dimen/pro_order_item_img_marign_small"
+            android:layout_marginLeft="@dimen/pro_order_item_margin"
+            android:layout_marginRight="@dimen/pro_order_item_margin"
+            android:background="@color/line_color_default"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/pro_order_item_margin"
+            android:paddingRight="@dimen/pro_order_item_margin">
+
+            <TextView
+                android:id="@+id/tv_skill_title_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pro_order_item_margin"
+                android:drawableLeft="@mipmap/pro_time_icon"
+                android:drawablePadding="@dimen/pro_order_item_img_marign_small"
+                android:text="@string/order_time"/>
+
+
+            <TextView
+                android:id="@+id/iv_skill_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/setting"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/evalue_no_slide_shape"
+                android:layout_marginLeft="@dimen/pro_order_item_img_marign_small"
+                android:layout_marginRight="@dimen/pro_order_item_img_marign_small"
+                android:layout_marginBottom="@dimen/pro_order_item_img_marign_small"
+                android:layout_alignParentTop="true"/>
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_skill_set"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--/>-->
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

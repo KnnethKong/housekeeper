@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/publish_f1_lltop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="20dp"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:id="@+id/issue_requirea_sb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp"
+            android:max="100"
+            android:maxHeight="8dp"
+            android:minHeight="8dp"
+            android:progress="10"
+            android:progressDrawable="@drawable/seekbar_progress_drawable_publish"
+            android:thumb="@null" />
+        <TextView
+            android:id="@+id/issue_requirea_tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="100%"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/theme"
+            />
+    </LinearLayout>
+
+    <com.haiwai.housekeeper.view.MyScrollView
+        android:id="@+id/issue_require_sl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/publish_f1_llbottom"
+        android:layout_below="@+id/publish_f1_lltop"
+        android:layout_marginBottom="20dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/issue_requirea_ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+    </com.haiwai.housekeeper.view.MyScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/publish_f1_llbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/zhezhao"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/theme"
+                android:gravity="center"
+                android:maxHeight="55dp"
+                android:minHeight="55dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/huo" />
+
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="18dp"
+            android:paddingTop="18dp"
+            android:text="上一步"
+            android:textColor="@color/theme"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/publish_f1_ll_empty"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/issue_require_ll_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/zhezhao"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/issue_require_ll_tv_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/theme"
+                android:gravity="center"
+                android:maxHeight="55dp"
+                android:minHeight="55dp"
+                android:text="@string/o2o_order_next_step"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/issue_require_iv_huo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_or" />
+
+        <TextView
+            android:id="@+id/issue_require_tv_before"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="18dp"
+            android:paddingTop="18dp"
+            android:text="@string/o2o_order_last_step"
+            android:textColor="@color/theme"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>

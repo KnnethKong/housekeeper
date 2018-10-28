@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/pro_order_img_marging"
+              android:background="@color/white"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pro_detail_content_height"
+        >
+
+        <TextView
+            style="@style/left_text"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/space_l"
+            android:text="@string/pro_wdbj_str"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            style="@style/line_horizental_type"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pro_detail_content_height"
+            >
+
+            <TextView
+                style="@style/left_text"
+                android:layout_centerVertical="true"
+                android:text="@string/tv_offer_name"/>
+
+            <TextView
+                android:id="@+id/tv_jcfy_b"
+                style="@style/right_text"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="$1600"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<View-->
+            <!--style="@style/line_horizental_type"/>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/pro_detail_content_height"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+                <!--style="@style/left_text"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="@string/tv_offer_check_name"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_jcf_b"-->
+                <!--style="@style/right_text"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="$1600"/>-->
+        <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            style="@style/line_horizental_type"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pro_detail_content_height"
+            >
+
+            <TextView
+                style="@style/left_text"
+                android:layout_centerVertical="true"
+                android:text="@string/tv_offer_person"/>
+
+            <TextView
+                android:id="@+id/tv_rgf_c"
+                style="@style/right_text"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="$1600"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

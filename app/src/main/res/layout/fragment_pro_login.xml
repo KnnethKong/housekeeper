@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:context="com.haiwai.housekeeper.fragment.server.ProLoginFragment">
+
+    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:id="@+id/login_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="32dp"/>
+
+        <ImageButton
+            android:id="@+id/ib_btn_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_xl"
+            android:layout_marginTop="@dimen/space_sm"
+            android:background="@null"
+            android:padding="@dimen/space_s"
+            android:src="@mipmap/pro_del"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="@string/login_yjsc"
+            android:textColor="#4A5B1C"
+            android:textSize="@dimen/txt_xxxl"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_view"
+        android:layout_marginLeft="@dimen/space_xll"
+        android:layout_marginRight="@dimen/space_xll"
+        android:layout_marginTop="@dimen/space_xxxl"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_xxxl"
+            android:layout_marginTop="@dimen/space_xl"
+            android:background="@color/bj_b_color"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_mm"
+                android:src="@mipmap/pro_account"/>
+
+            <EditText
+                android:id="@+id/et_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/login_hint_account"
+                android:inputType="phone"
+                android:paddingLeft="@dimen/space_l"
+                android:textColorHint="@color/hint_a_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_xxxl"
+            android:layout_marginTop="@dimen/space_l"
+            android:background="@color/bj_b_color"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_ml"
+                android:layout_marginRight="@dimen/space_s"
+                android:src="@mipmap/pro_password"/>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/login_hint_password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/space_l"
+                android:textColorHint="@color/hint_a_color"/>
+
+            <TextView
+                android:id="@+id/tv_get_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/space_sm"
+                android:gravity="center_vertical"
+                android:text="@string/login_forget_pass"
+                android:textColor="@color/txt_b_color"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/ib_login"
+            style="@style/common_button_login_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_xxl"
+            android:text="@string/login_btn_login"
+            />
+
+        <TextView
+            android:id="@+id/tv_rigister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_l"
+            android:text="@string/login_txt_regist"
+            android:textColor="@color/txt_green_color"
+            android:textSize="@dimen/pro_order_text_title_size_midle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_xl"
+        android:layout_marginTop="@dimen/space_l"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:checked="true"
+            android:paddingLeft="@dimen/space_m"
+            android:paddingRight="@dimen/space_mm"
+            android:visibility="gone"
+            ></CheckBox>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/log_icon"
+            android:drawablePadding="@dimen/space_s"
+            android:gravity="center_vertical"
+            android:text="@string/login_agr_str"
+            android:visibility="gone"
+            android:textColor="@color/txt_c_color"
+            android:textSize="@dimen/txt_l"/>
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:autoLink="all"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:text="@string/login_soft_str"
+            android:textColor="@color/txt_c_color"
+            android:textSize="@dimen/txt_l"/>
+    </LinearLayout>
+</RelativeLayout>

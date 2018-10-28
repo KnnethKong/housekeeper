@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/upload_pic_et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/divider_big_width"
+        android:padding="@dimen/divider_big_width"
+        android:hint="@string/upload_pic_hint_describe"
+        android:textColorHint="@color/light_gray"
+        android:background="@drawable/bg_shape_tv_rect_white_little_corner"
+        android:minHeight="140dp"
+        android:gravity="start"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/upload_pic_describe"
+        android:textColor="@color/light_gray2"
+        android:id="@+id/textView4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/divider_big_width"
+        android:padding="@dimen/divider_big_width"
+        android:background="@drawable/bg_shape_tv_rect_white_little_corner"
+        >
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/upload_pic_iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@mipmap/pro_del_icon"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/upload_pic_iv_upload"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@mipmap/pic_add"
+                android:layout_marginLeft="@dimen/space_m"
+                android:layout_marginRight="@dimen/space_m"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/upload_pic_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="@dimen/divider_big_width"
+        android:background="@color/theme"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/point_here"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/upload_pic_upload"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_dtqx_12_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="18dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="18dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+   <RadioGroup
+       android:id="@+id/view_dtqx_12_rg"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingLeft="20dp"
+       android:paddingRight="20dp"
+       android:orientation="vertical"
+       >
+       <RadioButton
+           android:id="@+id/view_dtqx_12_rb_no"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:button="@null"
+           android:drawableLeft="@drawable/order_detail_wallet_round_button_select"
+           android:drawablePadding="5dp"
+           android:paddingTop="10dp"
+           android:paddingBottom="15dp"
+           android:text=""
+           />
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/line_gray"/>
+       <RadioButton
+           android:id="@+id/view_dtqx_12_rb_yes"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:button="@null"
+           android:drawableLeft="@drawable/order_detail_wallet_round_button_select"
+           android:drawablePadding="5dp"
+           android:paddingTop="15dp"
+           android:paddingBottom="15dp"
+           android:text=""
+           />
+   </RadioGroup>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/view_dtqx_12_tv_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="+ Add Photos"
+        android:textColor="@color/blue2"
+        android:gravity="center"
+        android:background="@drawable/bg_shape_tv_rect_gray_light_fill_corner"
+        android:minHeight="40dp" />
+
+    <LinearLayout
+        android:id="@+id/view_dtqx_12_ll_add_pic"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/space_pic_wh"
+                android:layout_height="@dimen/space_pic_wh"
+                android:layout_margin="@dimen/space_m"
+                android:src="@mipmap/pic_add"/>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView1"
+                android:layout_marginTop="@dimen/space_mm"
+                android:src="@mipmap/pro_del_icon"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/space_pic_wh"
+                android:layout_height="@dimen/space_pic_wh"
+                android:layout_margin="@dimen/space_m"
+                android:src="@mipmap/pic_add"/>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignEnd="@+id/imageView2"
+                android:layout_marginTop="@dimen/space_mm"
+                android:src="@mipmap/pro_del_icon"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="@dimen/space_pic_wh"
+                android:layout_height="@dimen/space_pic_wh"
+                android:layout_margin="@dimen/space_m"
+                android:src="@mipmap/pic_add"/>
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignEnd="@+id/imageView3"
+                android:layout_marginTop="@dimen/space_mm"
+                android:src="@mipmap/pro_del_icon"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

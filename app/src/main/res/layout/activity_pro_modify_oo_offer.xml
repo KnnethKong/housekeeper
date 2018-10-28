@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_g"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    tools:context=".activity.server.OrderDetailActivity">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_modify_offer_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/space_xl"
+                android:text="@string/pro_modify_string"
+                android:textSize="@dimen/txt_xl"/>
+
+            <LinearLayout
+                android:id="@+id/ll_offer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/space_l"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/relativeLayout_ho_width"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_smf"
+                        style="@style/left_text"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/pro_radio_button"
+                        android:drawableLeft="@mipmap/pro_ver_line"
+                        android:drawablePadding="@dimen/space_s"
+                        android:text="@string/pro_smf_str"/>
+
+                    <TextView
+                        android:id="@+id/tv_sfm_m"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/space_mm"
+                        android:paddingLeft="@dimen/space_xl"
+                        android:text="CAD$60"
+                        android:textColor="@color/txt_a_color"
+                        android:textSize="@dimen/txt_l"/>
+
+                    <ImageView
+                        android:id="@+id/iv_btn_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_mm"
+                        android:layout_toRightOf="@id/tv_smf"
+                        android:src="@mipmap/pro_offer_icon"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_smf_remove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/space_mm"
+                        android:background="@null"
+                        android:visibility="gone"
+                        android:src="@mipmap/pro_offer_remove_icon"/>
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/line_horizental_type"/>
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/relativeLayout_ho_width"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_jcf"-->
+                        <!--style="@style/left_text"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:button="@drawable/pro_radio_button"-->
+                        <!--android:drawableLeft="@mipmap/pro_ver_line"-->
+                        <!--android:drawablePadding="@dimen/space_s"-->
+                        <!--android:text="@string/tv_offer_check_name"/>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_jcf_m"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginRight="@dimen/space_mm"-->
+                        <!--android:paddingLeft="@dimen/space_xl"-->
+                        <!--android:text="CAD$60"-->
+                        <!--android:textColor="@color/txt_a_color"-->
+                        <!--android:textSize="@dimen/txt_l"/>-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/iv_btn_b"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="@dimen/space_mm"-->
+                        <!--android:layout_toRightOf="@id/tv_jcf"-->
+                        <!--android:src="@mipmap/pro_offer_icon"/>-->
+
+                    <!--<ImageButton-->
+                        <!--android:id="@+id/ib_jcf_remove"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginRight="@dimen/space_mm"-->
+                        <!--android:background="@null"-->
+                        <!--android:visibility="gone"-->
+                        <!--android:src="@mipmap/pro_offer_remove_icon"/>-->
+                <!--</RelativeLayout>-->
+
+                <!--<TextView-->
+                    <!--style="@style/line_horizental_type"/>-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/relativeLayout_ho_width"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_rgf"
+                        style="@style/left_text"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/pro_radio_button"
+                        android:drawableLeft="@mipmap/pro_ver_line"
+                        android:drawablePadding="@dimen/space_s"
+                        android:text="@string/tv_fwbj"/>
+
+                    <ImageView
+                        android:id="@+id/iv_btn_c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_mm"
+                        android:layout_toRightOf="@id/tv_rgf"
+                        android:src="@mipmap/pro_offer_icon"/>
+
+                    <TextView
+                        android:id="@+id/tv_price_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:minWidth="@dimen/space_smlx"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/space_mm"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:padding="@dimen/space_mm"
+                        android:text=""
+                        android:textColor="@color/txt_a_color"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_mm"
+                android:layout_marginLeft="@dimen/space_xl"
+                android:layout_marginRight="@dimen/space_xl"
+                android:layout_marginTop="@dimen/space_mm"
+                android:background="@mipmap/pro_offer_modify_bj"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/relativeLayout_ho_width"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_fwdj"
+                        style="@style/left_text"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/pro_radio_button"
+                        android:text="@string/pro_fwdj_str"/>
+
+                    <TextView
+                        android:id="@+id/et_fwdj_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:minWidth="@dimen/space_smlx"
+                        android:inputType="number"
+                        android:gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/space_mm"
+                        android:background="@null"
+                        android:hint=""
+                        android:padding="@dimen/space_mm"
+                        android:textColorHint="@color/hint_text_color"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/line_horizental_type"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/relativeLayout_ho_width"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_zgs"
+                        style="@style/left_text"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/pro_radio_button"
+                        android:text="@string/pro_zgs_strss"/>
+
+                    <EditText
+                        android:id="@+id/et_zgs_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:inputType="number"
+                        android:layout_marginRight="@dimen/space_mm"
+                        android:minWidth="@dimen/space_smlx"
+                        android:gravity="right|center_vertical"
+                        android:background="@null"
+                        android:hint="@string/offer_hint_c"
+                        android:padding="@dimen/space_mm"
+                        android:textColorHint="@color/hint_text_color"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_content"
+                android:layout_margin="@dimen/pro_order_item_padding_middle"
+
+                android:background="@drawable/pro_shade_bj"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/relativeLayout_ho_width"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:id="@+id/tv_clf"
+                        style="@style/left_text"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/pro_radio_button"
+                        android:drawableLeft="@mipmap/pro_ver_line"
+                        android:drawablePadding="@dimen/space_s"
+                        android:text="@string/pro_clf_str"/>
+
+                    <ImageView
+                        android:id="@+id/iv_btn_d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_mm"
+                        android:layout_toRightOf="@id/tv_clf"
+                        android:src="@mipmap/pro_offer_icon"/>
+
+                    <EditText
+                        android:id="@+id/et_clf_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:inputType="number"
+                        android:layout_marginRight="@dimen/space_mm"
+                        android:minWidth="@dimen/space_smlx"
+                        android:gravity="right|center_vertical"
+                        android:background="@null"
+                        android:hint=""
+                        android:padding="@dimen/space_mm"
+                        android:textColorHint="@color/hint_text_color"
+                        />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_hj_price"
+                    style="@style/left_text"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_xl"
+                    android:text="合计 "
+                    android:textColor="@color/text_color_count"
+                    android:textSize="@dimen/txt_xxxl"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_confirm_price"
+                style="@style/common_button_style"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/space_mm"
+                android:text="@string/pop_confirm"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

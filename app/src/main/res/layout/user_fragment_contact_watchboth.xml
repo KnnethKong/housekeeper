@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haiwai.housekeeper.view.CustomSwipeToRefresh xmlns:android="http://schemas.android.com/apk/res/android"
+                                                  android:id="@+id/contact_both_watch_cst"
+                                                  android:layout_width="match_parent"
+                                                  android:layout_height="match_parent"
+                                                  android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/contact_watch_both_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00000000"
+        android:dividerHeight="0px"
+        android:listSelector="@android:color/transparent"/>
+</com.haiwai.housekeeper.view.CustomSwipeToRefresh>

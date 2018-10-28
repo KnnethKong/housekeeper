@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_common_pro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haiwai.housekeeper.activity.user.CommonProActivity">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_prob_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/space_l"
+            android:lineSpacingExtra="3dip"
+            android:gravity="center"
+            android:text="@string/tv_pro_con"
+            android:textSize="@dimen/txt_xxxl"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_common_pro_next"
+        style="@style/common_vip_button_style"
+        android:layout_marginBottom="@dimen/space_mm"
+        android:layout_marginTop="@dimen/space_l"
+        android:text="@string/tv_next_step"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+           android:layout_marginTop="5dp"
+            android:src="@mipmap/pop_big_dot"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:layout_marginLeft="3dp"
+        android:text="@string/tv_pro_con_zhu1"
+        android:textSize="@dimen/txt_m"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/pop_big_dot"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:layout_marginLeft="3dp"
+        android:text="@string/tv_pro_con_zhu2"
+        android:textSize="@dimen/txt_m"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/yincang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:paddingBottom="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="5dp"
+
+            android:src="@mipmap/pop_big_dot"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:layout_marginLeft="3dp"
+        android:text="@string/tv_pro_con_zhu3"
+        android:textSize="@dimen/txt_m"/>
+    </LinearLayout>
+</LinearLayout>

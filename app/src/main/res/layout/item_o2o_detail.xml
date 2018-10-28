@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/divider_big_width"
+        android:layout_marginRight="@dimen/divider_big_width"
+        android:background="@drawable/bg_shape_tv_rect_white_little_corner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+                <com.haiwai.housekeeper.view.CircleImageView
+                    android:id="@+id/item_o2o_detail_iv_head"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/user_icon"/>
+                <ImageView
+                    android:id="@+id/iv_user_level"
+                    android:layout_width="@dimen/space_ll"
+                    android:layout_height="@dimen/space_ll"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/s_icon"
+                    android:layout_marginRight="4dp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/item_o2o_detail_ll_skill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/item_o2o_detail_iv_sf"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/shenfenrenzheng_card" />
+
+                <ImageView
+                    android:id="@+id/item_o2o_detail_iv_jn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingLeft="8dp"
+                    android:src="@mipmap/shenfenrenzheng_jiangbei" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/item_o2o_detail_tv_name"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="3dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text=""
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/item_o2o_detail_tv_skill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/text_bg_background_color_little_corner"
+                        android:drawablePadding="3dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="3dp"
+                        android:text=""
+                        android:textColor="@color/light_gray2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/item_o2o_detail_tv_km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/dingwei_red"
+                    android:drawablePadding="5dp"
+                    android:text=""
+                    android:layout_marginTop="4dp"
+                    android:layout_alignParentRight="true"
+                    android:textSize="10sp"
+                    android:textColor="@color/theme" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <com.haiwai.housekeeper.view.ProGradeView
+                    android:id="@+id/item_o2o_detail_v_prograde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/item_o2o_detail_tv_danping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="8sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/item_o2o_detail_tv_skill_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginTop="6dp"
+                android:gravity="start"
+                android:text=""
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

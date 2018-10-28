@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical"
+            android:background="@mipmap/translate_grey_pop"
+            android:paddingLeft="23dp"
+            android:paddingRight="20dp"
+            >
+            <TextView
+                android:id="@+id/translate_en_tv_en"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="top"
+                android:text=""
+                android:textColor="@color/text_1"
+                android:textSize="14sp"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/translate_en_tv_zh"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="top"
+                android:text=""
+                android:textColor="@color/text_1"
+                android:textSize="14sp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="EN"
+            android:textColor="@color/text_1"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="@mipmap/translate_blue_circle"
+            />
+    </LinearLayout>
+</LinearLayout>

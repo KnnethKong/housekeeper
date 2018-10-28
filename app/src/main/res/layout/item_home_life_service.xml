@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.gcssloop.widget.RCRelativeLayout
+
+            android:layout_width="220dp"
+            android:layout_height="100dp"
+            app:round_corner_bottom_left="5dp"
+            app:round_corner_bottom_right="5dp"
+            app:round_corner_top_right="5dp"
+            app:round_corner_top_left="5dp"
+            android:layout_margin="6dp"
+           >
+        <ImageView
+            android:id="@+id/life_service_iv_main"
+            android:layout_width="220dp"
+            android:layout_height="100dp"
+
+
+            />
+        </com.gcssloop.widget.RCRelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="6dp">
+
+            <TextView
+                android:id="@+id/life_service_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text=""
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

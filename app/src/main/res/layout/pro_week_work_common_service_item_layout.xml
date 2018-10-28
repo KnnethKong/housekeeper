@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="@dimen/space_xl"
+              android:background="@color/white"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/relativeLayout_ho_height"
+        >
+
+        <FrameLayout
+            android:id="@+id/ser_fl_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/pro_service_bj"
+            android:visibility="gone"
+            ></FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ser_tv_title"
+                style="@style/left_text"
+                android:text="第一次服务"/>
+
+            <TextView
+                android:id="@+id/ser_tv_warn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="请于03.8-05-15完成"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ser_ll_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ser_ll_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="2016.03.07"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/text_color_count"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:src="@mipmap/pro_week_serviced_icon"/>
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="1dp"
+            android:background="#ffffff">
+            <TextView
+                android:id="@+id/ser_ib_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#01D1C1"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:textColor="#fff"
+                android:text="@string/report_cricle"/>
+        </RelativeLayout>
+
+            <!--<ImageButton
+                android:id="@+id/ser_ib_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:src="@mipmap/pro_serviec_confirm_submit_icon"
+                />-->
+
+
+
+        <TextView
+            android:id="@+id/ser_tv_time"
+            style="@style/right_text"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="03.16-03.24"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

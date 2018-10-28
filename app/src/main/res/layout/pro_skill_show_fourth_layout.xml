@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_g"
+    android:orientation="vertical"
+    tools:context=".activity.server.OrderDetailActivity">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_showe_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pro_detail_content_height_m"
+                android:layout_marginLeft="@dimen/margain_left_right"
+                android:layout_marginRight="@dimen/margain_left_right"
+                android:layout_marginTop="@dimen/pro_order_img_marging"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_l"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/skill_set_b"
+                        android:textColor="@color/tv_pressed_focused"
+                        android:textSize="@dimen/txt_l"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_content_a_skill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ib_btn_confirm_show"
+                style="@style/common_button_style"
+                android:layout_marginTop="@dimen/space_xll"
+                android:text="@string/pop_confirm"
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/space_l"
+               >
+
+                <TextView
+                    android:id="@+id/tv_order_linkman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/select_or"
+                    android:textSize="@dimen/pro_order_text_title_size_midle"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm"
+                    android:background="@mipmap/pro_order_text_lie"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_btn_ignore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/space_s"
+                android:gravity="center"
+                android:text="@string/tv_contine"
+                android:textColor="@color/txt_green_color"
+                android:textSize="@dimen/txt_xxl"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

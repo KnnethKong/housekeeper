@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/user_contact_shape_text_bottom_theme" android:state_selected="true" />
+    <item android:drawable="@drawable/user_need_shape_text_bottom_theme_unselect" android:state_selected="false" />
+</selector>

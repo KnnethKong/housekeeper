@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginEnd="@dimen/space_l"
+              android:layout_marginStart="@dimen/space_l"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/space_xxxl"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_xxl"
+        android:text="数据"
+        android:textColor="@color/txt_a_color"
+        android:textSize="@dimen/txt_xxl"/>
+</LinearLayout>

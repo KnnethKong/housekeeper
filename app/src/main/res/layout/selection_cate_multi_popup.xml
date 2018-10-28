@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/liangdian_horizontal_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/liangdian_item_01"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="接机用车"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_02"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="扶持"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_03"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="医疗健康"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liangdian_horizontal_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/liangdian_item_04"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="就业创业"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_05"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="关爱妇幼"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_06"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="国际救助"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liangdian_horizontal_03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/liangdian_item_07"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="社会救助"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_08"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="环境/动物\n保护"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_09"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="文体艺术"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liangdian_horizontal_04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/liangdian_item_10"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="敬老助残"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_11"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="教育"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_12"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="精准扶贫"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liangdian_horizontal_05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/liangdian_item_13"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_14"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_15"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liangdian_horizontal_06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/liangdian_item_16"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_17"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_18"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liangdian_horizontal_07"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/liangdian_item_19"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_20"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_21"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liangdian_horizontal_08"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/liangdian_item_22"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_23"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_24"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liangdian_horizontal_09"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/liangdian_item_25"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_26"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_27"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liangdian_horizontal_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/liangdian_item_28"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_29"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_30"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="其他"
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
+</LinearLayout>

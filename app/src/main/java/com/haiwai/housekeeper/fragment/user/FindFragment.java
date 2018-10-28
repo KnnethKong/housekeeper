@@ -1,0 +1,670 @@
+package com.haiwai.housekeeper.fragment.user;
+
+import android.Manifest;
+import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.drawable.BitmapDrawable;
+import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.text.TextUtils;
+import android.util.DisplayMetrics;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.AdapterView;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.android.volley.Response;
+import com.google.gson.Gson;
+import com.haiwai.housekeeper.R;
+import com.haiwai.housekeeper.activity.base.LoginActivity;
+import com.haiwai.housekeeper.activity.user.FindSearchActivity;
+import com.haiwai.housekeeper.activity.user.ProDetailActivity;
+import com.haiwai.housekeeper.adapter.FindAdapter;
+import com.haiwai.housekeeper.adapter.PopGvAdapter;
+import com.haiwai.housekeeper.adapter.PopGvAdapter2;
+import com.haiwai.housekeeper.adapter.PopGvAdapter3;
+import com.haiwai.housekeeper.base.AppGlobal;
+import com.haiwai.housekeeper.base.BaseFragment;
+import com.haiwai.housekeeper.entity.ProListEntity;
+import com.haiwai.housekeeper.entity.SigGogleEntity;
+import com.haiwai.housekeeper.entity.TitleEntity;
+import com.haiwai.housekeeper.entity.TitleItem;
+import com.haiwai.housekeeper.entity.User;
+import com.haiwai.housekeeper.https.Contants;
+import com.haiwai.housekeeper.https.PlatRequest;
+import com.haiwai.housekeeper.libs.ui.PullToRefreshListView;
+import com.haiwai.housekeeper.utils.ActivityTools;
+import com.haiwai.housekeeper.utils.AssetsUtils;
+import com.haiwai.housekeeper.utils.ErrorCodeUtils;
+import com.haiwai.housekeeper.utils.EvmUtil;
+import com.haiwai.housekeeper.utils.JsonUtils;
+import com.haiwai.housekeeper.utils.LocationUtils;
+import com.haiwai.housekeeper.utils.LogUtil;
+import com.haiwai.housekeeper.utils.PlatUtils;
+import com.haiwai.housekeeper.utils.SPUtils;
+import com.haiwai.housekeeper.utils.SizeUtil;
+import com.haiwai.housekeeper.utils.ToastUtil;
+import com.haiwai.housekeeper.view.MyGridView;
+import com.haiwai.housekeeper.view.OnScrollYListener;
+import com.haiwai.housekeeper.view.xlistview.XListView;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * Created by ihope007 on 2016/9/1.
+ * 发现
+ */
+public class FindFragment extends BaseFragment implements XListView.IXListViewListener, PopGvAdapter.OnItemsClickListener {
+    private RelativeLayout rlcontainer;
+    private int llHeight;
+    private RelativeLayout rltitle;
+
+    private PopupWindow pop, pop_type, pop_order, pop_all;
+    //poptype
+    private TextView tvdistance1, tvdistance2, tvdistance3, tvrz1, tvrz2, tvrz3, tvcommit_type, tvreset_type;
+    //order
+    private ImageView ivorder1, ivorder2, ivorder3, ivorder4;
+    private LinearLayout llorder1, llorder2, llorder3, llorder4;
+    private TextView tvcommit_order;
+    //all
+    private MyGridView gvAll1, gvAll2, gvAll3;
+    private PopGvAdapter popGvAdapter1, popGvAdapter2, popGvAdapter3;
+    private ImageButton tvcommit_all;
+
+    private List<TitleEntity> mTitleList;
+    private List<TitleItem> itemList;
+
+    private PullToRefreshListView mPullListView;
+    private ListView mListView;
+    private List<ProListEntity.DataBean> list;
+    private int page = 1;
+    private FindAdapter FindAdapter;
+    private View headView;
+    private TextView tv_zb;
+
+    private SimpleDateFormat mDateFormat = new SimpleDateFormat("MM-dd HH:mm");
+    boolean hasMoreData = true;
+    private String km = "";
+    private String sf_ren = "";
+    private String jn_ren = "";
+    private String sort = "";
+    private String type = "";
+    private String isZhorEn = "";
+    User user;
+    SigGogleEntity mSigGogleEntity;
+
+
+    private void clearAllData() {
+        km = "";
+        sf_ren = "";
+        jn_ren = "";
+        sort = "";
+        type = "";
+        isZhorEn = "";
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.user_fragment_find, container, false);
+        return rootView;
+    }
+
+    @Override
+    protected void initView(View view, Bundle savedInstanceState) {
+        headView = getActivity().getLayoutInflater().inflate(R.layout.find_head_view, null);
+        rlcontainer = (RelativeLayout) headView.findViewById(R.id.find_pic_ll_container);
+        tv_zb = (TextView) headView.findViewById(R.id.tv_zb);
+        rltitle = (RelativeLayout) view.findViewById(R.id.find_rl_collpase_title);
+        rltitle.setVisibility(View.GONE);
+        rlcontainer.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, PlatUtils.getImageRario(getActivity(), 5, 8)));
+        mPullListView = (PullToRefreshListView) view.findViewById(R.id.find_detail_listview);
+        mPullListView.setPullLoadEnabled(true);
+        mPullListView.setScrollLoadEnabled(false);
+        mListView = mPullListView.getRefreshableView();
+        mListView.addHeaderView(headView);
+        list = new ArrayList<>();
+        FindAdapter = new FindAdapter(this, list);
+        mListView.setAdapter(FindAdapter);
+        mListView.setDivider(null);
+        mListView.setOverScrollMode(View.OVER_SCROLL_NEVER);
+        setLastUpdateTime();
+        mPullListView.doPullRefreshing(true, 500);
+
+        llHeight = SizeUtil.getViewHeight(rlcontainer);
+        mListView.setOnScrollListener(new OnScrollYListener(mListView) {
+            @Override
+            protected void onScrollY(int scrolledY) {
+                if (scrolledY <= 0) {
+                    rltitle.setVisibility(View.GONE);
+                } else if (scrolledY >= 0 && scrolledY < llHeight - EvmUtil.dip2px(getActivity(), 25)) {
+                    rltitle.setVisibility(View.GONE);
+                } else if (scrolledY >= llHeight - EvmUtil.dip2px(getActivity(), 25)) {
+                    rltitle.setVisibility(View.VISIBLE);
+                } else {
+                    rltitle.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        mPullListView.setOnRefreshListener(new com.haiwai.housekeeper.libs.ui.PullToRefreshBase.OnRefreshListener<ListView>() {
+            @Override
+            public void onPullDownToRefresh(com.haiwai.housekeeper.libs.ui.PullToRefreshBase<ListView> refreshView) {
+                page = 1;
+                requestFind(1);
+            }
+
+            @Override
+            public void onPullUpToRefresh(com.haiwai.housekeeper.libs.ui.PullToRefreshBase<ListView> refreshView) {
+                page++;
+                requestFind(2);
+            }
+        });
+
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(getContext(),ProDetailActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("uid", list.get(position - 1).getUid());
+                bundle.putString("nickname", list.get(position - 1).getNickname());
+                bundle.putString("type", list.get(position - 1).getType());
+                bundle.putString("choose", "0");
+                bundle.putString("oid", "");
+                intent.putExtra("fromO2O",true);
+                intent.putExtras(bundle);
+                startActivity(intent);
+
+//                ActivityTools.goNextActivity(getActivity(), ProDetailActivity.class, bundle);
+            }
+        });
+
+        view.findViewById(R.id.find_expand_iv_type).setOnClickListener(this);
+        view.findViewById(R.id.find_expand_iv_order).setOnClickListener(this);
+        view.findViewById(R.id.find_expand_iv_all).setOnClickListener(this);
+        view.findViewById(R.id.find_collapse_type).setOnClickListener(this);
+        view.findViewById(R.id.find_collapse_order).setOnClickListener(this);
+        view.findViewById(R.id.find_collapse_all).setOnClickListener(this);
+        view.findViewById(R.id.ib_search).setOnClickListener(this);
+        view.findViewById(R.id.ib_search_find).setOnClickListener(this);
+    }
+
+    private void setLastUpdateTime() {
+        String text = formatDateTime(System.currentTimeMillis());
+        mPullListView.setLastUpdatedLabel(text);
+    }
+
+    private String formatDateTime(long time) {
+        if (0 == time) {
+            return "";
+        }
+
+        return mDateFormat.format(new Date(time));
+    }
+
+    @Override
+    protected void initData() {
+
+        initNetData();
+    }
+
+    private void initNetData() {
+        initLocationData();
+        user = AppGlobal.getInstance().getUser();
+        isZhorEn = AppGlobal.getInstance().getLagStr();
+        if (isNetworkAvailable()) {
+            requestFind(0);
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        switch (requestCode) {
+            case 1:
+                if (grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
+                    initNetData();
+                }
+                break;
+            default:
+                super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+    }
+
+    private void initLocationData() {
+        LocationUtils locationUtils = new LocationUtils(getActivity());
+        String str = locationUtils.getGeoStr();
+        mSigGogleEntity = LocationUtils.parStr(str);
+    }
+
+    /**
+     * 发现列表
+     */
+    private void requestFind(final int isSwipe) {
+        hasMoreData = true;
+        Map<String, String> map = new HashMap<>();
+        map.put("uid", user.getUid() == null ? "" : user.getUid());
+        map.put("nickname", "");
+        map.put("type", type);
+        map.put("lat", mSigGogleEntity.getLat());
+        map.put("long", mSigGogleEntity.getLng());
+        map.put("km", km);
+        map.put("sf_ren", sf_ren);
+        map.put("jn_ren", jn_ren);
+        map.put("sort", sort);
+        map.put("page", page + "");
+        map.put("page_size", "10");
+        map.put("secret_key", SPUtils.getString(getActivity(), "secret", ""));
+        map.put("login_key", AppGlobal.getInstance().getLoginKey() == null ? "" : AppGlobal.getInstance().getLoginKey());
+        mRequestQueue.add(new PlatRequest(getActivity(), Contants.find_lst, map, null, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    int code = JsonUtils.getJsonInt(response, "status");
+                    if (code == 200) {
+                        if (page == 1) {
+                            list.clear();
+                        }
+                        ProListEntity entity = new Gson().fromJson(response, ProListEntity.class);
+                        if (entity.getData() == null || entity.getData().size() == 0) {
+                            hasMoreData = false;
+                        }
+                        list.addAll(entity.getData());
+                        FindAdapter.notifyDataSetChanged();
+                    } else {
+                        ToastUtil.shortToast(getActivity(), ErrorCodeUtils.getRegisterError(code + ""));
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                } finally {
+                    if (isSwipe == 1) {
+                        mPullListView.onPullDownRefreshComplete();
+                    } else if (isSwipe == 2) {
+                        mPullListView.onPullUpRefreshComplete();
+                    }
+//                    mPullListView.setHasMoreData(hasMoreData);
+                    setLastUpdateTime();
+                }
+            }
+        }));
+    }
+
+    public void initZhType() {
+        String json = AssetsUtils.getJson(getActivity());
+        try {
+            JSONArray jsonArray = new JSONArray(json);
+            mTitleList = new ArrayList<>();
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                TitleEntity title = new TitleEntity();
+                title.setName((String) jsonObject.opt("hncn"));
+                JSONArray jArray = jsonObject.getJSONArray("hccn");
+                itemList = new ArrayList<>();
+                for (int j = 0; j < jArray.length(); j++) {
+                    JSONObject joOb = jArray.getJSONObject(j);
+                    TitleItem titleItem = new TitleItem();
+                    titleItem.setName((String) joOb.opt("ty"));
+                    titleItem.setType((String) joOb.opt("type"));
+                    itemList.add(titleItem);
+                }
+                title.setItems(itemList);
+                mTitleList.add(title);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void initEnType() {
+        String json = AssetsUtils.getJson(getActivity());
+        try {
+            JSONArray jsonArray = new JSONArray(json);
+            mTitleList = new ArrayList<>();
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                TitleEntity title = new TitleEntity();
+                title.setName((String) jsonObject.opt("hnen"));
+                JSONArray jArray = jsonObject.getJSONArray("hcen");
+                itemList = new ArrayList<>();
+                for (int j = 0; j < jArray.length(); j++) {
+                    JSONObject joOb = jArray.getJSONObject(j);
+                    TitleItem titleItem = new TitleItem();
+                    titleItem.setName((String) joOb.opt("ty"));
+                    titleItem.setType((String) joOb.opt("type"));
+                    itemList.add(titleItem);
+                }
+                title.setItems(itemList);
+                mTitleList.add(title);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    protected void click(View v) {
+
+        switch (v.getId()) {
+            case R.id.ib_search_find:
+                startActivity(new Intent(getActivity(), FindSearchActivity.class));
+                break;
+            case R.id.find_expand_iv_type:
+            case R.id.find_collapse_type:
+                showPopWindowType();
+                break;
+            case R.id.pop_type_distance_1:
+                initTypeDistance(1);
+                km = "";
+                break;
+            case R.id.pop_type_distance_2:
+                initTypeDistance(2);
+                km = "10";
+                break;
+            case R.id.pop_type_distance_3:
+                initTypeDistance(3);
+                km = "30";
+                break;
+            case R.id.pop_type_renzheng_1:
+                initTypeRenzheng(1);
+                sf_ren = "";
+                jn_ren = "";
+                break;
+            case R.id.pop_type_renzheng_2:
+                initTypeRenzheng(2);
+                if(tvrz2.isSelected()){
+                    sf_ren = "1";
+                }else {
+                    sf_ren = "";
+                }
+                if(tvrz3.isSelected()){
+                    jn_ren = "1";
+                }else {
+                    jn_ren = "";
+                }
+                break;
+            case R.id.pop_type_renzheng_3:
+                initTypeRenzheng(3);
+                if(tvrz2.isSelected()){
+                    sf_ren = "1";
+                }else {
+                    sf_ren = "";
+                }
+                if(tvrz3.isSelected()){
+                    jn_ren = "1";
+                }else {
+                    jn_ren = "";
+                }
+                break;
+            case R.id.pop_type_commit:// TODO: 2016/9/13 暂时dismiss 缺少提交逻辑
+                if (pop_type != null && pop_type.isShowing()) {
+                    pop_type.dismiss();
+                    mListView.setSelection(0);
+                    mPullListView.doPullRefreshing(true, 500);
+                }
+                break;
+            case R.id.pop_type_reset:
+                initTypeDistance(1);
+                initTypeRenzheng(1);
+                break;
+            case R.id.find_expand_iv_order:
+            case R.id.find_collapse_order:
+                showPopWindowOrder();
+                break;
+            case R.id.pop_order_ll_1:
+                initOrder(1);
+                break;
+            case R.id.pop_order_ll_2:
+                initOrder(2);
+                break;
+            case R.id.pop_order_ll_3:
+                initOrder(3);
+                break;
+            case R.id.pop_order_ll_4:
+                initOrder(4);
+                break;
+            case R.id.pop_order_commit://////////////////////////////
+                if (pop_order != null && pop_order.isShowing()) {
+                    pop_order.dismiss();
+                    mListView.setSelection(0);
+                    mPullListView.doPullRefreshing(true, 500);
+                }
+                break;
+            case R.id.find_expand_iv_all:
+            case R.id.find_collapse_all:
+                showPopWindowAll();
+                break;
+            case R.id.pop_all_commit:
+                if (pop_all != null && pop_all.isShowing()) {
+                    type = "";
+                    pop_all.dismiss();
+                    tv_zb.setText(getString(R.string.find_zb));
+                    mListView.setSelection(0);
+                    mPullListView.doPullRefreshing(true, 500);
+                }
+                break;
+            case R.id.ib_search:
+                startActivity(new Intent(getActivity(), FindSearchActivity.class));
+                break;
+        }
+    }
+
+    /**
+     * 技能认证弹窗
+     */
+    public void showPopWindow(View view) {
+        View v = LayoutInflater.from(getActivity())
+                .inflate(R.layout.pop_skill, null);
+        pop = new PopupWindow(v, WindowManager.LayoutParams.WRAP_CONTENT,
+                WindowManager.LayoutParams.WRAP_CONTENT, true);
+        pop.setBackgroundDrawable(new BitmapDrawable());
+        pop.showAsDropDown(view);
+    }
+
+    /**
+     * type--弹窗1
+     */
+    private void showPopWindowType() {
+        View v = LayoutInflater.from(getActivity())
+                .inflate(R.layout.o2o_pop_type, null);
+        tvdistance1 = (TextView) v.findViewById(R.id.pop_type_distance_1);
+        tvdistance2 = (TextView) v.findViewById(R.id.pop_type_distance_2);
+        tvdistance3 = (TextView) v.findViewById(R.id.pop_type_distance_3);
+        tvrz1 = (TextView) v.findViewById(R.id.pop_type_renzheng_1);
+        tvrz2 = (TextView) v.findViewById(R.id.pop_type_renzheng_2);
+        tvrz3 = (TextView) v.findViewById(R.id.pop_type_renzheng_3);
+        tvcommit_type = (TextView) v.findViewById(R.id.pop_type_commit);
+        tvreset_type = (TextView) v.findViewById(R.id.pop_type_reset);
+        initTypeDistance(1);
+        initTypeRenzheng(1);
+        tvdistance1.setOnClickListener(this);
+        tvdistance2.setOnClickListener(this);
+        tvdistance3.setOnClickListener(this);
+        tvrz1.setOnClickListener(this);
+        tvrz2.setOnClickListener(this);
+        tvrz3.setOnClickListener(this);
+        tvcommit_type.setOnClickListener(this);
+        tvreset_type.setOnClickListener(this);
+        pop_type = new PopupWindow(v, WindowManager.LayoutParams.MATCH_PARENT,
+                WindowManager.LayoutParams.WRAP_CONTENT, true);
+        pop_type.setBackgroundDrawable(new BitmapDrawable());
+        backgroundAlpha(0.4f);
+        pop_type.showAtLocation(v, Gravity.BOTTOM, 0, 0);
+        pop_type.setOnDismissListener(new poponDismissListener());
+
+        //初始化参数
+        tvdistance1.performClick();
+        tvrz1.performClick();
+    }
+
+    private void initTypeDistance(int i) {
+        tvdistance1.setSelected(i == 1 ? true : false);
+        tvdistance2.setSelected(i == 2 ? true : false);
+        tvdistance3.setSelected(i == 3 ? true : false);
+    }
+
+    private void initTypeRenzheng(int i) {
+        tvrz1.setSelected(i == 1 ? true : false);
+       // tvrz2.setSelected(i == 2 ? true : false);
+        //tvrz3.setSelected(i == 3 ? true : false);
+        if(i==1){
+            tvrz2.setSelected(false);
+            tvrz3.setSelected(false);
+        }
+        if(i==2){
+            if(tvrz2.isSelected()){
+                tvrz2.setSelected(false);
+            }else {
+                tvrz2.setSelected(true);
+            }
+        }else if(i==3){
+            if(tvrz3.isSelected()){
+                tvrz3.setSelected(false);
+            }else {
+                tvrz3.setSelected(true);
+            }
+
+        }
+    }
+
+    /**
+     * order
+     */
+    private void showPopWindowOrder() {
+        View v = LayoutInflater.from(getActivity())
+                .inflate(R.layout.o2o_pop_order, null);
+        ivorder1 = (ImageView) v.findViewById(R.id.pop_order_iv_1);
+        ivorder2 = (ImageView) v.findViewById(R.id.pop_order_iv_2);
+        ivorder3 = (ImageView) v.findViewById(R.id.pop_order_iv_3);
+        ivorder4 = (ImageView) v.findViewById(R.id.pop_order_iv_4);
+        llorder1 = (LinearLayout) v.findViewById(R.id.pop_order_ll_1);
+        llorder2 = (LinearLayout) v.findViewById(R.id.pop_order_ll_2);
+        llorder3 = (LinearLayout) v.findViewById(R.id.pop_order_ll_3);
+        llorder4 = (LinearLayout) v.findViewById(R.id.pop_order_ll_4);
+        tvcommit_order = (TextView) v.findViewById(R.id.pop_order_commit);
+        initOrder(1);
+        llorder1.setOnClickListener(this);
+        llorder2.setOnClickListener(this);
+        llorder3.setOnClickListener(this);
+        llorder4.setOnClickListener(this);
+        tvcommit_order.setOnClickListener(this);
+        pop_order = new PopupWindow(v, WindowManager.LayoutParams.MATCH_PARENT,
+                WindowManager.LayoutParams.WRAP_CONTENT, true);
+        pop_order.setBackgroundDrawable(new BitmapDrawable());
+        backgroundAlpha(0.4f);
+        pop_order.showAtLocation(v, Gravity.BOTTOM, 0, 0);
+        pop_order.setOnDismissListener(new poponDismissListener());
+
+
+    }
+
+    private void initOrder(int i) {
+        ivorder1.setSelected(i == 1 ? true : false);
+        ivorder2.setSelected(i == 2 ? true : false);
+        ivorder3.setSelected(i == 3 ? true : false);
+        ivorder4.setSelected(i == 4 ? true : false);
+        sort = String.valueOf(i);
+    }
+
+    /**
+     * all
+     */
+    private void showPopWindowAll() {
+        if ("zh".equalsIgnoreCase(isZhorEn))
+            initZhType();
+        else
+            initEnType();
+        View v = LayoutInflater.from(getActivity())
+                .inflate(R.layout.o2o_pop_all, null);
+        gvAll1 = (MyGridView) v.findViewById(R.id.pop_all_gv_1);
+        gvAll2 = (MyGridView) v.findViewById(R.id.pop_all_gv_2);
+        gvAll3 = (MyGridView) v.findViewById(R.id.pop_all_gv_3);
+        ((TextView) v.findViewById(R.id.pop_all_tv_1)).setText(mTitleList.get(0).getName());
+        ((TextView) v.findViewById(R.id.pop_all_tv_2)).setText(mTitleList.get(1).getName());
+        ((TextView) v.findViewById(R.id.pop_all_tv_3)).setText(mTitleList.get(2).getName());
+        tvcommit_all = (ImageButton) v.findViewById(R.id.pop_all_commit);
+        if ("en".equals(isZhorEn)) {
+            tvcommit_all.setImageResource(R.mipmap.all_btn_icon_en);
+        } else {
+            tvcommit_all.setImageResource(R.mipmap.all_btn_icon);
+        }
+        popGvAdapter1 = new PopGvAdapter(getActivity(), mTitleList.get(0).getItems());
+        popGvAdapter2 = new PopGvAdapter(getActivity(), mTitleList.get(1).getItems());
+        popGvAdapter3 = new PopGvAdapter(getActivity(), mTitleList.get(2).getItems());
+        gvAll1.setAdapter(popGvAdapter1);
+        gvAll2.setAdapter(popGvAdapter2);
+        gvAll3.setAdapter(popGvAdapter3);
+        popGvAdapter1.setOnItemsClickListener(this);
+        popGvAdapter2.setOnItemsClickListener(this);
+        popGvAdapter3.setOnItemsClickListener(this);
+        tvcommit_all.setOnClickListener(this);
+        WindowManager wm = (WindowManager) getActivity().getSystemService(Context.WINDOW_SERVICE);
+        DisplayMetrics dm = new DisplayMetrics();
+        wm.getDefaultDisplay().getMetrics(dm);
+        pop_all = new PopupWindow(v, WindowManager.LayoutParams.MATCH_PARENT,
+                dm.heightPixels * 4 / 5, true);
+        pop_all.setBackgroundDrawable(new BitmapDrawable());
+        backgroundAlpha(0.4f);
+        pop_all.showAtLocation(v, Gravity.BOTTOM, 0, 0);
+        pop_all.setOnDismissListener(new poponDismissListener());
+    }
+
+    /**
+     * 设置添加屏幕的背景透明度
+     *
+     * @param bgAlpha
+     */
+    public void backgroundAlpha(float bgAlpha) {
+        WindowManager.LayoutParams lp = getActivity().getWindow().getAttributes();
+        lp.alpha = bgAlpha; // 0.0-1.0
+        getActivity().getWindow().setAttributes(lp);
+    }
+
+    @Override
+    public void onRefresh() {
+        page = 1;
+        list.clear();
+        requestFind(1);
+    }
+
+    @Override
+    public void onLoadMore() {
+        page++;
+        requestFind(2);
+    }
+
+    @Override
+    public void itemClick(String type) {
+        if (pop_all != null && pop_all.isShowing()) {
+            this.type = type;
+            pop_all.dismiss();
+            tv_zb.setText(AssetsUtils.getSkillName(type, isZhorEn));
+            mListView.setSelection(0);
+            mPullListView.doPullRefreshing(true, 500);
+        }
+    }
+
+    class poponDismissListener implements PopupWindow.OnDismissListener {
+        @Override
+        public void onDismiss() {
+            backgroundAlpha(1f);
+        }
+    }
+}

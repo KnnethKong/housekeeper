@@ -1,0 +1,1478 @@
+<resources>
+    <string name="app_name">移居手册</string>
+    <string name="title_activity_login">登录</string>
+
+    <!--<string name="pull_to_refresh_pull_label">下拉刷新…</string>-->
+    <!--<string name="pull_to_refresh_release_label">放开以刷新…</string>-->
+    <!--<string name="pull_to_refresh_refreshing_label">正在载入…</string>-->
+    <!--<string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>-->
+    <!--<string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>-->
+    <!--<string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>-->
+    <string name="get_it">知道了</string>
+    <string name="self_position_1">授权入室察视（稍后开通）</string>
+
+    <string name="skip_question">您确定要跳过后面的所有问题吗？</string>
+
+    <string name="red_desc">您当前暂无任何优惠券</string>
+    <string name="distance_">范围不超过</string>
+    <string name="app_decrible1">从房屋管理维护到信件财务处理</string>
+    <string name="app_decrible2">无处不在的零空缺，清澄为您呈现最周全、省心的美好体验</string>
+    <string name="main_home">首页</string>
+    <string name="main_not_login">暂没登录！</string>
+    <string name="main_quit_again">再按一次退出程序</string>
+    <string name="main_home_qczy">清澄自营</string>
+    <string name="main_home_label">周期管理服务</string>
+    <string name="main_home_label_2">清澄护航，将琐碎最小化，让享受最大化</string>
+    <string name="main_home_label_3">四季意趣，我们为您的美宅内外造景</string>
+    <string name="main_home_hot">热门</string>
+
+    <string name="delete_all_service">您确定要删除所有的服务吗?</string>
+
+    <string name="main_home_home_service">家居服务</string>
+    <string name="main_home_house_repair">房屋维修</string>
+    <string name="main_home_life_service">生活服务</string>
+    <string name="main_need">订单</string>
+    <string name="main_need_response">待响应</string>
+    <string name="main_need_doing">进行中</string>
+    <string name="main_need_history">历史</string>
+    <string name="main_need_month">月</string>
+    <string name="maintain">可维持</string>
+
+    <string name="config_maintain">当前月可以支付超过6个月的服务费用</string>
+    <string name="note_agree_prool">请同意用户协议</string>
+
+    <string name="rent_submit">确认并提交</string>
+    <string name="agree_with_prool">点击注册，即表示您同意《移居手册使用协议》和《移居手册服务提供者协议》</string>
+    <string name="main_need_order_num">订单号:</string>
+    <string name="main_need_serice">服务商</string>
+    <string name="main_need_business_detail">业务详情</string>
+    <string name="main_need_choose_service">由此选择</string>
+    <string name="main_need_choose_services">查看接单情况</string>
+    <string name="main_need_watch_order">查看评价</string>
+    <string name="main_need_cancel_order">取消订单</string>
+    <string name="main_need_cancel_order_jie">去选专家</string>
+    <string name="main_need_agree_order">同意报价</string>
+
+    <string name="main_need_agree_order1">接受报价同意开工</string>
+
+    <string name="main_need_disagree_order">驳回</string>
+    <string name="main_need_disagree_order1">不接受报价</string>
+    <string name="main_need_service">服务中</string>
+    <string name="main_need_pay_order">去支付</string>
+    <string name="main_need_evaluate_order">去评价</string>
+    <string name="main_need_has_canceld">已取消</string>
+    <string name="pro_pop_word7_1">如果服务完成，则专家只得向用户收取服务总价。</string>
+    <string name="pro_pop_word7_2">上门费——只有专家已上门并且服务终止(不能完成)时，用户才应向专家支付上门费用</string>
+    <string name="pro_pop_word7_3">检测费——只有当专家已上门进行检测工作，服务终止(不能完成)时，用户才应向专家支付有偿检测费用。(用户与专家应自行协商是否收取该费用)</string>
+
+
+    <string name="pro_pop_word8_1">\"服务总价\"为服务完成后，用户应向专家支付全部费用总额</string>
+    <string name="pro_pop_word8_2">报价方式分为\"定额报价\"(固定总价)和\"时薪报价\"(总价=时薪*小时价)两种模式</string>
+    <string name="pro_pop_word8_3">时薪报价模式的小时数由专家上门后输入，需经过用户同意才能生效</string>
+
+    <string name="main_need_is_cancel">确定要取消订单吗?</string>
+
+    <string name="main_cancel_order_time">1</string>
+
+
+    <string name="main_need_is_agree">确定要同意报价吗?</string>
+    <string name="main_need_is_disagree">您确认不接受报价？</string>
+    <string name="main_need_gqd">个抢单</string>
+    <string name="main_find">需求</string>
+    <string name="main_message">消息</string>
+    <string name="main_mine_page">我的主页</string>
+    <string name="main_mine_change_to_pro">切换到服务商版</string>
+    <string name="main_mine_change_to_user">切换到用户版</string>
+    <string name="main_mine_pro_set_location">设置服务区域中心</string>
+    <string name="main_mine_service">客服</string>
+
+
+    <string name="o2o_detail_has_done">完成\t</string>
+    <string name="o2o_detail_dan_pingjias">单/评价\t</string>
+    <string name="o2o_detail_dan_pingjia">单/评价\t</string>
+    <string name="o2o_detail_xie_pingmi">/平米</string>
+    <string name="o2o_detail_fwbj8_choose_date">具体日期</string>
+    <string name="o2o_detail_fwbj8_choose_time">具体时间</string>
+    <string name="o2o_detail_fwbj8_for_long">可供工作时长</string>
+    <string name="o2o_detail_fwbj8_answer_5">请填写您希望服务安排在什么时间</string>
+
+
+    <string name="o2o_detail_glwx12_tv_email">邮箱地址</string>
+    <string name="o2o_detail_glwx12_tv_phone">电话号码</string>
+    <string name="o2o_detail_glwx12_tv_check">专家可以直接给我打电话报价</string>
+
+
+    <string name="last_update_time">上次更新时间:</string>
+
+    <string name="yes_is">需要添加</string>
+
+    <string name="point_here">点此按钮</string>
+    <string name="look_for_your_sercice">为您找到合适的专家</string>
+    <string name="begin_look_for_your_sercice">开始寻找合适的专家</string>
+    <string name="message_alert">信息提示</string>
+    <string name="message_alert_yes">确定</string>
+    <string name="message_alert_no">取消</string>
+    <string name="done">确定</string>
+    <string name="yes">完成</string>
+    <string name="yes1">完成</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="commit">提交</string>
+    <string name="commit_success">提交成功</string>
+    <string name="delete_success">删除成功</string>
+    <string name="add_house_title2">添加房产</string>
+    <string name="change">修改</string>
+    <string name="add_house_title">添加房产</string>
+    <string name="add_house_edit_title">编辑房产</string>
+    <string name="add_house_toast">添加房产成功</string>
+    <string name="add_house_edit_toast">修改房产成功</string>
+    <string name="add_house_title_1">为了使我们的国家团队可以更详细的掌握您爱家的情况，请您告诉我们您的</string>
+    <string name="add_house_title_2">房屋状况</string>
+    <string name="add_house_label_1">所在城市</string>
+    <string name="add_house_label_2">详细地址</string>
+    <string name="add_house_label_3">房屋类型</string>
+    <string name="add_house_label_4">土地面积</string>
+    <string name="add_house_label_5">建筑面积</string>
+    <string name="add_house_label_6">绿地面积</string>
+    <string name="add_house_label_7">水池面积</string>
+    <string name="add_house_label_8">备用联系人电话:</string>
+
+    <string name="up_id_card">上传手持证件照</string>
+    <string name="up_front_card">上传身份证正面照片</string>
+    <string name="up_back_card">上传身份证反面照片</string>
+    <string name="is_can_see">接单后可见</string>
+    <string name="add_house_hint_1">选择您的所在城市</string>
+    <string name="add_house_hint_2">填写您的房屋地址</string>
+    <string name="add_house_hint_3">选择您的房屋类型</string>
+    <string name="add_house_hint_4">选择您的土地面积</string>
+    <string name="add_house_hint_5">选择您的建筑面积</string>
+    <string name="add_house_hint_6">选择您的绿地面积</string>
+    <string name="add_house_hint_7">选择您的水池面积</string>
+    <string name="add_house_hint_8">填写您的备用联系人电话</string>
+
+
+    <string name="advice_feedback_title">意见反馈</string>
+    <string name="advice_feedback_toast_1">请补全反馈内容</string>
+    <string name="tell_us">有什么要对我们说的...</string>
+
+
+    <string name="all_business_title">全部业务</string>
+
+    <string name="user_time">时间:</string>
+
+    <string name="more_comment_title">TA的评价</string>
+
+
+    <string name="contact_title">联系人</string>
+    <string name="contact_label_1">我关注的人</string>
+    <string name="contact_label_2">关注我的人</string>
+    <string name="contact_label_3">互相关注</string>
+
+    <string name="refres_suucess">刷新成功</string>
+
+
+    <string name="cancel_select">取消</string>
+    <string name="confirm_select">确定</string>
+
+    <string name="no_service">本月无服务</string>
+
+    <string name="select_proof">选择要分享到的平台</string>
+    <string name="cancel_share">取消分享</string>
+    <string name="share_title">分享</string>
+    <string name="evaluate_title">评价:</string>
+    <string name="evaluate_label">非常满意，无可挑剔</string>
+    <string name="evaluate_label_2">请选择标签</string>
+    <string name="evaluate_hint">请输入评价内容</string>
+
+    <string name="select_or">或</string>
+
+    <string name="o2o_order_next_step">下一步</string>
+    <string name="o2o_order_or">或</string>
+    <string name="o2o_order_last_step">上一步</string>
+    <string name="o2o_order_make_sure_title">信息确认</string>
+    <string name="o2o_expert">专家</string>
+    <string name="o2o_order_make_sure_">信息确认</string>
+
+
+    <string name="issue_require_complete">请至少选择一项或输入内容</string>
+    <string name="issue_require_at_least_one">请至少选择一项或输入内容</string>
+    <string name="issue_require_upload_pic">上传照片</string>
+
+
+    <string name="issue_addr_add_addr">+ 添加地址</string>
+    <string name="issue_addr_choose_house">选择您的房产</string>
+
+
+    <string name="modify_username">昵\t\t称</string>
+    <string name="modify_name">姓名</string>
+    <string name="show_user_name">用户名</string>
+
+    <string name="modify_phone">手机号</string>
+    <string name="modify_my_introduce">我的简介</string>
+    <string name="conque_account">该Paypal账号已被占用</string>
+
+    <string name="my_wallet">我的钱包</string>
+    <string name="my_deduct">扣除 : </string>
+    <string name="my_recharge">充值 : </string>
+    <string name="my_wallet_total_money">总资产($) </string>
+
+    <string name="bind_paypal_text">绑定或修改Paypal账号需要经平台验证后才能生效\n第一步、提交Paypal账号至平台\n第二步、拨打下方电话联系工作人员验证账号\n95045580098</string>
+
+    <string name="need_order_detail">订单详情</string>
+    <string name="need_order_expand">展开</string>
+    <string name="need_order_view_all">展开</string>
+    <string name="need_order_hide">收起</string>
+
+
+    <string name="person_info">个人信息</string>
+    <string name="person_info_name">姓\t\t名</string>
+    <string name="person_info_hint_username">编辑用户名</string>
+    <string name="person_info_hint_name">编辑姓名</string>
+    <string name="person_info_hint_phone">编辑手机号</string>
+    <string name="person_info_hint_introduce">输入我的简介</string>
+
+
+    <string name="person_pic">个人相册</string>
+    <string name="person_pic_no_pic">暂无图片</string>
+
+
+    <string name="pro_detail_sfrz">身份认证</string>
+    <string name="pro_detail_jnrz">技能认证</string>
+    <string name="pro_detail_pic">相册</string>
+    <string name="pro_detail_intro">个人简介</string>
+    <string name="pro_detail_his_skill">TA的技能</string>
+    <string name="pro_detail_my_skill">我的技能</string>
+    <string name="pro_detail_his_evaluate">TA的评价</string>
+    <string name="pro_detail_my_evaluate">我的评价</string>
+    <string name="pro_detail_no_evaluate">暂无评价</string>
+    <string name="pro_detail_invite_him">选择专家</string>
+    <string name="pro_detail_has_sfrz_book">用户已提供身份证件</string>
+    <string name="pro_detail_has_jnrz_book">用户已提供相关技能证书</string>
+    <string name="pro_detail_watch_success">关注成功</string>
+    <string name="pro_cancel_watch_success">取消关注</string>
+
+    <string name="user_name">用户名</string>
+
+    <string name="baojiafangshi">报价方式</string>
+    <string name="gongshifei">工时费</string>
+    <string name="wodeyoshi">我的优势</string>
+    <string name="zongjia">总价</string>
+    <string name="pro_skill_average_money">服务收费</string>
+    <string name="pro_skill_service_intro">服务介绍</string>
+    <string name="pro_skill_begin">开始</string>
+    <string name="pro_skill_has_authenticate">已认证</string>
+    <string name="pro_skill_no_authenticate">未认证</string>
+
+
+    <string name="recharge_title">服务续费</string>
+    <string name="recharge_start_month">起始月份</string>
+    <string name="recharge_hint_choose_date">请选择起始日期</string>
+    <string name="recharge_wallet_leave">钱包余额</string>
+    <string name="recharge_total_num">充值金额：</string>
+    <string name="recharge_dollar">美元</string>
+    <string name="recharge_dollarQ">美元</string>
+    <string name="recharge_choose_pay_way">支付方式</string>
+
+
+    <string name="rate">汇率</string>
+
+    <string name="rmb">人民币</string>
+
+    <string name="red_wallet_title">红包福利</string>
+    <string name="red_wallet_yxq">有效期 : </string>
+    <string name="red_wallet_djq">\t代金券</string>
+    <string name="red_wallet_wsy">使用中</string>
+    <string name="red_wallet_ysy">已使用</string>
+
+
+    <string name="self_support_detail_kwgl">信件管理·$</string>
+    <string name="self_support_detail_yygl">庭院管理·$</string>
+    <string name="self_support_detail_jzgl">家政管理·$</string>
+    <string name="self_support_detail_zlgl">租赁·$</string>
+    <string name="self_support_detail_mei_yue">/月</string>
+
+
+    <string name="manage_scheme">管理方案</string>
+
+
+    <string name="set_title">设置</string>
+    <string name="set_label_1">消息推送</string>
+    <string name="set_label_2">意见反馈</string>
+    <string name="set_label_3">版本信息</string>
+    <string name="set_label_4">关于我们</string>
+    <string name="set_safe_quit">安全退出</string>
+    <string name="set_safe_toast">退出成功</string>
+
+    <string name="dialog">欢迎加入移居手册服务商。请您务必在【我的】-【我的收入】-【我的收款信息】里填写您的收款银行卡信息，以确保您的收入顺利到账。
+用户每笔订单的服务费将直接支付给公司平台，公司每周一为您结算上周收入。</string>
+    <string name="take_money_title">提现</string>
+    <string name="take_money_num">提现金额</string>
+    <string name="take_money_commit_apply">提交申请</string>
+
+
+    <string name="take_order_serve_list_toast">暂无服务商接单，请稍后再试</string>
+    <string name="take_order_serve_special_invite">特约邀请</string>
+
+
+    <string name="go_back">返回</string>
+
+    <string name="translate_title">翻译</string>
+    <string name="translate_toast_1">请填写要翻译的内容</string>
+    <string name="translate_fail">翻译失败</string>
+    <string name="translate_zh">中文</string>
+    <string name="translate_en">英文</string>
+
+    <string name="next_month_go">以上服务配置计划由</string>
+    <string name="next_month_go2"> 下月1日开始执行</string>
+    <string name="total_next_month">下月服务合计:</string>
+
+    <string name="upload_pic_title">上传照片</string>
+    <string name="upload_pic_add_pic_describe">请填写图片描述！</string>
+    <string name="upload_pic_add_pic">请上传照片！</string>
+    <string name="upload_pic_success">上传成功!</string>
+    <string name="upload_pic_hint_describe">输入照片描述</string>
+    <string name="upload_pic_describe">请上传与个人技能相关的照片，或个人形象生活照</string>
+    <string name="upload_pic_upload">上传</string>
+
+
+    <string name="use_guide_title">使用手册</string>
+    <string name="use_guide_label_1">使用协议</string>
+    <string name="use_guide_label_2">常见问题</string>
+    <string name="use_guide_label_3">积分规则</string>
+
+    <string name="business_order_title">物业账单</string>
+    <string name="business_order_own_money">(欠费)</string>
+    <string name="business_order_this_month">当月</string>
+    <string name="business_order_history">历史</string>
+    <string name="business_order_order">账单项</string>
+    <string name="business_order_money_num">金额</string>
+    <string name="business_order_water_electric">电费</string>
+    <string name="business_order_gas">燃气费</string>
+    <string name="business_order_property">物业费</string>
+    <string name="business_order_net">网络通信费</string>
+    <string name="business_order_clean">卫生费</string>
+    <string name="business_order_phone">固定话费</string>
+    <string name="business_order_tv">有线电视费</string>
+    <string name="business_order_mobile">移动通信费</string>
+    <string name="business_order_total">总计 : </string>
+
+
+    <string name="choose_house">选择房产</string>
+    <string name="choose_house_use_new">使用新房产</string>
+
+    <string name="house_design_title">房屋管理</string>
+    <string name="housing_mangager">周期服务-房屋管理</string>
+    <string name="zl">周期服务-租赁-管理</string>
+    <string name="for_rent">周期服务-租赁-招租</string>
+    <string name="yygl1">周期服务-庭院管理</string>
+
+    <string name="yygl134">周期服务-冬季清雪</string>
+    <string name="yygl132">周期服务-草坪修剪</string>
+    <string name="yygl133">周期服务-秋季落叶清扫</string>
+    <string name="yygl">庭院管理</string>
+    <string name="jzfw">家政服务</string>
+
+    <string name="first_service_stpe">第一次服务</string>
+    <string name="second_service_stpe">第二次服务</string>
+    <string name="third_service_stpe">第三次服务</string>
+    <string name="fourth_service_stpe">第四次服务</string>
+
+    <string name="refresh_data">正在刷新</string>
+    <string name="house_design_first_visit">第一次巡视</string>
+    <string name="house_design_second_visit">第二次巡视</string>
+    <string name="house_design_third_visit">第三次巡视</string>
+    <string name="house_design_renting">正在招租中...</string>
+    <string name="house_design_take_rent">租金收取</string>
+    <string name="house_design_detail">详情</string>
+    <string name="house_design_rent_state">房屋/租户状态</string>
+    <string name="house_design_price_bill">价格清单</string>
+    <string name="house_design_first_cut">第一次剪草</string>
+    <string name="house_design_second_cut">第二次剪草</string>
+    <string name="house_design_third_cut">第三次剪草</string>
+    <string name="house_design_fourth_cut">第四次剪草</string>
+    <string name="house_design_first_clean">第一次保洁</string>
+    <string name="house_design_second_clean">第二次保洁</string>
+    <string name="house_design_third_clean">第三次保洁</string>
+    <string name="house_design_fourth_clean">第四次保洁</string>
+    <string name="house_design_effect_next_month">您的修改将在下月生效</string>
+
+    <string name="my_house_title">我的房产</string>
+    <string name="house_manage_title">地址管理</string>
+    <string name="house_manage_add_house">添加房产</string>
+
+    <string name="vip_order_title">VIP订单</string>
+    <string name="in_use">可用</string>
+
+    <string name="vip_page_title">VIP首页</string>
+    <string name="vip_page_my_vip">我的VIP</string>
+
+    <string name="watch_evaluate_i">我</string>
+    <string name="watch_evaluate_give_him">给对方的</string>
+    <string name="watch_evaluate_give_me">对方给我</string>
+    <string name="watch_evaluate_give_him1">给对方的</string>
+    <string name="watch_evaluate_de_evaluate">的评价</string>
+    <!--————————————用户端end——————————————-->
+
+    <string name="btn_click_design_scheme">点此 修改方案</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--海外之家服务端的内容start  add by liu_yjie 2016/09/13-->
+    <string name="order">订单</string>
+    <string name="skill">技能</string>
+    <string name="message">消息</string>
+    <string name="mine">我的</string>
+
+
+    <string name="enough_not_money">余额不足，已暂停</string>
+    <string name="order_no">待接单</string>
+    <string name="order_no1">待接单</string>
+    <string name="order_yes">已接单</string>
+    <string name="order_yes1">已接单</string>
+    <string name="order_history">历史</string>
+    <string name="order_condition_select">筛选</string>
+    <string name="order_condition_order">排序</string>
+    <string name="pop_style">品类</string>
+    <string name="pop_distance">距离</string>
+    <string name="pop_isat">是否@</string>
+    <string name="sort_zxfb">最新发布</string>
+    <string name="sort_jlzj">距离最近</string>
+    <string name="pop_reset">重置</string>
+    <string name="pop_confirm">确定</string>
+    <string name="zhifu_s">支付成功</string>
+    <string name="zhifu_f">支付失败</string>
+
+
+    <string name="order_item_title">Robin</string>
+    <string name="order_btn_skill">冬季除害</string>
+    <string name="order_locaton_content">北京海淀区上地西路8号</string>
+    <string name="order_location_distance">1.5km</string>
+    <string name="order_btn_switch">待响应</string>
+    <string name="order_time">2016-07-09</string>
+    <string name="order_week_time">每月3次</string>
+
+    <string name="input_msg">请输入反馈信息</string>
+
+    <string name="skill_right_name">赚钱攻略</string>
+    <string name="skill_mine_skill">我的技能</string>
+    <string name="skill_mine_message">我的认证</string>
+    <string name="pro_skill_item_title">建筑维修</string>
+    <string name="pro_skill_item_attend">完成8单</string>
+    <string name="pro_skill_status_desc">这里是技能描述这里是技能描述这里是技能描述</string>
+    <string name="order_detial_card_tel">123456789011</string>
+    <string name="order_content_title">剪草</string>
+    <string name="order_content_code"> 订单号:</string>
+    <string name="tv_order_code">23423953450469</string>
+    <string name="tv_order_status">待确认</string>
+    <string name="tenant_name">租户名称:</string>
+    <string name="rental_money">租金:</string>
+    <string name="retal_info">租金信息</string>
+
+    <string name="review_title">请选择标签:</string>
+    <string name="review_hint">请输入反馈信息:</string>
+
+    <string name="tv_order_linkman">备用联系人:</string>
+    <string name="tv_order_content_detail">业务详情</string>
+    <string name="tv_offer_name">基础费用</string>
+    <string name="tv_base_offer">上门费</string>
+    <string name="tv_offer_name_hint">请输入上门费</string>
+    <string name="tv_offer_check_name">检测费</string>
+    <string name="tv_offer_check_name_hint">请输入检测费</string>
+    <string name="tv_offer_bz">备注</string>
+    <string name="tv_offer_bz_hint">请输入备注</string>
+    <string name="offer_content_one">1.总价在上门后允许修改</string>
+    <string name="offer_content_two">2.抢单成功后如果用户选择了您，用于需支付上门费及检测费</string>
+    <string name="tv_offer_person">人工费</string>
+    <string name="tv_offer_material">附加费</string>
+    <string name="tv_offer_clf">材料费</string>
+    <string name="tv_offer_zgs">总工时</string>
+    <string name="skill_set_a">关闭状态不再接受该技能订单</string>
+    <string name="skill_set_b">您可以通过打开/关闭开关来修改您专业工作的倾向</string>
+    <string name="skill_set_c">我养了宠物</string>
+    <string name="skill_set_d">请帮我清理冰箱</string>
+    <string name="skill_set_e">请帮我清洁烤箱</string>
+    <string name="skill_set_f">请帮我清洁室内窗户</string>
+    <string name="tv_contact_a">我关注的人</string>
+    <string name="tv_contact_b">关注我的人</string>
+    <string name="tv_contact_c">互相关注</string>
+    <string name="btn_next">下一步</string>
+    <string name="btn_accept_order">点此 接单</string>
+    <string name="btn_show">点此发布</string>
+    <string name="duration_scale">200</string>
+    <string name="btn_next_order">点此确定去抢单</string>
+    <string name="title_activity_pro_ordered_detail">ProOrderedDetailActivity</string>
+    <string name="tv_fabu">发布</string>
+    <string name="already">已有 </string>
+    <string name="persons_take_order">人接单</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_get_pass">GetPassActivity</string>
+
+    <string name="tap_to_here">点此</string>
+    <string name="btn_set_save">点此保存设置</string>
+    <string name="btn_set_btn_save">保存</string>
+    <string name="hour_time">(/小时)</string>
+    <string name="eva_tdel">态度恶劣</string>
+    <string name="eva_jybhg">技艺不合格</string>
+    <string name="eva_gzwwc">工作未完成</string>
+    <string name="eva_jzbd">举止不当</string>
+    <string name="eva_jgjfhqz">价格纠纷或欺诈</string>
+    <string name="eva_yzbz">衣着不整</string>
+    <string name="zc">正常</string>
+    <string name="eva_gzwczlc">工作完成质量差</string>
+    <string name="eva_bryzcxxbf">本人与注册信息不符</string>
+    <string name="eva_yzbsshwgsy">严重不守时或无故爽约</string>
+    <string name="eva_rqys">热情友善</string>
+    <string name="eva_jyxs">技艺娴熟</string>
+    <string name="eva_sfgd">收费公道</string>
+    <string name="eva_zssx">准时守信</string>
+    <string name="eva_wxjfw">五星级服务</string>
+    <string name="eva_yzbb">颜值爆表</string>
+    <string name="eva_xtsh">相谈甚欢</string>
+    <string name="eva_tdld">态度冷淡</string>
+    <string name="eva_jyss">技艺生疏</string>
+    <string name="eva_sfbhl">收费不合理</string>
+    <string name="eva_bss">不守时</string>
+    <string name="eva_input_other">其它內容</string>
+    <string name="pro_modify_string">以下费用均为含税价格</string>
+    <string name="pro_smf_str">上门费</string>
+    <string name="pro_rgf_str">人工费</string>
+    <string name="pro_fwdj_str">服务单价</string>
+    <string name="pro_zgs_str">确定总工时</string>
+
+    <string name="order_list_note">已接单专家</string>
+    <string name="work_hour">工时：</string>
+    <string name="sx_price">时薪报价：</string>
+    <string name="daiding">待定</string>
+    <string name="pro_zgs_strss">总工时</string>
+    <string name="pro_clf_str">材料费</string>
+    <string name="pro_srzgs_str">输入总工时</string>
+    <string name="pro_wdbj_str">我的报价</string>
+    <string name="pro_str_zw">暂无</string>
+    <string name="pro_cancel_order_str">取消订单</string>
+    <string name="pro_work_str">开工</string>
+    <string name="pro_btn_submit">提 交</string>
+    <string name="pro_finish_submit">完 成</string>
+    <string name="pro_zero_submit">清零</string>
+    <string name="pro_eva_submit">去评价</string>
+    <string name="pro_modify_label">修 改</string>
+    <!--xlistview内容-->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">加载更多</string>
+    <string name="xlistview_footer_loading_normal">正在加载...</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="last_refresh">最新刷新:</string>
+
+    <string name="zl_de_desc">租赁业务需进行线下确认，提交后需平台审核，您是否确认删除？</string>
+    <string name="zl_stop_desc">租赁业务需进行线下确认，提交后需平台审核，您是否确认暂停？</string>
+    <string name="zl_jh_desc">租赁业务需进行线下确认，提交后需平台审核，您是否确认激活？</string>
+
+    <string name="lan_english">英文</string>
+    <string name="delete_service_desc">确定删除服务吗？</string>
+
+    <string name="choose_date">点此选择日期</string>
+    <string name="choose_time">点此选择时间</string>
+    <!--海外之家服务端的内容end add by liu_yjie 2016/09/13-->
+    <string name="star1">非常不满意，各方面都很差</string>
+    <string name="star2">不满意，比较差</string>
+    <string name="star3">一般，需要改善</string>
+    <string name="star4">比较满意，但仍可改进</string>
+    <string name="star5">非常满意，无可挑剔</string>
+    <string name="xs_tsqkfk">特殊情况反馈</string>
+    <string name="xs_zlxj">整理信件</string>
+    <string name="xs_cqxs">出勤巡视</string>
+    <string name="xs_decxs">第二次巡视</string>
+    <string name="xs_dycxs">第一次巡视</string>
+    <string name="pro_order_detai_a">订单详情</string>
+    <string name="pro_order_detai_b">待响应</string>
+    <string name="pro_order_detai_c">待接单</string>
+    <string name="pro_order_detai_d">总体报价：</string>
+    <string name="pro_order_detai_e">/小时</string>
+    <string name="pro_order_detai_f">您尚未接单，咱不能沟通</string>
+    <string name="pro_xc">相册</string>
+    <string name="pro_fwjzhzt">房屋及租户状态</string>
+    <string name="pro_zyfk">作业反馈</string>
+    <string name="pro_gzfk">工作反馈</string>
+
+    <string name="wait_ro_feed_back">等待专家反馈</string>
+
+    <string-array name="star_arr">
+        <item>@string/star1</item>
+        <item>@string/star2</item>
+        <item>@string/star3</item>
+        <item>@string/star4</item>
+        <item>@string/star5</item>
+    </string-array>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="title_activity_seak_bar_demo">SeakBarDemoActivity</string>
+    <string name="title_activity_new_hous">NewHousActivity</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="title_activity_user_pro">UserProActivity</string>
+    <string name="login_hint_account">请输入账户</string>
+    <string name="login_hint_password">请输入密码</string>
+    <string name="login_forget_pass">忘记密码？</string>
+    <string name="login_protocol">我同意《海外管家用户使用协议》</string>
+    <string name="login_btn_login">登录</string>
+    <string name="login_txt_or">或</string>
+    <string name="login_txt_regist">注册</string>
+    <string name="haiwaiguanjia_com">移居手册landingbook.com</string>
+
+    <string name="delete_all_data">删除所有服务</string>
+
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="app_tip">提示</string>
+    <string name="str_us_des">\t\t北京清澄管理咨询有限公司，致力于协助海外同胞化解移居后居住、生活、日常诉求无从着手，难于真正融入本土主流社会等共性困扰。从客户需求出发，融入当地模式，以定制化专属服务，架设客户与所在国衔接的桥梁，真正消弭国内外差异造成的不适，避免因地域、习惯等异同仅限于华人小群体的困窘，杜绝边缘化倾向，解决客户后顾之忧，摆脱海外生活诉求仅“求”当地“熟人”的尴尬，以对全链条需求平台化专业服务管理为支撑，助客户重拾尊荣生活，高效融入当地主流社会群体。</string>
+    <string name="str_us_des1">\t\t选择“清澄”，就选择了新的开始。以“清澄”为依托，仅怀揣“移民纸”，就能圆海外同胞轻松开启移民生活的梦想，这也是“清澄”人不容片刻懈怠的美好愿景。</string>
+    <string name="str_us_des2">北京清澄管理咨询有限公司</string>
+    <string name="tv_title1">标题</string>
+    <string name="tv_con2">我不确定</string>
+    <string name="btn_tv_con">确 认</string>
+
+    <string name="enter_num">请输入</string>
+    <string name="btn_tv_save_letter">提交</string>
+    <string name="large_room">10000平方英尺以上请输入</string>
+
+    <string name="awaiting_visit">等待专家上门</string>
+    <string name="confirm_information">专家会与您联系作进一步确认</string>
+    <string name="confirm_work">不确定的工作量可以等专家上门评估,要是留意是否有偿上门</string>
+
+    <string name="input_area">请输入面积</string>
+
+    <string name="input_big">4000平方英尺以上请输入</string>
+
+    <string name="tv_pro_con">下面,我们需要问您几个问题以方便提供更细致的服务</string>
+    <string name="tv_pro_con1">下面,我们需要问您几个问题\n以便帮您找到合适的专家</string>
+    <string name="tv_pro_con_zhu1">每月1日00:00至24日00:00是下单期，在此期间内您可以定制服务（下单或修改订单）。</string>
+    <string name="tv_pro_con_zhu2">24日00：00至月末24:00为系统维护期，暂停定制服务。</string>
+    <string name="tv_pro_con_zhu3">以上时间均为温哥华当地时间</string>
+    <string name="property_edit">编辑房产</string>
+
+    <string name="tv_next_step">下一步</string>
+    <string name="tv11">标题一</string>
+    <string name="tv_or">或</string>
+    <string name="tv_break">跳过</string>
+    <string name="tv_xfz">您的消费总额为：</string>
+    <string name="tv_btn_search">搜索</string>
+    <string name="tv_hint_con">请输入专家的用户名</string>
+    <string name="tv_fwpz">房屋配置</string>
+    <string name="tv_wyzd">物业账单</string>
+    <string name="tv_tel_num">请输入您的手机号</string>
+    <string name="tv_pass">输入验证码</string>
+    <string name="tv_get_pass">获取验证码</string>
+    <string name="tv_set_pass">请设置您的新密码</string>
+    <string name="btn_conf">确定</string>
+    <string name="tv_curr_pay">您本次需要支付：</string>
+    <string name="wx_pay">微信支付</string>
+    <string name="zfb_pay">支付宝</string>
+    <string name="btn_con_pay">确认支付</string>
+    <string name="tv_show_des">担心空置房屋无人管理？您可以交给海外管家</string>
+    <string name="tv_finish_a">完成</string>
+    <string name="tv_contact_style">联系方式</string>
+    <string name="person_contact">联系人：</string>
+    <string name="tv_nickname">可填昵称</string>
+    <string name="tv_contact_tel">联系电话：</string>
+
+    <string name="tv_RealIncome">实际收入：</string>
+    <string name="tv_RealIncomedetails">实际收入：\n扣除电子支付，平台管理等费用</string>
+    <string name="input__account">请输入提现到的账户</string>
+    <string name="withdraw_money">可提现金额为:</string>
+    <string name="input_withdraw_money">输入提现金额</string>
+
+    <string name="pay_for_quot">支付</string>
+
+    <string name="tv_phone_call">电话：</string>
+
+    <string name="can_select">选填</string>
+
+    <string name="alternative_contact">备用联系方式</string>
+    <string name="service_address">服务地址:</string>
+
+    <string name="yb">邮编：</string>
+    <string name="et_hint_tel">请填写联系电话</string>
+    <string name="tv_by_tel">备用联系电话：</string>
+    <string name="et_hint_by_tel">请填写联系电话</string>
+    <string name="tv_email">邮箱：</string>
+    <string name="tv_hint_email">请填写邮箱(选填)</string>
+    <string name="btn_tv_add">添加</string>
+    <string name="tv_deail_addr">请输入街道(必填)</string>
+    <string name="tv_deail_addr2">请输入房间号(必填)</string>
+    <string name="input_street">请输入街道</string>
+    <string name="input_number">请输入房间号</string>
+    <string name="tv_deail_addrs">请输入邮编(选填)</string>
+    <string name="tv_contine">跳 过</string>
+    <string name="tv_add_new_addr1">为新房产添加服务</string>
+    <string name="tv_add_new_addr">添加新服务地址</string>
+    <string name="tv_curr_month_money">本月服务费合计</string>
+
+    <string name="tv_next_month_money">下月服务费合计</string>
+    <string name="tv_fwje">服务余额</string>
+    <string name="tv_ye_des">当前余额不足以支持下一个月的服务,请充值</string>
+    <string name="tv_fwxf">续费</string>
+    <string name="tv_fwxf1">续费</string>
+
+    <string name="twty_month">12/个月</string>
+    <string name="tv_ref_data">刷新数据</string>
+
+    <string name="exit_order">您已为该房产订制服务，请前往周期服务查看</string>
+
+    <string name="no_edit_view">没有可编辑的订单</string>
+    <string name="off_line">线下调整</string>
+    <string name="select_at_last_one">至少选择一项</string>
+    <string name="save_change">保存</string>
+    <string name="can_not_detele">该房产含有周期订单，不能删除</string>
+    <string name="confirm_detele">确认删除</string>
+    <string name="str_end_server">无法达成一致终止服务</string>
+    <string name="tv_yjbb">维持原价</string>
+    <string name="btn_modify_pri">修改报价</string>
+    <string name="tv_modf_pri">修改报价</string>
+    <string name="tv_every_month_ze">您每月消费总额:</string>
+    <string name="tv_every_month_zes">您各月的消费总额:</string>
+    <string name="tvsa">我们将尽快和您联系，确认需求并核实相关信息</string>
+    <string name="tvsb">招租成功后一次性收取一个月租金</string>
+    <string name="tvconf">确 认</string>
+    <string name="tv_nopic">相册没有照片</string>
+    <string name="tv_addnew">添加新技能</string>
+    <string name="set_addr">默认地址</string>
+    <string name="tv_mj">月入万元，必看秘籍</string>
+    <string name="tv_fwbj">服务总价</string>
+    <string name="tv_debj">定额报价</string>
+    <string name="not_zero">不能为0</string>
+    <string name="tv_base">基础费用:</string>
+    <string name="tv_debjfj">(以下费用包含在总价中)</string>
+
+    <string name="tv_debj_desc">(包含上门费和材料费)</string>
+
+    <string name="choose_him">选TA</string>
+    <string name="one_time_service">单次服务</string>
+    <string name="recuring_reports">管理报告</string>
+    <string name="recuring_manangement">周期服务</string>
+    <string name="recuring_manangement1">周期服务</string>
+    <string name="translation">翻译</string>
+
+    <string name="need_all">全部</string>
+    <string name="need_zbz">招标中</string>
+    <string name="need_dsm">待上门</string>
+    <string name="need_fwz">服务中</string>
+    <string name="need_dzf">待支付</string>
+    <string name="need_dpj">待评价</string>
+
+
+    <string name="msg_yjsc">@string/app_name</string>
+    <string name="msg_yjsc_des">怎么看我的周期订单</string>
+    <string name="msg_xtxx">系统消息</string>
+    <string name="msg_xtxx_des">怎么看我的周期订单</string>
+    <string name="msg_jgjfwgs">联系人</string>
+    <string name="msg_jgjfwgs_des">怎么看我的周期订单</string>
+    <string name="pop_bx">不限</string>
+    <string name="pop_5p">10公里內</string>
+    <string name="pop_10p">30公里內</string>
+    <string name="pop_yes">是</string>
+    <string name="pop_no">否</string>
+    <string name="mine_share_content">分享给好友</string>
+    <string name="home_yjsc">@string/app_name</string>
+    <string name="title_forget_pass">忘记密码</string>
+    <string name="wallet_cz">充值</string>
+    <string name="wallet_cz1">确认充值</string>
+    <string name="wallet_tx">提现</string>
+    <string name="house_addr">房产地址</string>
+    <string name="order_config">周期管理</string>
+    <string name="zqbg">周期报告</string>
+
+    <string name="kwgl_word">信件管理</string>
+    <string name="zlgl_word">租赁管理</string>
+    <string name="tygl_word">庭院管理</string>
+    <string name="jzfw_word">家政服务</string>
+
+
+    <string name="report_cricle">报告</string>
+
+    zhi
+    <string name="login_yjsc">@string/app_name</string>
+    <string name="login_agr_str">我已阅读并同意</string>
+    <string name="login_soft_str">软件许可及服务协议</string>
+    <string name="login_look_xy">查看用户协议</string>
+    <string name="login_input_phone">请输入手机号</string>
+    <string name="input_email">请完整填完我的收款信息</string>
+    <string name="login_input_pass">请输入密码</string>
+    <string name="login_ry_warn">尚未连接到融云服务，暂时不能沟通，检查网络！</string>
+    <string name="code_xd">下单</string>
+    <string name="code_xqhszj">选取合适的专家</string>
+    <string name="code_zjsm">专家上门</string>
+    <string name="code_zbz">招标中</string>
+    <string name="code_de1">查看专家的报价和个人信息</string>
+    <string name="code_de2">选择合适的专家为您服务</string>
+    <string name="code_xcqr">现场确认</string>
+    <string name="code_de3">专家到场后，请先核实专家身份信息，检查其职业资格证书</string>
+    <string name="code_de4">时薪报价:由专家勘查现场情况，确定工时。</string>
+    <string name="code_de5">定额报价:具有严肃性，若现场与描述情况有较大出入，可以由专家修改报价，经用户批准后生效。</string>
+    <string name="code_service">服务中</string>
+    <string name="code_de6">请监督专家服务</string>
+    <string name="code_pay">待支付</string>
+    <string name="code_de7">请验收服务结果</string>
+    <string name="code_de8">确认服务完成支付服务费</string>
+    <string name="pro_code_bj">报 价</string>
+    <string name="week_order">接单</string>
+
+    <string name="pro_code_jd">接单</string>
+    <string name="complete_time_week">完成时间</string>
+    <string name="pro_code_yzb">已中标</string>
+    <string name="pro_code_sm">上门</string>
+    <string name="pro_de1">接到新的订单,请及时提交您的报价</string>
+    <string name="pro_de2">不要违规透露您的联系方式</string>
+    <string name="pro_de22"></string>
+    e
+    <string name="no_bill">尚无账单</string>
+    <string name="no_money">金额不能为空</string>
+    <string name="pro_ddyhxz">等待用户选择</string>
+    <string name="pro_de3">订单已提交，等待用户选择</string>
+    <string name="pro_service">服务中</string>
+    <string name="pro_de4">提供服务</string>
+    <string name="pro_xcpg">现场复查评估</string>
+
+    <string name="pro_pay">请用户验收服务结果并监督其完成支付</string>
+
+    <string name="pro_evalue">请对用户进行评价</string>
+    <string name="pro_evalue1">用户对该评价不可见，请客观评价。</string>
+
+    <string name="pro_sm">联系确认，准备上门</string>
+    <string name="pro_de5">上门后，请主动向客户出示自己的身份信息和职业资格证书</string>
+    <string name="pro_de100">现场复查评估情况，确定工时</string>
+    <string name="pro_de101">定额报价具有严肃性，若现场与描述情况有较大出入，可以申请修改报价，经客户批准后生效</string>
+
+    <string name="pro_de6">您的报价已被选中，请尽快与客户取得联系</string>
+    <string name="pro_de7">与客户沟通中请明确以下内容：</string>
+    <string name="pro_de71">工作内容及地点是否准确</string>
+    <string name="pro_de72">报价信息是否明确</string>
+    <string name="pro_de73">约定具体上门服务时间</string>
+    <string name="pro_de8">请在约定的时间上门，上门后指导用户点击“专家已上门”，按键进行确认</string>
+    <string name="top_finish">完成</string>
+    <string name="code_str1">专家上门</string>
+    <string name="code_str2">接受报价，同意开工</string>
+    <string name="code_str3">验收并支付</string>
+    <string name="code_str4">接受报价，同意开工</string>
+    <string name="code_str5">验收并支付</string>
+    <string name="code_str6">评价</string>
+    <string name="str_order_code">"订单号:"</string>
+    <string name="sta_zbz">招标中</string>
+    <string name="fr_str1">人接单</string>
+    <string name="fr_str2">人接单</string>
+
+    <string name="paypal_this_time">您本次需要支付</string>
+    <string name="fr_order">接 单</string>
+    <string name="fr_ddjsm">等待专家上门</string>
+    <string name="all_str1">专家已上门 点此按钮</string>
+    <string name="all_str2">确定专家已经上门？</string>
+    <string name="all_str3">现场确认</string>
+    <string name="all_str4">待确认总价</string>
+    <string name="all_str5">现场确认</string>
+    <string name="all_counts">总价</string>
+    <string name="all_str8">不接受报价</string>
+    <string name="all_str11">接受报价同意开工</string>
+    <string name="all_str22">现场确认</string>
+    <string name="all_str23">总价</string>
+    <string name="all_str24">接受报价同意开工</string>
+    <string name="all_str123">专家取消订单</string>
+    <string name="all_str12">用户取消订单</string>
+    <string name="all_str124">订单已取消</string>
+    <string name="all_str125">订单已取消</string>
+    <string name="all_fini">已完成</string>
+    <string name="all_str34">已评价</string>
+    <string name="all_str234">支付费用</string>
+    <string name="all_st23r">已清零,请支付</string>
+    <string name="all_strnd">支付费用</string>
+    <string name="all_n">已完工，请验收</string>
+    <string name="all_m">驳回报价</string>
+    <string name="all_mn">等待服务</string>
+    <string name="all_ss">服务中</string>
+    <string name="conf_dw">$/月</string>
+    <string name="balance">余额:</string>
+    <string name="conf_ye">钱包余额:$</string>
+    <string name="pro_edu1">教育机构</string>
+    <string name="pro_edu2">输入您的学校</string>
+    <string name="pro_edu3">学 历</string>
+    <string name="pro_edu4">选择您的学历</string>
+    <string name="pro_edu5">开始时间</string>
+    <string name="pro_eud6">选择时间</string>
+    <string name="pro_edu7">结束时间</string>
+    <string name="pro_edu8">选择时间</string>
+    <string name="pro_edu9">移除</string>
+    <string name="pro_work1">工作单位</string>
+    <string name="pro_work2">输入您的工作单位</string>
+    <string name="pro_work3">职 位</string>
+    <string name="pro_work4">输入您的职位</string>
+    <string name="pro_work5">开始时间</string>
+    <string name="pro_work6">选择时间</string>
+    <string name="pro_work7">结束时间</string>
+    <string name="pro_work9">选择时间</string>
+    <string name="pro_work10">移除</string>
+    <string name="pro_codes_sm">上门</string>
+    <string name="pro_codes_yzb">已中标</string>
+    <string name="pro_codes_fhjg">复核价格</string>
+    <string name="pro_codes_qrwg">确认完工</string>
+    <string name="pro_codes_dzf">待支付</string>
+    <string name="pro_codes_dpj">待评价</string>
+    <string name="pro_codes_re">已评价</string>
+    <string name="vivi_key">请输入关键字进行搜索</string>
+
+    <string name="dz_service">定制服务</string>
+    <string name="dz_next_month">下月服务定制</string>
+    <string name="do_next_month">新订单下月开始执行</string>
+    <string name="hourly_price">时薪报价</string>
+
+    <string name="hour_price">时薪</string>
+
+    <string name="pay_after_task">服务顺利完成后收取</string>
+    <string name="enter_price">请输入价格</string>
+
+    <string name="pay_free">无偿</string>
+    <string name="submit_all">提交</string>
+    <string name="final_price">最终报价，</string>
+    <string name="uncertain">待定</string>
+
+    <string name="pay_cancel">上门费用在服务顺利完成后自动免除</string>
+    <string name="is_pay_fee">如已上门，用户不再需要后续服务，则可收取上门费</string>
+    <string name="check_pay_fee">如已上门并进行检查，用户不再需要后续服务，则可收取上门费和检测费</string>
+
+    <string name="change_after_talk">可根据实际事情与用户协商并在其同意后修改</string>
+
+    <string name="reg_ph0">请选择地区(手机区号)</string>
+    <string name="reg_ph1">请输入您的手机号</string>
+    <string name="reg_ph2">输入验证码</string>
+    <string name="reg_ph3">获取验证码</string>
+    <string name="reg_ph4">请输入密码</string>
+    <string name="reg_ph6">请输入用户名(选填)</string>
+    <string name="reg_ph5">完成</string>
+    <string name="home_tab1">点击这里可以进行</string>
+    <string name="home_tab2">用户版/服务商版切换</string>
+    <string name="home_tab3">订单管理、翻译管理</string>
+    <string name="home_tab4">点这里</string>
+    <string name="min_set_addr">设置服务区域中心</string>
+    <string name="pro_country">国家</string>
+    <string name="pro_provence">省 </string>
+    <string name="pro_city">城市</string>
+    <string name="pro_add_detail2">门牌</string>
+    <string name="pro_add_detail1">街道</string>
+
+    <string name="fwbj_describt">(包括房屋清洁、月度床品更换及洗涤、冰箱整理、绿植照顾、衣服洗涤晾晒折叠)</string>
+    <string name="fwbj_descr">(基础服务内容之外增加室内玻璃清洁、油烟机清洗、烤箱清洁、洗衣机清洗、除螨、空调清洗、收纳、地板打蜡等)</string>
+    <string name="pro_detail_email">邮编</string>
+    <string name="pro_hin_addr_email">填写邮编</string>
+    <string name="pro_addr_finish">完 成</string>
+    <string name="zfjl">支付记录</string>
+    <string name="czjl">充值记录</string>
+    <string name="my_ser_addr">服务地址</string>
+    <string name="addr_edit">编辑</string>
+    <string name="addr_del">删除</string>
+    <string name="or_pro">订单问题</string>
+
+
+    <string name="stop_service">暂停</string>
+
+    <string name="no_bills">尚无账单</string>
+    <string name="visit_fee">上门费用(建议无偿)</string>
+    <string name="add_new_certificate">+ 添加新证书</string>
+    <string name="xzfc">选择房产</string>
+    <string name="add_or_select">首先，请选择一个已有房产  或  添加一个新的房产</string>
+    <string name="tc">退出</string>
+    <string name="pro_adr">解析服务地址失败！</string>
+    <string name="pro_hous_adr">解析房产地址失败！</string>
+    <string name="skill_rz">认证</string>
+    <string name="skill_sf_rz">@string/pro_detail_sfrz</string>
+    <string name="skill_sf_q1">手持证件照</string>
+    <string name="skill_sf_q2">请上传手持证件照</string>
+    <string name="skill_sf_q3">身份证正面</string>
+    <string name="skill_sf_q4">请上传身份证正面照片</string>
+    <string name="skill_sf_q5">身份证反面</string>
+    <string name="skill_sf_q6">请上传身份证反面照片</string>
+    <string name="skill_jn_s">技能认证</string>
+    <string name="skill_set">技能设置</string>
+    <string name="skill_adds">发布技能</string>
+    <string name="skill_ti1">技能审核尚未确定，暂不能进行该操作！</string>
+    <string name="skill_ti2">已激活</string>
+    <string name="skill_ti3">已关闭</string>
+    <string name="skill_ti4">修改成功</string>
+    <string name="skill_ti5">删除成功</string>
+    <string name="skill_kg">技能开关</string>
+    <string name="skill_detail_set">技能详细设置</string>
+    <string name="skill_desc">技能描述</string>
+    <string name="skill_se_des">服务介绍</string>
+    <string name="skill_advan">您的优势</string>
+    <string name="skill_edu">教育经历</string>
+    <string name="skill_work">工作经历</string>
+    <string name="skill_jh">激 活</string>
+    <string name="skill_status1">该技能正在审核中</string>
+    <string name="skill_status2">该技能已审核通过</string>
+    <string name="skill_status3">该技能已被拒绝</string>
+    <string name="showa_ti1">服务介绍不能少于20字</string>
+    <string name="showa_ti2">请填写您的优势</string>
+    <string name="showa_c_c">为了防止用户的隐私收到干扰，在未达成交易意向请不要再服务介绍中留下电话号码和其他联系方式</string>
+    <string name="show_a_c">技能品类</string>
+    <string name="show_ser_a">服务介绍</string>
+    <string name="show_inpu_adv">请输入您的优势</string>
+    <string name="showa_adv">您的优势</string>
+    <string name="showa_asc">请填写与您技能相关的介绍,最少20字</string>
+    <string name="showb_c">第二步-添加教育经历(选填)</string>
+    <string name="showd_c">第三步-添加工作经历(选填)</string>
+    <string name="showe_ti_open">打开</string>
+    <string name="showe_ti_close">关闭</string>
+    <string name="showe_ti_set">发布成功</string>
+    <string name="add_new_skill">添加新技能</string>
+    <string name="pro_setc">确定举报该用户吗？</string>
+    <string name="jb_se">已举报该专家</string>
+    <string name="no">暂无数据</string>
+    <string name="wan_order">完成 单/评价</string>
+    <string name="zwdz">暂无地址</string>
+
+    <string name="ding_service">周期服务</string>
+
+    <string name="no_data">暂无数据</string>
+    <string name="more">更多</string>
+    <string name="week_ti">周期订单详情</string>
+    <string name="pr_ev_ti">评价完成</string>
+    <string name="at1">上传真实形象照，打造个人品牌第一步</string>
+    <string name="at1c">发布技能时，我们要求您上传个人真实、清晰的个人形象照作为头像，它是您在“移居手册”上个人服务品牌的重要标识,可以给客户留下良好的第一印象，有助于提升客户对您的关注度。</string>
+    <string name="at2">上传照片到相册，有效提升信任度</string>
+    <string name="at2c">我们建议您上传1-3张能够充分展示技能或服务的照片，或者充满阳光与微笑的生活照也是不错的选择，因为这可以使您看起来更加专业、真实，可大幅提升客户对您的信任度。</string>
+    <string name="at3">上传身份/技能认证，证明真实与水平</string>
+    <string name="at3c">上传成功后，您所发布的技能都会带有认证标识，标识代表您的真实身份或技能水平，客户更希望与带有认证标识的服务者达成交易。同时，我们也会优先推荐更多优质订单给认证的服务者。</string>
+    <string name="at4">详实的服务内容，赢得客户关键所在</string>
+    <string name="at4c">发布技能时，填写详细的服务描述、真实的工作与教育经历，有助于客户对您个人背景、服务内容、技能水平的了解与判断，对其交易决策产生重要影响。</string>
+    <string name="at5">有竞争力的报价，获得更多客户关注</string>
+    <string name="at5c">在您发布技能填写报价时，我们建议您相同服务质量的前提下较低价格的报价对客户更有吸引力，成交概率更大。</string>
+    <string name="at6">积极抢单应邀，获得更多成交机会</string>
+    <string name="at6c">每个订单生成发出后，如您有意接单需尽早接单报价，您抢单应邀的次数越多，将更有机会被客户选中并完成最终交易。</string>
+    <string name="at7">多关注订单推送消息，第一时间抢单</string>
+    <string name="at7c">当您的技能发布成功后，只要有符合您技能要求的订单生成，我们都会第一时间推送给您，由于很多客户希望能尽快获得服务，我们建议您多关注推送消息并及时抢单应邀。</string>
+    <string name="at8">让客户评价打分， 让实力脱颖而出</string>
+    <string name="at8c">服务完成后，记得让客户为您评价打分，评价越多、打分越高，可以吸引到更多客户关注，同时,我们也会优先推荐更多优质客户给您。</string>
+    <string name="at9">获得积分越高，订单越多</string>
+    <string name="at9c">经常应邀、完成工作并获得好评以提高信用级，数据显示，客户更偏向与信用级较高的服务者达成交易，因为分值越高代表您在平台越活跃，且可信度越高。同时，信用级越高将会优先获得优质订单的推荐。</string>
+    <string name="at10">发布多个技能， 增加收入来源</string>
+    <string name="at10c">您可以根据我们的品类设定，结合您自身的专业与擅长，发布不同品类的技能，以增加更多的收入来源。据数据统计，发布技能越多，收入将成倍增。</string>
+    <string name="at11">“移居手册”助您打造个人服务品牌</string>
+    <string name="at11c">我们致力于帮助每一位优秀服务者打造个人服务品牌，当您成单次数或服务质量满足我们条件时，我们会为您进行个人品牌的设计、包装、宣传，在推荐给您更多优质订单的同时，我们还会通过“移居手册个人创业基金”对您的创业给予资金支持。</string>
+    <string name="off_1">服务报价服务报价这是服务报价</string>
+    <string name="off_2">\"上门费\"为专家已上门，服务终止(不能完成)时，用户应向专家支付的有偿上门费用</string>
+    <string name="off_3">\"检测费\"为专家已上门进行检测工作，服务终止(不能完成)时，用户应向专家支付的有偿检测费用。(用户与专家应自行协商是否收取该费用)</string>
+    <string name="hin1">请输入价格</string>
+    <string name="hin2">请输入上门费</string>
+    <string name="hin3">请输入检测费</string>
+    <string name="dd">待定</string>
+    <string name="sda">您确定要报价吗？</string>
+    <string name="ti_bj">报价成功</string>
+    <string name="ti12">上门费不能高于定额报价</string>
+    <string name="ti23">检测费不能高于定额报价</string>
+    <string name="or_detial">订单详情</string>
+    <string name="cancel_order">@string/pro_cancel_order_str</string>
+    <string name="finish_price">最终报价</string>
+    <string name="modi_price">修改价格</string>
+    <string name="zj">租金</string>
+    <string name="zj1">月租金:</string>
+    <string name="zj_ti">租金不能为空</string>
+    <string name="zuj_ti2">提交成功</string>
+    <string name="zuj_tj">@string/commit</string>
+    <string name="jgqd">价格清单</string>
+    <string name="zhmc">承租人:</string>
+    <string name="wczz">完成招租</string>
+    <string name="wczz1">完成招租</string>
+    <string name="zhcg_t">招租成功</string>
+    <string name="tujsfd">报价</string>
+
+    <string name="zongjia1">总价</string>
+    <string name="gongshifei1">工时费</string>
+    <string name="input_price">输入价格</string>
+    <string name="bjfs">报价方式</string>
+    <string name="zjss">总价</string>
+    <string name="hin_zj">请输入总价</string>
+    <string name="gsfss">工时费</string>
+    <string name="hin_gsf">请输入工时费</string>
+    <string name="jtqk">需要看具体情况</string>
+    <string name="wdys">我的优势</string>
+    <string name="hin_adv">请输入我的优势</string>
+    <string name="pay">支付</string>
+    <string name="payQ">支付</string>
+    <string name="jdqu">接单券</string>
+    <string name="jdquQ">接单券</string>
+    <string name="wx">微信</string>
+    <string name="other_option">其他</string>
+    <string name="zfbzf">支付宝</string>
+    <string name="qdd">确 认</string>
+    <string name="tiss">您无可用的接单券，请选择其他支付方式</string>
+    <string name="zjsr">租金收入：</string>
+    <string name="glfy">管理费用：</string>
+    <string name="whwxfy">维护维修费用：</string>
+    <string name="yrz">应入账：</string>
+    <string name="zb">备注</string>
+    <string name="fiance_status">财务一切正常</string>
+
+    <string name="kad">确认款项已打入用户账号</string>
+    <string name="ti_bz">请填写备注内容</string>
+    <string name="ti_ts">提交完成</string>
+    <string name="fwzt">房屋状态</string>
+    <string name="fw_des">请输入反馈信息(本月发生维修维护项目及金额)</string>
+    <string name="wwx">维修维护费用总计</string>
+    <string name="hint_wx">请填写费用总计</string>
+    <string name="zhzt">租户状态</string>
+
+    <string name="yc">异常</string>
+    <string name="zhyc">租户异常</string>
+    <string name="zhycdes">租户异常说明</string>
+    <string name="fw_st1">请填写房屋状态</string>
+    <string name="fw_st2">请填写维修维护费用</string>
+    <string name="fw_st3">填写租户异常内容</string>
+    <string name="pop6">接到新的订单（用户指定您为❤心仪专家，报价成功率较高）</string>
+    <string name="pop1">我们已将您的需求通知附近专家，专家们给出报价需要一定时间，请您耐心等候</string>
+    <string name="pop2">查看报价时请注意报价方式为定额报价还是时薪报价(上门确定工时)，请注意专家是否有偿上门服务(服务顺利完成则免除上门费用)</string>
+    <string name="pop3">您可以通过查看专家的平台认证等级(加V加S)、信用分(红心、钻石)、个人介绍＆身份认证、技能介绍＆技能认证、服务评价等信息对专家有更全面的认识</string>
+    <string name="pop4">综合以上信息选择合适的专家为您服务</string>
+    <string name="pop5">您可以发送语音、文字、图片等方式与专家交流(由您发起与专家的交流，专家无法主动给您发送信息)</string>
+    <string name="pro_pop1">请您耐心等待,专家会主动与您联系</string>
+    <string name="pro_pop2">联系过程中专家会:1明确工作内容,2确认报价信息,3确定服务地点约定工作的具体时间</string>
+    <string name="pro_pop3">可以通过发送语音、文字、图片消息辅助说明</string>
+    <string name="pro_pop4">专家上门后请点击页面底部按键进行确认。于此同时，若专家报价包含上门费，则该费用生效--在无法达成共识开始服务的情况下您需要支付专家上门费用(如服务顺利完成则上门费自动免除)</string>
+    <string name="pro_pop5">建议请您按照以上步骤进行操作，以保障您的权益</string>
+    <string name="no_order_str">您暂未添加技能，添加技能后才可接单</string>
+    <string name="order_ti1">暂不添加</string>
+    <string name="order_ti2">去添加</string>
+    <string name="order_ti3">添加的技能正在审核中，请耐心等待或去添加新的技能</string>
+    <string name="order_ti4">等待</string>
+    <string name="order_ti5">去添加</string>
+    <string name="order_ti11">每月</string>
+    <string name="orer_ti2">次</string>
+
+    <string name="aleardy_cancel_time">你已经取消</string>
+
+    <string name="can_not_change">每⽉月24⽇日0:00-⽉月底24:00间系统对下⽉月服务进⾏行行排期,此期间⽆无法定制服务。 您可以在次⽉月1⽇日0:00限制解除后⾃自助定制服务。 也可以要求客服⼈人员在下⽉月1⽇日给您致电联系定制服务事宜。是否需要客服⼈人员在1⽇日给您致电定制服务?</string>
+
+    <string name="my_paypal">我的收入</string>
+    <string name="status_1">待响应</string>
+    <string name="status_2">报 价</string>
+    <string name="status_3">等待用户选择</string>
+    <string name="status_4">已报价</string>
+    <string name="status_5">待报价</string>
+    <string name="status_6">等待用户选择</string>
+    <string name="status_7">已报价</string>
+    <string name="status_8">待报价</string>
+    <string name="status_9">待支付</string>
+    <string name="order_sss">接单需要扣除一定的费用，您确定接单吗？</string>
+    <string name="status_y1">已中标</string>
+    <string name="status_y3">联系确认，等待上门</string>
+    <string name="status_y2">复核价格</string>
+    <string name="status_none">未中标</string>
+    <string name="samewithzero">不能为0</string>
+
+    <string name="paypal_account">PayPal 账号</string>
+    <string name="re_paypal_account">再次输入PayPal账号</string>
+
+
+    <string name="inputWholeNum">请输入整数</string>
+    <string name="status_y4">现场复查评估</string>
+    <string name="status_y5">已提交最终价格</string>
+    <string name="status_y6">等待用户审核</string>
+    <string name="status_y7">维持价格不变</string>
+    <string name="status_y8">等待用户审核</string>
+    <string name="status_y9">修改报价</string>
+    <string name="status_y10">用户不接受报价</string>
+    <string name="status_y11">确认开工</string>
+    <string name="status_y12">用户同意开工</string>
+    <string name="con_ti1">确认开始当前的工作？</string>
+    <string name="status_y13">确认完工</string>
+    <string name="status_y14">服务中</string>
+    <string name="con_sti1">你确定自己已完成当前工作？</string>
+    <string name="status_p1">待用户支付</string>
+
+    <string name="pro_pay_title">监督客户支付</string>
+    <string name="status_w1">已完工</string>
+    <string name="status_z1">已清零</string>
+    <string name="status_ep1">评价</string>
+    <string name="status_ep2">待评价</string>
+    <string name="status_h1">查看评价</string>
+    <string name="status_h2">服务完成</string>
+    <string name="status_h3">订单取消</string>
+    <string name="status_h4">用户取消订单</string>
+    <string name="status_h5">订单取消</string>
+    <string name="status_h6">订单已取消</string>
+    <string name="status_h7">已过期</string>
+    <string name="status_h8">订单已失效</string>
+    <string name="status_u1">已完工，请验收</string>
+    <string name="pay_fees">支付费用</string>
+    <string name="orde_zero">订单清零</string>
+    <string name="about_uss">关于我们</string>
+    <string name="sys_msg">系统消息</string>
+    <string name="py_cz">PayPal</string>
+    <string name="per_album">个人相册</string>
+    <string name="pic_show">照片预览</string>
+    <string name="certified">已认证</string>
+
+    <string name="no_photo">不需要</string>
+
+    <string name="can_canle_time">你可以取消订单</string>
+    <string name="can_canle_time1">次每月。你确定取消订单?</string>
+    <string name="can_not_cancel_time">次每月。不能取消订单!</string>
+
+    <string name="upload_pic">需要上传证书照片(需包含证书名称和本人姓名)</string>
+    <string name="upload_pic1">需要上传证书照片(需包含本人姓名)</string>
+    <string name="show_for_customer">该证书名称将展示给客户</string>
+    <string name="certificate_name">证书名称</string>
+    <string name="setting">设置</string>
+    <string name="skill_msg">$平米/0</string>
+    <string name="skill_status_r1">未认证</string>
+    <string name="skill_status_r2">已认证</string>
+    <string name="skill_status_r3">认证失败</string>
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="skill_edu_d">@string/skill_edu</string>
+    <string name="skill_work_d">@string/skill_work</string>
+    <string name="skill_rname">技能认证</string>
+    <string name="skill_fwuf">收费标准</string>
+    <string name="up_load">请上传与该技能相关的职业证书，例如电工证等</string>
+    <string name="skill_fwjs">@string/pro_skill_service_intro</string>
+
+    <string name="pop6_s1">如专家服务未达到约定的服务结果，请要求其现场整改</string>
+    <string name="pop6_s2">如专家服务未达到约定的服务结果，请要求其现场整改</string>
+    <string name="pop6_s3">如专家服务未达到约定的服务结果，请要求其现场整改</string>
+
+
+    <string name="pop9_s1">请根据现场情况与客户一起确认价格。专家必须在用户点击\"接受价格同意服务开始\"按键后，再开始服务。</string>
+    <string name="pop9_s2">现场复查评估需进行检测工作时，如检测工作是有偿服务需明确告知客户此项并非免费(如服务最终完成则检测费自动免除)</string>
+    <string name="pop9_s3">如果无法与客户达成共识，可以选择不提供服务，请客户支付上门费(如有偿上门)</string>
+
+
+    <string name="pop3_s1">如专家服务未达到约定的服务结果，请要求其现场整改</string>
+    <string name="pop3_s2">达到约定的服务结果前，请不要支付服务费用</string>
+
+    <string name="pop4_s_1">专家评估现场情况后必须明确最终服务价格提交用户批准——确定定额报价或确定工时（时薪报价形式）</string>
+    <string name="pop4_s_2">最终服务价格需要得到您的批准前专家没有资格提供服务，如果对价格有异议可以驳回让其进行修改</string>
+    <string name="pop4_s_3">如果无法与专家达成共识，可以选择不让其提供服务，但需要支付上门费（如果专家有偿上门）</string>
+
+    <string name="pop4_s1">专家在评估现场情况时如需进行检测工作，请您注意该检测工作可能不是无偿进行的（如果服务最终完成则检测费用自动免除）</string>
+    <string name="pop4_s2">专家评估现场情况后必须明确最终服务价格提交用户批准——确定定额报价或确定工时（时薪报价形式）</string>
+    <string name="pop4_s3">达到约定的服务结果前请不要支付服务费用</string>
+    <string name="pop4_s4">如专家服务未达到约定的服务结果，请要求其到现场整改</string>
+    <string name="ser_p1">现场确认</string>
+    <string name="serv_p2">待确认总价</string>
+    <string name="serr_p3">现场确认</string>
+    <string name="serv_p4">不接受报价</string>
+    <string name="serv_p5">接受报价同意开工</string>
+    <string name="start_working">接受报价同意开工</string>
+    <string name="serv_p6">现场确认</string>
+    <string name="serv_p7">接受报价同意开工</string>
+    <string name="serv_p8">驳回报价</string>
+    <string name="serv_p9">已驳回</string>
+    <string name="serv_p10">等待服务</string>
+    <string name="serv_p11">服务中</string>
+    <string name="ten_p1">招标中</string>
+    <string name="tend_p2">人接单</string>
+    <string name="eva_p1">已完成</string>
+
+    <string name="is_bind_paypal">pro paypal账号未验证，请pro联系我们验证他的paypal账户</string>
+    <string name="no_bind_paypal">该pro没有添加Paypal账号，不能进行支付</string>
+
+    <string name="home_p1">等待专家上门</string>
+    <string name="home_p2">专家已上门点此按钮</string>
+    <string name="home_t1">确定专家已经上门？</string>
+    <string name="pro_fbsj">发布时间:</string>
+    <string name="ss">单</string>
+    <string name="set_center">您暂未设置服务区域中心</string>
+    <string name="bind_account_word">您未绑定Paypal账号，是否绑定</string>
+
+    <string name="no_self_skill">您暂无平台自营技能，请联系客服</string>
+    <string name="selelct_this_pro">您确定选择这位专家？</string>
+    <string name="customer_service">联系客服</string>
+
+
+    <string name="select_pro">选择专家</string>
+    <string name="find_zb">周边</string>
+    <string name="find_npro">您身边的专家</string>
+    <string name="find_p_1">房屋管理</string>
+    <string name="find_p_2">居家生活</string>
+    <string name="find_p_3">居家生活</string>
+    <string name="find_p1_1">排序</string>
+    <string name="find_p1_2">智能排序</string>
+    <string name="find_p1_3">最新发布</string>
+    <string name="find_p1_4">信用等级最高</string>
+    <string name="find_p1_5">订单量最高</string>
+    <string name="find_p1_6">确定</string>
+    <string name="find_p2_1">距离</string>
+    <string name="find_p2_2">不限</string>
+    <string name="find_p2_3">10公里内</string>
+    <string name="find_p2_4">30公里内</string>
+    <string name="find_p2_5">认证</string>
+    <string name="find_p2_6">@string/pro_detail_sfrz</string>
+    <string name="find_2_7">@string/pro_detail_jnrz</string>
+    <string name="find_p2_8">重新设置</string>
+    <string name="wek_sta1">待响应</string>
+    <string name="wek_sta2">未接单</string>
+    <string name="first_step">第一步：巡视房屋，填写下方表格对房屋状况简述，并上传</string>
+    <string name="fed_back_hint">本次服务顺利完成，无异常情况</string>
+    <string name="fed_back_submit">提交反馈</string>
+    <string name="hous_new">或创建一个新房产</string>
+    <string name="hous_add_new">+ 创建新房产</string>
+
+    <string name="add_new_house">+ 添加房产</string>
+    <string name="send_location">发送</string>
+
+    <string name="confirm_work_hourly">确认工时</string>
+
+    <string name="vip_fwbj">家政服务</string>
+    <string name="vip_tygl">庭院管理</string>
+    <string name="vip_fwzl">房屋租赁</string>
+    <string name="vip_kwgl">信件管理</string>
+    <string name="offer_top">以下费用均为含税价格</string>
+    <string name="offer_smf">上门费:</string>
+    <string name="offer_jcf">检测费:</string>
+    <string name="offer_jcfy">基础费用</string>
+    <string name="jy_dw">$ </string>
+    <string name="offer_hj">合计$</string>
+    <string name="offer_tis">修改完成，确定提交报价？</string>
+    <string name="offer_l_hj">合计$</string>
+    <string name="offer_hint_c">待输入工时</string>
+    <string name="xf_ti">请开始说话</string>
+    <string name="tv_wufa">无法达成一致终止服务</string>
+    <string name="empty_phone_number">联系人电话不能为空</string>
+
+    <string name="sure_to_give_up">确定放弃本次修改吗?</string>
+
+    <string name="user_location">地点:</string>
+
+    <string name="nede_ti">不能联系专家!</string>
+    <string name="nede_ti_user">不能联系客户!</string>
+    <string name="zj_m">总价：</string>
+    <string name="gsf_m">工时费：</string>
+    <string name="time">/小时</string>
+    <string name="bj_t">接受报价同意开工</string>
+    <string name="zj_t">您确定专家已上门？</string>
+    <string name="bj_t2">确定接受报价，并同意开工</string>
+    <string name="kf_t">接单需要扣除一定的费用，您确定接单吗？</string>
+    <string name="jd_t">接单后可见</string>
+    <string name="ckpj_t">查看评价</string>
+    <string name="ye_modif">修 改</string>
+    <string name="ye_conf">待用户确认</string>
+    <string name="ye_cancel">确定清零并取消订单吗</string>
+    <string name="Accountreceivable">应收账款</string>
+    <string name="bj_c">确定订单报价不变吗</string>
+    <string name="star_t">您确定要完成？</string>
+    <string name="star_ti2">确认开始当前的工作？</string>
+    <string name="ti1">取消订单成功</string>
+    <string name="ti2">已开工</string>
+    <string name="Settled">结算成功</string>
+    <string name="Inprogress">结算中</string>
+    <string name="Awaitingsettled">待结算 </string>
+
+    <string name="EMail">我的邮箱</string>
+    <string name="PleaseinputyourEmail">请输入我的邮箱</string>
+    <string name="BankInformation">银行收款账户</string>
+    <string name="BankName">银行名称</string>
+    <string name="Nameofpayeecompany">收款人（公司）名称</string>
+    <string name="Sample">样例 </string>
+    <string name="Save">保存</string>
+    <string name="Pleaseinputyourponenumber">请输入我的电话</string>
+    <string name="PhoneNo.">我的电话</string>
+
+    <string name="MyEarning">我的收入</string>
+    <string name="AccountInformation">我的收款信息</string>
+    <string name="wxpay">微信支付：加币兑人民币汇率为1：</string>
+    <string name="AlipayandPaypal">支付宝和PayPal支付的加币对人民币汇率由该官方平台决定</string>
+    <string name="ti3">订单清零</string>
+    <string name="ti4">完成订单</string>
+    <string name="pro_s1">报价已被选中，请尽快与用户联系确认以下内容： 工作内容及地点是否准确/报价信息是否明确/约定具体上门服务时间</string>
+    <string name="pro_s2">请按约定的时间上门。上门后请第一时间指导用户点击“专家已上门”按键进行确认</string>
+    <string name="pro_s3">上门后，请主动向客户出示自己的身份信息和职业资格证书</string>
+    <string name="pro_s4">现场复查评估情况，确定工时.</string>
+    <string name="pro_s5">定额报价具有严肃性，若现场与描述情况有较大出入，可以申请修改报价，经客户批准后生效。</string>
+    <string name="pro_s6">请根据现场情况与客户一起确认服务价格。专家必须在用户点击“接受价格同意服务开始”按键后，再开始服务。</string>
+    <string name="pro_s7">现场复查评估需进行检测工作时，如检测工作是有偿服务，需明确告知客户此项并非免费（如服务最终完成则检测费用自动免除）</string>
+    <string name="pro_s8">如果无法与客户达成共识，可以选择不提供服务，请客户支付上门费（如有偿上门）。</string>
+    <string name="pro_s9">上门费用在服务顺利完成后自动免除</string>
+    <string name="pro_s10">如已上门，用户不再需要后续服务，则可收取上门费</string>
+    <string name="pro_s11">服务顺利完成后收取</string>
+    <string name="pro_s12">可根据实际事情与用户协商并在其同意后修改</string>
+    <string name="zt1">待接单</string>
+    <string name="zt2">待响应</string>
+    <string name="zt3">准备上门</string>
+    <string name="zt4">确认上门</string>
+    <string name="zt5">修改报价待确认</string>
+    <string name="zt6">原价待确认</string>
+    <string name="zt7">报价驳回修改</string>
+    <string name="zt8">复核价格完成</string>
+    <string name="zt9">pro确认开工</string>
+    <string name="zt10">待支付</string>
+    <string name="zt11">已清零</string>
+    <string name="zt12">待评价评价</string>
+    <string name="zt13">用户取消订单</string>
+    <string name="zt14">自己取消订单</string>
+    <string name="zt21">未接单</string>
+    <string name="zt22">待选择</string>
+    <string name="zt23">已接单</string>
+    <string name="zt24">服务中</string>
+    <string name="zt25">完成</string>
+    <string name="zt26">暂停</string>
+    <string name="zt250">确认</string>
+
+    <string name="paypal_bind">绑定PayPal账号</string>
+    <string name="zt1111">未认证</string>
+    <string name="zt111">未认证</string>
+    <string name="zt112">已认证</string>
+    <string name="zt113">认证失败</string>
+    <string name="zt221">未认证</string>
+    <string name="zt222">审核中</string>
+    <string name="zt223">已认证</string>
+    <string name="zt224">未通过</string>
+    <string name="no_his">暂无历史记录</string>
+    <string name="pay_jcf">需要支付上门费 :￥0.00</string>
+    <string name="pay_title">您确定终止服务吗</string>
+    <string name="pay_jcf_c">我已检测,需用户支付检测费 :￥0.00</string>
+    <string name="pay_hj">用户合计支付:</string>
+    <string name="ts">TA很懒，暂未填写个人简介</string>
+    <string name="share_s">" 分享成功啦"</string>
+    <string name="share_f">" 分享失败啦"</string>
+    <string name="share_c">" 分享取消了"</string>
+    <string name="pz">拍照</string>
+
+    <string name="cancle_pro_order">是否取消订单?</string>
+    <string name="cxc">从相册中选取</string>
+    <string name="fes">有什么要对我们说的...</string>
+    <string name="mfsm">免费上门</string>
+    <string name="ysfm">有上门费</string>
+    <string name="sx">时薪</string>
+    <string name="tstitle">提示</string>
+    <string name="tiscontent">该账号已在其他设备登录</string>
+    <string name="isupdatecontent">您当前使用的移动网络，是否继续更新。</string>
+    <string name="isupdatecontent1">请检查您的网络连接</string>
+    <string name="inp_code">请输入验证码</string>
+    <string name="code_tis">验证码发送到您的手机，请注意查收。</string>
+    <string name="je_tx">您当前无可用提现金额</string>
+    <string name="xb">请选择标签</string>
+    <string name="pc">评价成功</string>
+    <string name="zf_jy_dw">加元</string>
+
+    <string name="zf_jy_month">加元/每月</string>
+
+    <string name="bjxq">报价详情</string>
+    <string name="fwxq">服务详情</string>
+    <string name="toast">您已修改过价格，无法终止服务</string>
+
+    <string name="delete_skill">确定删除该技能?</string>
+    <string name="date_p">请选择日期</string>
+    <string name="notice_no_fee">当前订单未发生任何费用，确定完成订单吗?</string>
+    <string name="commit_paypal_account">提交paypal账号</string>
+    <string name="o2oaddr">您的上门服务地址？</string>
+    <string name="sure_submit">您确认提交?</string>
+    <string name="off_Line_make">线下调整</string>
+    <string name="table_month">月份</string>
+    <string name="table_service">服务</string>
+    <string name="table_price">价格</string>
+    <string name="Add_Service">添加服务</string>
+    <string name="dialog_note">温馨提示</string>
+    <string name="dialog_add">添加</string>
+    <string name="dialog_cancel">取消</string>
+</resources>

@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_home_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <com.haiwai.housekeeper.view.PullToZoomScrollView2
+        android:id="@+id/user_home_ob_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/home_rl_title_container"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.youth.banner.Banner>
+
+                <TextView
+                    android:id="@+id/tv_app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/space_l"
+                    android:layout_marginLeft="@dimen/space_l"
+                    android:text="@string/home_yjsc"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/img_ying_bar" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_rl_title_container"
+                android:background="@color/background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="3dp"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:id="@+id/tv_home_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="18dp"
+                        android:text="@string/app_decrible1"
+                        android:textColor="#535353"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_home_desc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="@string/app_decrible2"
+                        android:textSize="14sp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="@drawable/home_liner" />
+                    <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0.5dp"-->
+                    <!--android:background="#DDDDDD" />-->
+
+                    <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="5dp"-->
+                    <!--android:background="#F7F7F7" />-->
+
+                    <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0.5dp"-->
+                    <!--android:background="#DDDDDD" />-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_l"
+                        android:layout_marginTop="@dimen/space_xl"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:src="@mipmap/home_l_line_icon" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_s"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_cycle_service"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="@dimen/divider_big_width"
+                                android:text="@string/main_home_label"
+                                android:textColor="#484848"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_cycle_desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:paddingBottom="@dimen/space_s"
+                                android:paddingRight="@dimen/divider_big_width"
+                                android:text="@string/main_home_label_2"
+                                android:textColor="#8E8E8E"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/home_recycleview1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="30dp"
+                    android:paddingTop="3dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/divider_big_width"
+                            android:paddingTop="@dimen/divider_big_width"
+                            android:text="@string/main_home_hot"
+                            android:textColor="@color/text_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/home_tv_remen"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@mipmap/home_more"
+                            android:paddingRight="@dimen/divider_big_width"
+                            android:text=""
+                            android:textColor="@color/text_1"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/home_recycleview5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#DDDDDD" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#F7F7F7" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#DDDDDD" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/background"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="30dp"
+                        android:paddingTop="3dp"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="@dimen/divider_big_width"
+                            android:paddingTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="18dip"
+                                    android:src="@mipmap/home_line_icon" />
+
+                                <TextView
+                                    android:id="@+id/tv_home_service"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/space_sm"
+                                    android:text="@string/main_home_home_service"
+                                    android:textColor="@color/text_1"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/home_tv_jjfw"
+                                android:layout_width="15dip"
+                                android:layout_height="15dip"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/space_l"
+                                android:src="@mipmap/home_all_icon" />
+
+                        </RelativeLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/home_recycleview2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#DDDDDD" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="#F7F7F7" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#DDDDDD" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="30dp"
+                        android:paddingTop="3dp"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="@dimen/divider_big_width"
+                            android:paddingTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="18dip"
+                                    android:src="@mipmap/home_line_icon" />
+
+                                <TextView
+                                    android:id="@+id/tv_house_service"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/space_sm"
+                                    android:text="@string/main_home_house_repair"
+                                    android:textColor="@color/text_1"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/home_tv_fwwx"
+                                android:layout_width="15dip"
+                                android:layout_height="15dip"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/space_l"
+                                android:src="@mipmap/home_all_icon" />
+                        </RelativeLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/home_recycleview3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#DDDDDD" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="#F7F7F7" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#DDDDDD" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="30dp"
+                        android:paddingTop="3dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="@dimen/divider_big_width"
+                            android:paddingTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="18dip"
+                                    android:src="@mipmap/home_line_icon" />
+
+                                <TextView
+                                    android:id="@+id/tv_live_service"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/space_sm"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/main_home_life_service"
+                                    android:textColor="@color/text_1"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/home_tv_shfw"
+                                android:layout_width="15dip"
+                                android:layout_height="15dip"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/space_l"
+                                android:src="@mipmap/home_all_icon" />
+                        </RelativeLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/home_recycleview4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </com.haiwai.housekeeper.view.PullToZoomScrollView2>
+
+    <RelativeLayout
+        android:id="@+id/home_titlebar_0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/user_home_iv_toserve"
+            android:layout_width="37dp"
+            android:layout_height="23dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_home_switch_0" />
+
+        <ImageButton
+            android:id="@+id/bar_left_ib_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@mipmap/user_ib_search"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_menu_background"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@mipmap/icon_index"-->
+    <!--android:visibility="gone"/>-->
+
+
+    <RelativeLayout
+        android:id="@+id/user_home_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent">
+
+        <ImageButton
+            android:id="@+id/user_home_iv_float_toserve"
+            android:layout_width="37dp"
+            android:layout_height="23dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@mipmap/new_user_left_btn"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="37dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="3dp">
+
+            <ImageButton
+                android:id="@+id/user_home_iv_talk"
+                android:layout_width="37dp"
+                android:layout_height="23dp"
+                android:background="@null"
+                android:src="@mipmap/home_message"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/msg_icon_pi"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/bar_collapse_ib_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:src="@mipmap/home_collpase_search"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/user_home_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_gray"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

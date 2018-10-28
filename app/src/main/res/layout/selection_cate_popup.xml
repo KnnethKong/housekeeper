@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/liangdian_horizontal_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/liangdian_item_01"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_m"
+            android:text="接机用车" />
+
+        <TextView
+            android:id="@+id/liangdian_item_02"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_m"
+            android:text="扶持" />
+
+        <TextView
+            android:id="@+id/liangdian_item_03"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_m"
+            android:text="医疗健康" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liangdian_horizontal_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/liangdian_item_04"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_m"
+            android:text="就业创业" />
+
+        <TextView
+            android:id="@+id/liangdian_item_05"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_m"
+            android:text="关爱妇幼" />
+
+        <TextView
+            android:id="@+id/liangdian_item_06"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_m"
+            android:text="国际救助" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liangdian_horizontal_03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/liangdian_item_07"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_m"
+            android:text="社会救助" />
+
+        <TextView
+            android:id="@+id/liangdian_item_08"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_m"
+            android:text="环境/动物\n保护" />
+
+        <TextView
+            android:id="@+id/liangdian_item_09"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_m"
+            android:text="文体艺术" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/liangdian_horizontal_04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/liangdian_item_10"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_m"
+            android:text="敬老助残" />
+
+        <TextView
+            android:id="@+id/liangdian_item_11"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_m"
+            android:text="教育" />
+
+        <TextView
+            android:id="@+id/liangdian_item_12"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_m"
+            android:text="精准扶贫" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/liangdian_horizontal_05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/liangdian_item_13"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_m"
+            android:text="其他" />
+
+        <TextView
+            android:id="@+id/liangdian_item_14"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/liangdian_item_15"
+            style="@style/Selection_TV_style"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="@dimen/txt_m"
+            android:visibility="invisible" />
+    </LinearLayout>
+</LinearLayout>

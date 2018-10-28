@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    style="@style/NavPage">
+	<com.haiwai.housekeeper.view.TopViewNormalBar
+		android:id="@+id/wx_result"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+	</com.haiwai.housekeeper.view.TopViewNormalBar>
+	<TextView
+		android:id="@+id/tv_show"
+	    android:layout_width="fill_parent"
+	 	android:layout_height="fill_parent"
+		android:gravity="center"
+	 	android:textColor="#ff000000"
+	 	android:textSize="20dp"
+	 	android:text="@string/pay_result_tip"/>
+	
+</LinearLayout>

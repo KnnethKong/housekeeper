@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="@dimen/space_l"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_skill_title"
+        android:layout_width="match_parent"
+        android:background="@color/white_g"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_mm"
+        android:text=""
+        android:textSize="@dimen/txt_xxl"></TextView>
+
+    <com.haiwai.housekeeper.view.MyGridView
+        android:id="@+id/m_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:horizontalSpacing="15dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:listSelector="@color/transparent"
+        android:verticalSpacing="5dp">
+    </com.haiwai.housekeeper.view.MyGridView>
+</LinearLayout>

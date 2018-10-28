@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#55000000">
+
+
+    <TextView
+        android:id="@+id/tv_ti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/home_ti_xin_bj"
+        android:maxEms="6"
+        android:text="点击这里可进行用专家和用户切换"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="21dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@mipmap/home_ti_xin_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/iv_arr"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="169dp"/>
+
+    <ImageView
+        android:id="@+id/iv_arr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/home_ti_xin_arrow"
+        android:layout_below="@+id/tv_ti"
+        android:layout_alignEnd="@+id/tv_ti"
+        android:layout_marginBottom="13dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_addr_hous"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.haiwai.housekeeper.activity.user.NewAddrHousActivity">
+
+
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_add_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/progress"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="100%"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_xl"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/left_title_text"
+            android:layout_marginTop="@dimen/space_xl"
+            android:text="@string/tv_contact_style"
+            android:layout_marginLeft="5dp"
+
+            android:textSize="@dimen/txt_xxxl"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/left_title_text"
+                android:paddingLeft="@dimen/space_l"
+                android:text="@string/tv_contact_tel"/>
+
+            <TextView
+                android:id="@+id/tv_contact_area_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical"
+                android:visibility="visible"
+                android:text="+"/>
+
+            <TextView
+                android:id="@+id/mspinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="区号"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/icon_down"
+                android:gravity="center"/>
+
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="#DCDCDC"/>
+            <!--<TextView
+                style="@style/left_title_text"
+                android:paddingLeft="@dimen/space_l"
+                android:text="@string/person_contact"/>-->
+
+            <EditText
+                android:id="@+id/et_input_lxr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint=""
+                android:background="@null"
+                android:paddingLeft="2dp"
+                android:textSize="13sp"
+                android:textColorHint="@color/hint_a_color"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/space_l"
+            android:layout_marginRight="@dimen/space_l"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#DCDCDC"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/left_title_text"
+                android:paddingLeft="@dimen/space_l"
+                android:text="@string/tv_email"/>
+
+            <EditText
+                android:id="@+id/et_input_lxdh"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/can_select"
+                android:paddingLeft="@dimen/space_s"
+                android:textColorHint="@color/hint_a_color"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/space_l"
+            android:layout_marginRight="@dimen/space_l"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#DCDCDC"/>
+        <TextView
+            style="@style/left_title_text"
+            android:layout_marginTop="@dimen/space_xl"
+            android:text="@string/alternative_contact"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/txt_xxxl"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/left_title_text"
+                android:paddingLeft="@dimen/space_l"
+                android:text="@string/person_contact"/>
+
+            <EditText
+                android:id="@+id/et_input_bylxr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/can_select"
+                android:paddingLeft="@dimen/space_s"
+                android:textColorHint="@color/hint_a_color"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/space_l"
+            android:layout_marginRight="@dimen/space_l"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#DCDCDC"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <!--<TextView-->
+                <!--style="@style/left_title_text"-->
+                <!--android:paddingLeft="@dimen/space_l"-->
+                <!--android:text="@string/tv_email"/>-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_input_email"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@null"-->
+                <!--android:hint="@string/tv_hint_email"-->
+                <!--android:inputType="textEmailAddress"-->
+                <!--android:paddingLeft="@dimen/space_s"-->
+                <!--android:textColorHint="@color/hint_a_color"/>-->
+
+
+            <TextView
+                style="@style/left_title_text"
+                android:paddingLeft="@dimen/space_l"
+                android:text="@string/tv_contact_tel"/>
+
+            <TextView
+                android:id="@+id/tv_bylxr_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:visibility="visible"
+                android:text="+"/>
+            <TextView
+                android:id="@+id/mSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="区号"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/icon_down"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="#DCDCDC"/>
+            <EditText
+                android:id="@+id/et_input_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/can_select"
+                android:background="@null"
+                android:textSize="13sp"
+                android:paddingLeft="@dimen/space_s"
+                android:textColorHint="@color/hint_a_color"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/space_l"
+            android:layout_marginRight="@dimen/space_l"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#DCDCDC"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_hous_addr_add"
+        style="@style/common_vip_button_style"
+        android:layout_marginTop="@dimen/space_xxl"
+        android:text="@string/btn_tv_add"
+        />
+</LinearLayout>

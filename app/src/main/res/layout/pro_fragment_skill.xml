@@ -1,0 +1,119 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white"
+             tools:context="com.haiwai.housekeeper.fragment.server.OrderFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pro_title_bar_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/skill"
+                android:textSize="@dimen/pro_top_font_top_size_default"/>
+
+            <TextView
+                android:id="@+id/tv_skill_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/pro_title_top_bar_margin_right"
+                android:drawableLeft="@mipmap/pro_skill_money"
+                android:drawablePadding="@dimen/pro_order_item_img_marign_small"
+                android:text="@string/skill_right_name"
+                />
+
+            <ImageView
+                android:id="@+id/iv_skill_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/pro_title_top_bar_margin_right"
+                android:src="@mipmap/earn_money"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pro_title_bar_height"
+            android:background="@color/gray_white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <TextView
+                    android:id="@+id/tv_skill_mine_skill"
+                    style="@style/textViewAttr"
+                    android:drawableBottom="@drawable/pro_text_bottom_line_select"
+                    android:drawablePadding="@dimen/pro_order_item_img_marign_bottom_small"
+                    android:text="@string/skill_mine_skill"
+                    android:textColor="@drawable/pro_text_bottom_color_select"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <TextView
+                    android:id="@+id/tv_skill_mime_message"
+                    style="@style/textViewAttr"
+                    android:drawableBottom="@drawable/pro_text_bottom_line_select"
+                    android:drawablePadding="@dimen/pro_order_item_img_marign_bottom_small"
+                    android:paddingBottom="2dp"
+                    android:text="@string/skill_mine_message"
+                    android:textColor="@drawable/pro_text_bottom_color_select"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/gray_white">
+
+            <com.haiwai.housekeeper.view.PullToRefreshListView
+                android:id="@+id/lv_skill_mine_skill"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:listSelector="@color/transparent"
+                android:layout_marginBottom="55dp"
+                android:scrollbars="none"></com.haiwai.housekeeper.view.PullToRefreshListView>
+
+            <TextView
+                android:id="@+id/ib_add_btn1"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/add_new_skill"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_above="@id/lv_skill_mine_skill"
+                style="@style/common_button_style"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

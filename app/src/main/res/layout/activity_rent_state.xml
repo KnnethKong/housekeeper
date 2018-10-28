@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rent_state"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_g"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.haiwai.housekeeper.activity.server.RentStateActivity">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_rent_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginRight="@dimen/space_l"
+                android:layout_marginTop="@dimen/space_xl"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_l"
+                    android:layout_marginRight="@dimen/space_l"
+                    android:layout_marginTop="@dimen/space_l"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/fwzt"
+                        android:textSize="@dimen/txt_xxl"/>
+
+                    <EditText
+                        android:id="@+id/et_fwzt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_sm"
+                        android:layout_marginTop="@dimen/space_sm"
+                        android:background="@null"
+                        android:gravity="left|top"
+                        android:hint="@string/fw_des"
+                        android:minLines="3"
+                        android:padding="@dimen/space_m"
+                        android:textColorHint="@color/hint_text_color"/>
+                </LinearLayout>
+
+                <View style="@style/line_horizental_type"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_l"
+                    android:layout_marginRight="@dimen/space_l"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/wwx"
+                        android:textSize="@dimen/txt_xxl"/>
+
+                    <EditText
+                        android:id="@+id/et_wxwffyzj"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_sm"
+                        android:layout_marginTop="@dimen/space_sm"
+                        android:background="@null"
+                        android:hint="@string/hint_wx"
+                        android:minHeight="@dimen/space_xxl"
+                        android:paddingLeft="@dimen/space_sm"
+                        android:textColorHint="@color/hint_text_color"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginRight="@dimen/space_l"
+                android:layout_marginTop="@dimen/space_xl"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_l"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/zhzt"
+                        android:textSize="@dimen/txt_xxl"/>
+
+                    <RadioGroup
+                        android:id="@+id/rg_state"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_l"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_normal"
+                            style="@style/RadioBttonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:padding="@dimen/space_m"
+                            android:text="@string/zc"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_no_normal"
+                            style="@style/RadioBttonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="@dimen/space_m"
+                            android:text="@string/yc"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View style="@style/line_horizental_type"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_l"
+                    android:layout_marginTop="@dimen/space_l"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_yc_des"
+                        style="@style/left_title_text"
+                        android:text="@string/zhycdes"
+                        android:textSize="@dimen/txt_xxl"/>
+
+                    <EditText
+                        android:id="@+id/et_zfyc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_mm"
+                        android:layout_marginTop="@dimen/space_sm"
+                        android:background="@null"
+                        android:hint="@string/zhycdes"
+                        android:minHeight="@dimen/space_xxl"
+                        android:textColorHint="@color/hint_text_color"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ib_sub"
+                style="@style/common_button_style"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space_xxl"
+                android:text="@string/commit"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

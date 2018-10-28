@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="false" android:drawable="@mipmap/user_tabbar_main_need_default"/>
+    <item android:state_selected="true" android:drawable="@mipmap/user_tabbar_main_need_select"/>
+
+</selector>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="@dimen/space_xl"
+              android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_skill_name"
+                style="@style/left_text"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/space_xl"
+                android:text="电路维修"/>
+
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_m"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_mm"
+                android:layout_marginRight="@dimen/space_mm"
+                android:src="@mipmap/pro_order_arrow_down"/>
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_arrow"
+                android:text="审核中"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/skills_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_add_skill"
+        style="@style/common_button_style"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/btn_common_bj"
+        android:visibility="gone"
+        android:text="@string/add_new_certificate"
+        />
+</LinearLayout>

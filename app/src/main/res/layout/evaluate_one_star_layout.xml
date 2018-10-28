@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/tv_ev1"
+            style="@style/evalute_text"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/pro_evaluate_selector"
+            android:drawableRight="@mipmap/eva_bad"
+            android:text="@string/eva_tdel"/>
+
+        <TextView
+            android:id="@+id/tv_ev2"
+            style="@style/evalute_text"
+            android:layout_toRightOf="@id/tv_ev1"
+            android:layout_marginLeft="40dip"
+            android:drawableRight="@mipmap/eva_bad"
+            android:background="@drawable/pro_evaluate_selector"
+            android:text="@string/eva_jybhg"/>
+
+        <TextView
+            android:id="@+id/tv_ev3"
+            style="@style/evalute_text"
+            android:layout_below="@id/tv_ev1"
+            android:layout_marginLeft="30dip"
+            android:drawableRight="@mipmap/eva_bad"
+            android:background="@drawable/pro_evaluate_selector"
+            android:text="@string/eva_gzwwc"/>
+
+        <TextView
+            android:id="@+id/tv_ev4"
+            style="@style/evalute_text"
+            android:layout_below="@id/tv_ev1"
+            android:layout_toRightOf="@id/tv_ev3"
+            android:layout_marginLeft="40dp"
+            android:drawableRight="@mipmap/eva_bad"
+            android:background="@drawable/pro_evaluate_selector"
+            android:text="@string/eva_jzbd"/>
+
+        <TextView
+            android:id="@+id/tv_ev5"
+            style="@style/evalute_text"
+            android:layout_below="@id/tv_ev3"
+            android:layout_marginLeft="30dp"
+            android:drawableRight="@mipmap/eva_bad"
+            android:background="@drawable/pro_evaluate_selector"
+            android:text="@string/eva_jgjfhqz"/>
+        <TextView
+            android:id="@+id/tv_ev6"
+            style="@style/evalute_text"
+            android:layout_below="@id/tv_ev3"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv_ev5"
+            android:drawableRight="@mipmap/eva_bad"
+            android:background="@drawable/pro_evaluate_selector"
+            android:text="@string/eva_yzbz"/>
+        <TextView
+            android:id="@+id/tv_ev7"
+            style="@style/evalute_text"
+            android:layout_below="@id/tv_ev5"
+            android:layout_marginLeft="30dp"
+            android:drawableRight="@mipmap/eva_bad"
+            android:background="@drawable/pro_evaluate_selector"
+            android:text="@string/eva_gzwczlc"/>
+        <TextView
+            android:id="@+id/tv_ev8"
+            style="@style/evalute_text"
+            android:layout_below="@id/tv_ev7"
+            android:layout_marginLeft="30dp"
+            android:drawableRight="@mipmap/eva_bad"
+            android:background="@drawable/pro_evaluate_selector"
+            android:text="@string/eva_bryzcxxbf"/>
+        <TextView
+            android:id="@+id/tv_ev9"
+            style="@style/evalute_text"
+            android:layout_below="@id/tv_ev8"
+            android:layout_marginLeft="30dp"
+            android:drawableRight="@mipmap/eva_bad"
+            android:background="@drawable/pro_evaluate_selector"
+            android:text="@string/eva_yzbsshwgsy"/>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_mm"
+        android:layout_marginLeft="@dimen/divider_big_width"
+        android:layout_marginRight="@dimen/divider_big_width"
+        android:background="@drawable/pro_order_offer_edit_bj"
+        android:gravity="top"
+        android:textSize="@dimen/txt_xl"
+        android:hint="@string/eva_input_other"
+        android:minLines="3"
+        android:padding="@dimen/space_mm"
+        android:textColorHint="@color/hint_text_color"/>
+</LinearLayout>
+

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_g"
+    android:orientation="vertical"
+    tools:context=".activity.server.OrderDetailActivity">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_modify_offer_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/pro_order_img_marging"
+            android:text="@string/offer_top"
+            android:textSize="@dimen/pro_top_font_size_default_g"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_content"
+            android:layout_margin="@dimen/pro_order_item_padding_middle"
+            android:background="@mipmap/pro_offer_bj"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/relativeLayout_ho_width"
+                >
+
+                <TextView
+                    android:id="@+id/tv_smf"
+                    style="@style/left_text"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/pro_radio_button"
+                    android:drawableLeft="@mipmap/pro_ver_line"
+                    android:drawablePadding="5dp"
+                    android:text="@string/offer_smf"/>
+
+
+
+                <ImageView
+                    android:id="@+id/iv_icon_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_smf"
+                    android:src="@mipmap/pro_offer_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_sfm_m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text=""
+                    android:textColor="@color/txt_a_color"
+                    android:textSize="@dimen/txt_l"/>
+
+                <ImageButton
+                    android:id="@+id/ib_smf_removes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:visibility="gone"
+                    android:src="@mipmap/pro_offer_remove_icon"/>
+            </RelativeLayout>
+
+            <TextView
+                style="@style/line_horizental_type"/>
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/relativeLayout_ho_width"-->
+                <!--&gt;-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_jcf"-->
+                    <!--style="@style/left_text"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:button="@drawable/pro_radio_button"-->
+                    <!--android:drawableLeft="@mipmap/pro_ver_line"-->
+                    <!--android:drawablePadding="5dp"-->
+                    <!--android:text="@string/offer_jcf"/>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_icon_b"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_toRightOf="@id/tv_jcf"-->
+                    <!--android:src="@mipmap/pro_offer_icon"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_jcf_m"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:text=""-->
+                    <!--android:textColor="@color/txt_a_color"-->
+                    <!--android:textSize="@dimen/txt_l"/>-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/ib_jcf_removes"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:background="@null"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:src="@mipmap/pro_offer_remove_icon"/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<TextView-->
+                <!--style="@style/line_horizental_type"/>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/relativeLayout_ho_width"
+                >
+
+                <TextView
+                    android:id="@+id/tv_rgf"
+                    style="@style/left_text"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/pro_radio_button"
+                    android:drawableLeft="@mipmap/pro_ver_line"
+                    android:drawablePadding="5dp"
+                    android:text="@string/tv_fwbj"/>
+
+                <ImageView
+                    android:id="@+id/iv_icon_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_rgf"
+                    android:src="@mipmap/pro_offer_icon"/>
+
+                <EditText
+                    android:id="@+id/et_input_rgf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint=""
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:textColorHint="@color/hint_text_color"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/line_horizental_type"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/relativeLayout_ho_width"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/tv_clf"
+                    style="@style/left_text"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/pro_radio_button"
+                    android:drawableLeft="@mipmap/pro_ver_line"
+                    android:drawablePadding="5dp"
+                    android:text="材料费"/>
+
+                <ImageView
+                    android:id="@+id/iv_icon_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_clf"
+                    android:src="@mipmap/pro_offer_icon"/>
+
+                <EditText
+                    android:id="@+id/et_input_fjf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="待输入"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColorHint="@color/hint_text_color"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_count_hj"
+                style="@style/left_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="合计 "
+                android:textColor="@color/text_color_count"
+                android:textSize="@dimen/pro_order_text_title_size_big"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_offer_confirm"
+            style="@style/common_button_style"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/pop_confirm"/>
+    </RelativeLayout>
+</LinearLayout>

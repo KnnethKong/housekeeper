@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_g"
+    android:orientation="vertical"
+    tools:context="com.haiwai.housekeeper.activity.user.NewHousActivity">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_new_hous_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="20dp"
+                android:layout_marginTop="1dp"
+                android:orientation="vertical">
+                <SeekBar
+                    android:id="@+id/issue_addr_sb_bar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:max="100"
+                    android:minHeight="8dp"
+                    android:progress="25"
+                    android:progressDrawable="@drawable/seekbar_progress_drawable_publish"
+                    android:thumb="@null"/>
+                <TextView
+                    android:id="@+id/tv_progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="25"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginRight="@dimen/space_l"
+                android:layout_marginTop="@dimen/space_xl"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_l">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/pro_country"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/txt_xxxl"/>
+
+                    <com.haiwai.housekeeper.view.MySpinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_xxxl"
+                        android:layout_centerVertical="true"
+                        android:overlapAnchor="false"
+                        android:paddingLeft="@dimen/space_l"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:spinnerMode="dropdown"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/icon_down"/>
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/line_horizental_type_big"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_l">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/pro_provence"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/txt_xxxl"/>
+
+                    <com.haiwai.housekeeper.view.MySpinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_xxxl"
+                        android:layout_centerVertical="true"
+                        android:overlapAnchor="false"
+                        android:paddingLeft="@dimen/space_l"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/icon_down"/>
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/line_horizental_type_big"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_l">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/pro_city"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/txt_xxxl"/>
+
+                    <com.haiwai.housekeeper.view.MySpinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_xxxl"
+                        android:layout_centerVertical="true"
+                        android:overlapAnchor="false"
+                        android:paddingLeft="@dimen/space_l"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/icon_down"/>
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/line_horizental_type_big"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_l"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/pro_add_detail1"
+                        android:textSize="@dimen/txt_xxxl"/>
+
+                    <EditText
+                        android:id="@+id/et_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_xxxl"
+                        android:background="@null"
+                        android:hint="@string/tv_deail_addr"
+                        android:paddingLeft="@dimen/space_l"
+                        android:textColorHint="@color/hint_a_color"/>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/line_horizental_type_big"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_l"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/pro_add_detail2"
+                        android:textSize="@dimen/txt_xxxl"/>
+
+                    <EditText
+                        android:id="@+id/et_address_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_xxxl"
+                        android:background="@null"
+                        android:hint="@string/tv_deail_addr2"
+                        android:paddingLeft="@dimen/space_l"
+                        android:textColorHint="@color/hint_a_color"/>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/line_horizental_type_big"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_l"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/pro_detail_email"
+                        android:textSize="@dimen/txt_xxxl"/>
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_xxxl"
+                        android:background="@null"
+                        android:hint="@string/tv_deail_addrs"
+                        android:paddingLeft="@dimen/space_l"
+                        android:textColorHint="@color/hint_a_color"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <Button
+                    android:id="@+id/btn_vip_addr_next"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/red"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_m"
+                    android:layout_marginTop="@dimen/space_xl"
+                    android:text="@string/tv_next_step"
+                    />
+                <Button
+                    android:id="@+id/btn_save_house_change"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@color/red"
+                    android:textColor="#fff"
+                    android:visibility="gone"
+                    android:layout_marginBottom="@dimen/space_m"
+                    android:layout_marginTop="@dimen/space_xl"
+                    android:text="@string/btn_set_btn_save"
+                    android:layout_marginLeft="1dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

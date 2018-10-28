@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shape_tv_rect_white_little_corner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+
+                <com.haiwai.housekeeper.view.CircleImageView
+                    android:id="@+id/item_take_order_serve_iv_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/test_head_1"/>
+
+                <ImageView
+                    android:id="@+id/item_take_order_serve_iv_diamond"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignBottom="@+id/item_take_order_serve_iv_icon"
+                    android:layout_alignRight="@+id/item_take_order_serve_iv_icon"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@mipmap/huangzuan"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/item_take_order_serve_tv_name"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="3dp"
+                        android:text=""
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"/>
+
+                    <ImageView
+                        android:id="@+id/item_take_order_serve_iv_sfrz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/o2o_item_sf_grey"/>
+
+                    <ImageView
+                        android:id="@+id/item_take_order_serve_iv_jnrz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:src="@mipmap/o2o_item_jn_grey"/>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/item_take_order_serve_tv_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/dingwei_red"
+                        android:drawablePadding="3dp"
+                        android:text="0.1km"
+                        android:textColor="@color/theme"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/item_take_order_serve_iv_star_line"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:visibility="gone"
+                        android:src="@mipmap/huangzuan"/>
+
+                    <TextView
+                        android:id="@+id/item_take_order_serve_tv_describe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="完成30单/评价4.8"
+                        android:textColor="@color/black"
+                        android:textSize="8sp"
+                        android:textStyle="italic"/>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/item_take_order_serve_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="免费上门"
+                        android:textColor="@color/light_gray2"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/item_take_order_serve_tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/space_m"
+                        android:gravity="center"
+                        android:text="$120"
+                        android:textColor="@color/green"
+                        android:textSize="18sp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_take_order_serve_iv_special"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/teyao"/>
+    </RelativeLayout>
+</LinearLayout>

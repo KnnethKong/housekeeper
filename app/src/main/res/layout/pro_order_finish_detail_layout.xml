@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white_g"
+              android:orientation="vertical">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_finish_messagee_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/space_l"
+        android:layout_marginRight="@dimen/space_l"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_order_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pro_corner_title_bj"
+            android:padding="@dimen/space_xl"
+            android:text="订单号：201602145528749"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_xxl"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_order_title"
+                style="@style/left_text"
+                android:layout_marginLeft="@dimen/space_mm"
+                android:layout_marginTop="@dimen/space_xl"
+                android:text="园林维护"
+                android:textSize="@dimen/txt_xxxl"/>
+
+            <TextView
+                android:id="@+id/tv_order_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_order_title"
+                android:layout_marginBottom="@dimen/space_mm"
+                android:layout_marginLeft="@dimen/space_xl"
+                android:layout_marginTop="@dimen/space_mm"
+                android:text="地点："/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_order_title"
+                android:layout_marginBottom="@dimen/space_mm"
+                android:layout_marginTop="@dimen/space_mm"
+                android:layout_toRightOf="@id/tv_order_location"
+                android:text="海淀区上地西路"/>
+
+            <TextView
+                android:id="@+id/tv_order_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_order_location"
+                android:layout_marginBottom="@dimen/space_mm"
+                android:layout_marginLeft="@dimen/space_xl"
+                android:text="时间："/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_order_location"
+                android:layout_marginBottom="@dimen/space_mm"
+                android:layout_toRightOf="@id/tv_order_time"
+                android:text="2016.03.01-2016.03.31"/>
+        </RelativeLayout>
+
+        <TextView
+            style="@style/line_horizental_type"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@mipmap/pro_icon_data_selected"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="已完成"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="次数："/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textColor="@color/text_color_count"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="次/月"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include
+            layout="@layout/pro_order_detail_card_a_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/common_button_style"
+        android:layout_marginTop="@dimen/space_xl"
+        android:text="点击完成"
+        android:layout_width="355dp"/>
+
+</LinearLayout>

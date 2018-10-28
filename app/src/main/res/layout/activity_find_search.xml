@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_find_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haiwai.housekeeper.activity.user.FindSearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/iv_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_mm"
+            android:background="@null"
+            android:padding="16dp"
+            android:src="@mipmap/iv_back_black"/>
+
+
+        <com.haiwai.housekeeper.view.ClearEditText
+            android:id="@+id/et_input_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/space_m"
+            android:layout_marginRight="@dimen/space_m"
+            android:layout_toRightOf="@id/iv_back_arrow"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg_corner"
+            android:drawableRight="@mipmap/clear_normal_list"
+            android:hint="@string/tv_hint_con"
+            android:paddingBottom="@dimen/space_sm"
+            android:paddingLeft="@dimen/space_l"
+            android:paddingRight="@dimen/space_l"
+            android:paddingTop="@dimen/space_sm"
+            android:textColor="@color/txt_a_color"
+            android:textColorHighlight="@color/hint_a_color"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/pro_title_top_bar_margin_left"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tv_btn_search"
+            android:textSize="@dimen/pro_top_font_size_default_g"
+            />
+
+    </LinearLayout>
+    <View
+        android:visibility="visible"
+        android:id="@+id/first_v_line"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"/>
+    <com.haiwai.housekeeper.view.xlistview.XListView
+        android:id="@+id/find_detail_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:layout_alignParentTop="true"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@color/transparent"/>
+</LinearLayout>

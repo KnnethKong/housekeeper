@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_root_school"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/space_l"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_smlx"
+        >
+        <TextView
+            android:id="@+id/tv_school"
+            style="@style/left_title_text"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_l"
+            android:text="@string/pro_work1"
+            />
+
+        <EditText
+            android:id="@+id/et_work_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_l"
+            android:layout_toRightOf="@id/tv_school"
+            android:textSize="@dimen/txt_xl"
+            android:background="@null"
+            android:hint="@string/pro_work2"
+            android:textColorHint="@color/hint_a_color"
+            />
+
+        <View
+            style="@style/line_horizental_type"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_smlx"
+        >
+
+        <TextView
+            android:id="@+id/tv_school_a"
+            style="@style/left_title_text"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_l"
+            android:text="@string/pro_work3"
+            />
+
+        <EditText
+            android:id="@+id/et_work"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_l"
+            android:layout_toRightOf="@id/tv_school_a"
+            android:textSize="@dimen/txt_xl"
+            android:background="@null"
+            android:hint="@string/pro_work4"
+            android:textColorHint="@color/hint_a_color"
+            />
+
+        <View
+            style="@style/line_horizental_type"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_smlx"
+        >
+
+        <TextView
+            android:id="@+id/tv_school_b"
+            style="@style/left_title_text"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_l"
+            android:text="@string/pro_work5"
+            />
+
+        <EditText
+            android:id="@+id/et_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_l"
+            android:layout_toRightOf="@id/tv_school_b"
+            android:background="@null"
+            android:drawableRight="@mipmap/pro_arrow_down"
+            android:textSize="@dimen/txt_xl"
+            android:focusable="false"
+            android:hint="@string/pro_work6"
+            android:paddingRight="@dimen/space_l"
+            android:textColorHint="@color/hint_a_color"
+            />
+
+        <View
+            style="@style/line_horizental_type"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_smlx"
+        >
+
+        <TextView
+            android:id="@+id/tv_school_c"
+            style="@style/left_title_text"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_l"
+            android:text="@string/pro_work7"
+            />
+
+        <EditText
+            android:id="@+id/et_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_l"
+            android:layout_toRightOf="@id/tv_school_c"
+            android:background="@null"
+            android:drawableRight="@mipmap/pro_arrow_down"
+            android:textSize="@dimen/txt_xl"
+            android:focusable="false"
+            android:hint="@string/pro_work9"
+            android:paddingRight="@dimen/space_l"
+            android:textColorHint="@color/hint_a_color"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pro_line_height_default_g"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/pro_order_item_img_marign_small"
+            android:layout_marginRight="@dimen/pro_order_item_img_marign_small"
+            android:background="@color/line_color_default"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_del_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:padding="@dimen/space_mm"
+        android:text="@string/pro_work10"
+        android:textColor="@color/txt_green_color"
+        android:textSize="@dimen/txt_xl"/>
+
+</LinearLayout>

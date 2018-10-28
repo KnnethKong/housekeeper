@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_edge_margin"
+        android:layout_marginRight="@dimen/normal_edge_margin"
+        android:layout_marginTop="@dimen/divider_big_width"
+        android:background="@drawable/bg_shape_tv_rect_white_little_corner"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/item_vip_order_tv_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="北京市海淀区上地西路8号院"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/item_vip_order_tv_order_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:drawableLeft="@mipmap/user_mine_viporder_clock"
+                        android:drawablePadding="8dp"
+                        android:text="2016-07-09  12:23:12"
+                        android:textColor="@color/line_gray"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/item_vip_order_tv_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_solid_grey_radius_little"
+                    android:text="已暂停"
+                    android:textStyle="italic"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_gravity="right|bottom"
+                    />
+                <!-- 待审核 待分配服务商 -->
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_gray" />
+
+        <LinearLayout
+            android:id="@+id/item_vip_order_ll_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/item_vip_order_iv_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/quchongzhi" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

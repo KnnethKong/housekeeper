@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white_g"
+              android:orientation="vertical">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_week_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+    <ScrollView
+        android:id="@+id/is_showing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginRight="@dimen/space_l"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_order_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pro_corner_title_bj"
+                    android:padding="@dimen/space_xl"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_xxl"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_order_title"
+                        style="@style/left_text"
+                        android:layout_marginTop="@dimen/space_xl"
+                        android:text=""
+                        android:textSize="@dimen/txt_xxxl"/>
+
+                    <TextView
+                        android:id="@+id/tv_order_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_order_title"
+                        android:layout_marginBottom="@dimen/space_mm"
+                        android:layout_marginLeft="@dimen/space_l"
+                        android:layout_marginTop="@dimen/space_mm"
+                        android:text="@string/user_location"/>
+
+                    <TextView
+                        android:id="@+id/tv_order_location_l"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_below="@id/tv_order_title"
+                        android:layout_marginBottom="@dimen/space_mm"
+                        android:layout_marginTop="@dimen/space_mm"
+                        android:drawableRight="@mipmap/pro_icon"
+                        android:layout_toRightOf="@id/tv_order_location"
+                        android:text=""/>
+
+                    <TextView
+                        android:id="@+id/tv_order_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_order_location"
+                        android:layout_marginBottom="@dimen/space_mm"
+                        android:layout_marginLeft="@dimen/space_l"
+                        android:text="@string/user_time"/>
+
+                    <TextView
+                        android:id="@+id/tv_order_time_l"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_order_location"
+                        android:layout_marginBottom="@dimen/space_mm"
+                        android:layout_toRightOf="@id/tv_order_time"
+                        android:text=""/>
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/line_horizental_type"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_order_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:drawableLeft="@mipmap/pro_icon_data_selected"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text=""/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_week_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:text="次数："/>
+
+                        <TextView
+                            android:id="@+id/tv_week_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/text_color_count"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:text="次/月"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <include
+                    android:id="@+id/ll_layout_card"
+                    layout="@layout/pro_order_new_detail_card_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_smlx"
+                    android:layout_marginTop="@dimen/space_xl"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/space_l"
+                        android:text="@string/tv_order_content_detail"/>
+
+                    <ImageView
+                        android:id="@+id/iv_order_show_or_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/space_l"
+                        android:paddingRight="@dimen/space_l"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_week_detail_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone"></LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_textView"
+                style="@style/common_button_style"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginRight="@dimen/space_l"
+                android:layout_marginTop="@dimen/space_xl"
+                android:text=""/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

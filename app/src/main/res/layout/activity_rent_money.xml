@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rent_money"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_g"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.haiwai.housekeeper.activity.server.RentMoneyActivity">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_zhzj_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_l"
+        android:layout_marginRight="@dimen/space_l"
+        android:layout_marginTop="@dimen/space_xl"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_smlx"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/left_title_text"
+                android:paddingLeft="@dimen/space_l"
+                android:text="@string/zhmc"/>
+
+            <EditText
+                android:id="@+id/et_zfmc"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:minHeight="@dimen/space_xxl"
+                android:paddingLeft="@dimen/space_s"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_smlx"
+            android:layout_marginTop="@dimen/space_xl"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/left_title_text"
+                android:paddingLeft="@dimen/space_l"
+                android:paddingRight="5dp"
+                android:text="@string/zj1"/>
+            <TextView
+                android:id="@+id/tv_money_type"
+                style="@style/left_title_text"
+                android:paddingRight="5dip"
+                android:text="$"/>
+
+            <EditText
+                android:id="@+id/et_zhzj"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:minHeight="@dimen/space_xxl"
+                android:paddingLeft="@dimen/space_s"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_subs_zhzj"
+        style="@style/common_text_button_style"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/space_l"
+        android:layout_marginRight="@dimen/space_l"
+        android:layout_marginTop="@dimen/space_xl"
+        android:text="@string/wczz"
+        android:textSize="@dimen/txt_xxl"/>
+</LinearLayout>

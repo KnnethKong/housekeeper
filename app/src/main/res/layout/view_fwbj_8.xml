@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_fwbj_8_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="18dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="18dp"
+        android:text="When do you need the service?"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <Spinner
+            android:id="@+id/view_fwbj_8_sp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/zhongyj">
+        </Spinner>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/icon_down"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fwbj_8_ll_da_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fwbj_8_ques_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+
+            android:text="@string/o2o_detail_fwbj8_choose_date"
+            android:textColor="@color/text_1"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/fwbj_8_et_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="@string/choose_date"
+            android:background="@drawable/bg_shape_tv_rect_gray_light_fill_corner"
+            android:minHeight="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fwbj_8_ques_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/o2o_detail_fwbj8_choose_time"
+                    android:textColor="@color/text_1"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fwbj_8_et_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_shape_tv_rect_gray_light_fill_corner"
+                    android:text="@string/choose_time"
+                    android:minHeight="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fwbj_8_ques_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/o2o_detail_fwbj8_for_long"
+                    android:textColor="@color/text_1"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fwbj_8_et_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_shape_tv_rect_gray_light_fill_corner"
+                    android:text="@string/can_select"
+                    android:minHeight="40dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/fwbj_8_et_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:hint="@string/o2o_detail_fwbj8_answer_5"
+        android:background="@drawable/bg_shape_tv_rect_gray_light_fill_corner"
+        android:minHeight="40dp" />
+
+</LinearLayout>

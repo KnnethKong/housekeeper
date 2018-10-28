@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <com.haiwai.housekeeper.libs.ui.PullToRefreshListView
+        android:id="@+id/take_order_serve_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/user_order_detail_ll_bottom"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:cacheColorHint="#00000000"
+        android:drawSelectorOnTop="true"
+        android:fastScrollEnabled="false"
+        android:listSelector="@color/transparent" />
+</LinearLayout>

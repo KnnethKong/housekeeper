@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pro_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haiwai.housekeeper.activity.server.ProAddressActivity">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_address_show_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></com.haiwai.housekeeper.view.TopViewNormalBar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_l"
+                android:layout_marginRight="@dimen/space_l"
+                android:layout_marginTop="@dimen/space_xl"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/pro_country"
+                        android:textSize="@dimen/txt_xxxl" />
+
+                    <com.haiwai.housekeeper.view.MySpinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_xxxl"
+                        android:drawableRight="@mipmap/spinner_right_arrow"
+                        android:gravity="center_vertical"
+                        android:overlapAnchor="false"
+                        android:paddingLeft="@dimen/space_l"
+                        android:paddingRight="@dimen/space_m"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <TextView style="@style/line_horizental_type_big" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/pro_provence"
+                        android:textSize="@dimen/txt_xxxl" />
+
+                    <com.haiwai.housekeeper.view.MySpinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_xxxl"
+                        android:drawableRight="@mipmap/spinner_right_arrow"
+                        android:gravity="center_vertical"
+                        android:overlapAnchor="false"
+                        android:paddingLeft="@dimen/space_l"
+                        android:paddingRight="@dimen/space_m"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <TextView style="@style/line_horizental_type_big" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/pro_city"
+                        android:textSize="@dimen/txt_xxxl" />
+
+                    <com.haiwai.housekeeper.view.MySpinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_xxxl"
+                        android:drawableRight="@mipmap/spinner_right_arrow"
+                        android:gravity="center_vertical"
+                        android:overlapAnchor="false"
+                        android:paddingLeft="@dimen/space_l"
+                        android:paddingRight="@dimen/space_m"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <TextView style="@style/line_horizental_type_big" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/pro_add_detail1"
+                        android:textSize="@dimen/txt_xxxl" />
+
+                    <EditText
+                        android:id="@+id/et_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_xxxl"
+                        android:background="@null"
+                        android:hint="@string/tv_deail_addr"
+                        android:paddingLeft="@dimen/space_l"
+                        android:textColorHint="@color/hint_a_color" />
+                </LinearLayout>
+
+
+                <TextView style="@style/line_horizental_type_big" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/pro_add_detail2"
+                        android:textSize="@dimen/txt_xxxl" />
+
+                    <EditText
+                        android:id="@+id/et_address_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_xxxl"
+                        android:background="@null"
+                        android:hint="@string/tv_deail_addr"
+                        android:paddingLeft="@dimen/space_l"
+                        android:textColorHint="@color/hint_a_color" />
+                </LinearLayout>
+
+                <TextView style="@style/line_horizental_type_big" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/pro_detail_email"
+                        android:textSize="@dimen/txt_xxxl" />
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_xxxl"
+                        android:background="@null"
+                        android:hint="@string/pro_hin_addr_email"
+                        android:paddingLeft="@dimen/space_l"
+                        android:textColorHint="@color/hint_a_color" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <com.mapbox.mapboxsdk.maps.MapView
+                android:id="@+id/new_house_mapview"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                mapbox:style_url="@string/style_mapbox_streets"
+                mapbox:zoom="2" />
+
+
+            <Button
+                android:id="@+id/btn_vip_addrss_next"
+                style="@style/common_vip_button_style"
+                android:layout_marginBottom="@dimen/space_m"
+                android:layout_marginTop="@dimen/space_xl"
+                android:text="@string/pro_addr_finish"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

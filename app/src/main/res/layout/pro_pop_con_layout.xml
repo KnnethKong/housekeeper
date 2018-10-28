@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/pop_pro_bj"
+              android:orientation="vertical">
+            <com.haiwai.housekeeper.view.TextFontView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_s"
+                android:drawableLeft="@mipmap/pop_big_dot"
+                android:drawablePadding="@dimen/space_m"
+                android:textSize="@dimen/txt_l"
+                android:text=""/>
+
+
+
+
+</LinearLayout>

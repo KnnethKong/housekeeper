@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_g"
+    android:orientation="vertical"
+    tools:context=".activity.server.OrderDetailActivity">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_skillSet_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/margain_left_right"
+                android:layout_marginRight="@dimen/margain_left_right"
+                android:layout_marginTop="@dimen/pro_order_img_marging"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_l"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/skill_kg"
+                        android:textSize="@dimen/txt_xxl"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/skill_set_a"
+                        android:textColor="@color/tv_pressed_focused"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <ToggleButton
+                    android:id="@+id/tb_is_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:button="@drawable/pro_skill_set_btn_selector"
+                    android:paddingRight="@dimen/pro_order_item_padding"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn=""/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/margain_left_right"
+                android:layout_marginRight="@dimen/margain_left_right"
+                android:layout_marginTop="@dimen/pro_order_img_marging"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_l"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/skill_detail_set"
+                        android:textColor="#000"
+                        android:textSize="@dimen/txt_xxl"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/skill_set_b"
+                        android:textColor="@color/tv_pressed_focused"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ib_show_of_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:background="@drawable/evalue_slide_color_shape"
+                    android:layout_marginRight="@dimen/space_m">
+                    <TextView
+                        android:id="@+id/tv_expand_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/arrow_up_white"
+                        android:text="@string/need_order_hide"/>
+                </LinearLayout>
+                <!--<ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@mipmap/pro_server_retrect"
+                    />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_content_skill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margain_left_right"
+                android:layout_marginRight="@dimen/margain_left_right"
+                android:layout_marginTop="@dimen/pro_order_img_marging"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_xxxl"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_l"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/left_title_text"
+                            android:text="@string/skill_desc"
+                            android:textColor="#000"
+                            android:textSize="@dimen/txt_xxl"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/ib_skill_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/space_m"
+                        android:text="@string/addr_edit"
+                        android:textColor="#fff"
+                        android:background="@drawable/evalue_slide_color_shape"
+                        />
+                </LinearLayout>
+
+                <View
+                    style="@style/line_horizental_type"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_smlx"
+                    android:layout_marginLeft="@dimen/space_l"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:layout_height="wrap_content"
+                        android:text="@string/skill_se_des"
+                        android:textSize="@dimen/txt_xxl"/>
+
+                    <TextView
+                        android:id="@+id/tv_class_str"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/skill_set_b"
+                        android:textColor="@color/tv_pressed_focused"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/line_horizental_type"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_smlx"
+                    android:layout_marginLeft="@dimen/space_l"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:layout_height="wrap_content"
+                        android:text="@string/skill_advan"
+                        android:textSize="@dimen/txt_xxl"/>
+
+                    <TextView
+                        android:id="@+id/tv_adv_str"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/skill_set_b"
+                        android:textColor="@color/tv_pressed_focused"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pro_detail_content_height_m"
+                android:layout_marginLeft="@dimen/margain_left_right"
+                android:layout_marginRight="@dimen/margain_left_right"
+                android:layout_marginTop="@dimen/pro_order_img_marging"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_l"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/skill_edu"
+                        android:textColor="#000"
+                        android:textSize="@dimen/txt_xxl"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ib_edu_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/addr_edit"
+                    android:textColor="#fff"
+                    android:layout_marginRight="@dimen/space_m"
+                    android:background="@drawable/evalue_slide_color_shape"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pro_detail_content_height_m"
+                android:layout_marginLeft="@dimen/margain_left_right"
+                android:layout_marginRight="@dimen/margain_left_right"
+                android:layout_marginTop="@dimen/pro_order_img_marging"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_l"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/left_title_text"
+                        android:text="@string/skill_work"
+                        android:textColor="#000"
+                        android:textSize="@dimen/txt_xxl"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ib_work_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_m"
+                    android:text="@string/addr_edit"
+                    android:textColor="#fff"
+                    android:background="@drawable/evalue_slide_color_shape"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_set_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margain_left_right"
+                android:layout_marginRight="@dimen/margain_left_right"
+                android:layout_marginTop="@dimen/pro_order_img_marging"
+                android:background="@color/text_color_count"
+                android:text="@string/skill_jh"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/pro_order_img_marging"
+                android:layout_marginLeft="@dimen/margain_left_right"
+                android:layout_marginRight="@dimen/margain_left_right"
+                android:layout_marginTop="@dimen/pro_order_img_marging">
+
+                <TextView
+                    android:id="@+id/tv_order_linkman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/o2o_order_or"
+                    android:textSize="@dimen/pro_order_text_title_size_midle"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@mipmap/pro_order_text_lie"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_set_del"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/space_m"
+                android:gravity="center"
+                android:text="@string/addr_del"
+                android:textColor="@color/text_color_count"
+                android:textSize="@dimen/pro_order_text_title_size_midle"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

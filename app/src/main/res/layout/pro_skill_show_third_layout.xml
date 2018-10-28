@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.haiwai.housekeeper.view.TopViewNormalBar
+        android:id="@+id/top_showd_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.haiwai.housekeeper.view.TopViewNormalBar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/space_xl"
+                android:layout_marginRight="@dimen/space_xl"
+                android:layout_marginTop="@dimen/space_xl"
+                android:text="@string/showd_c"
+                android:textSize="@dimen/txt_l"/>
+
+            <LinearLayout
+                android:id="@+id/ll_work_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ib_add_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/pro_order_img_marging"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/pro_edu_add">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green"
+                        android:textSize="17sp"
+                        android:text="+"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/btn_tv_add"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <!--<ImageButton-->
+                <!--android:id="@+id/ib_add_work"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_margin="@dimen/pro_order_img_marging"-->
+                <!--android:background="@null"-->
+                <!--android:src="@mipmap/pro_edu_add"/>-->
+            <RelativeLayout
+                android:id="@+id/rl_set_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/btn_common_bj">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <TextView
+                        android:id="@+id/ib_btn_showd1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#fff"/>
+
+                    <TextView
+                        android:id="@+id/ib_btn_showd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#fff"
+                        android:textSize="21dp"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!--<TextView
+                android:id="@+id/ib_btn_showd"
+                style="@style/common_text_button_style"/>-->
+            <TextView
+                android:id="@+id/ib_btn_showd_save"
+                android:text="@string/btn_set_btn_save"
+                android:textSize="@dimen/txt_xxl"
+                android:visibility="gone"
+                style="@style/common_text_button_style"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
